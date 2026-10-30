@@ -51,12 +51,12 @@ bpy.ops.object.select_all(action='DESELECT');rig.select_set(True);bpy.context.vi
 for o in meshes:
  modifier=o.modifiers.new('Palmar_calibrated_skin','ARMATURE');modifier.object=rig
  assert weights[o.name]==str([[(g.group,g.weight) for g in v.groups] for v in o.data.vertices])
-out=r/'assets/models/task009/v007';out.mkdir(parents=True,exist_ok=True);source=r/'assets/source/task009/v007';source.mkdir(parents=True,exist_ok=True);(source/'.gdignore').touch()
+out=r/'assets/models/task009/v008';out.mkdir(parents=True,exist_ok=True);source=r/'assets/source/task009/v008';source.mkdir(parents=True,exist_ok=True);(source/'.gdignore').touch()
 bpy.ops.object.select_all(action='DESELECT')
 for o in [rig]+meshes:o.select_set(True)
 bpy.context.view_layer.objects.active=rig
 bpy.ops.export_scene.gltf(filepath=str(out/'arms_palmar_candidate.glb'),export_format='GLB',use_selection=True,export_yup=True,export_apply=True,export_animations=False,export_cameras=False,export_lights=False)
 bpy.ops.wm.save_as_mainfile(filepath=str(source/'Arms_Palmar_Candidate.blend'))
-report['model']='res://assets/models/task009/v007/arms_palmar_candidate.glb';report['source_blend']='res://assets/source/task009/v007/Arms_Palmar_Candidate.blend'
+report['model']='res://assets/models/task009/v008/arms_palmar_candidate.glb';report['source_blend']='res://assets/source/task009/v008/Arms_Palmar_Candidate.blend'
 g=report['hands']['R']['target_bone_godot'];q=matrix(g).to_quaternion();report['right_grip_socket']={'position':g['origin'],'rotation':[q.x,q.y,q.z,q.w]}
-(r/'logs/TASK-009-v007-build.json').write_text(json.dumps(report,indent=2));print('PALMAR_CANDIDATE_EXPORTED edge_increase_m=',excess,flush=True)
+(r/'logs/TASK-009-v008-build.json').write_text(json.dumps(report,indent=2));print('PALMAR_CANDIDATE_EXPORTED edge_increase_m=',excess,flush=True)

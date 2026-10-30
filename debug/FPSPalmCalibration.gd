@@ -36,6 +36,17 @@ static func calibrate(mesh: MeshInstance3D, skeleton: Skeleton3D, hand: String) 
  var up := (middle - wrist).normalized()
  var across := (index - pink).normalized()
  var plane := across.cross(up).normalized()
+ var descendants := {}
+ for bone in skeleton.get_bone_count():
+  var ancestor := bone
+  while ancestor >= 0 and ancestor != hand_index:
+   ancestor = skeleton.get_bone_parent(ancestor)
+  if ancestor == hand_index:
+   var binding := _bind(mesh.skin,skeleton,bone)
+   if binding >= 0:descendants[binding] = true
+ var palm_length := (middle-wrist).length()
+ var anatomical_center := wrist+up*palm_length*.55
+ var palm_half_width := (index-pink).length()*.7
  var halves := [[], []]
  for surface in mesh.mesh.get_surface_count():
   var arrays: Array = mesh.mesh.surface_get_arrays(surface)
@@ -55,15 +66,17 @@ static func calibrate(mesh: MeshInstance3D, skeleton: Skeleton3D, hand: String) 
    var hand_weight := 0.0
    for influence in influences:
     var slot := vertex * influences + influence
-    if bones[slot] == hand_bind:
+    if descendants.has(bones[slot]):
      hand_weight += weights[slot]
    var dot := normals[vertex].normalized().dot(plane)
-   if hand_weight < .65 or absf(dot) < .65:
+   var along := (vertices[vertex]-wrist).dot(up)/palm_length
+   var across_palm := absf((vertices[vertex]-anatomical_center).dot(across))
+   if hand_weight < .5 or along < .25 or along > .8 or across_palm > palm_half_width or absf(dot) < .65:
     continue
    var px := clampi(int(fposmod(uv[vertex].x, 1) * image.get_width()), 0, image.get_width()-1)
    var py := clampi(int((1.0 - fposmod(uv[vertex].y, 1)) * image.get_height()), 0, image.get_height()-1)
    var color := image.get_pixel(px,py)
-   halves[0 if dot > 0 else 1].append({"luma":(color.r+color.g+color.b)/3,"point":vertices[vertex]})
+   halves[0 if dot > 0 else 1].append({"luma":(color.r+color.g+color.b)/3,"point":vertices[vertex],"vertex":vertex,"surface":surface})
  if halves[0].is_empty() or halves[1].is_empty():
   return {"valid":false,"reason":"not enough palm/back surface samples; no invented marker"}
  var light := [[],[]]
@@ -77,7 +90,14 @@ static func calibrate(mesh: MeshInstance3D, skeleton: Skeleton3D, hand: String) 
   for sample in halves[half]:
    for axis in range(3):coordinates[axis].append(sample.point[axis])
   centers.append(Vector3(_median(coordinates[0]),_median(coordinates[1]),_median(coordinates[2])))
- var center:Vector3 = centers[selected]
+ var selected_samples:Array=halves[selected].duplicate()
+ selected_samples.sort_custom(func(a:Dictionary,b:Dictionary)->bool:return a.point.distance_squared_to(anatomical_center)<b.point.distance_squared_to(anatomical_center))
+ var center:=Vector3.ZERO
+ var vertex_ids:=[]
+ for i in mini(5,selected_samples.size()):
+  center+=selected_samples[i].point
+  vertex_ids.append([selected_samples[i].surface,selected_samples[i].vertex])
+ center/=mini(5,selected_samples.size())
  var authored_normal := plane * (1 if selected == 0 else -1)
  # A dark texture sample alone does not prove an outward normal. Verify the shell sides.
  var signed_separation:float = (center-centers[1-selected]).dot(plane)
@@ -89,7 +109,7 @@ static func calibrate(mesh: MeshInstance3D, skeleton: Skeleton3D, hand: String) 
  var frame := Basis(x,normal.cross(x).normalized(),normal)
  var local := mesh.skin.get_bind_pose(hand_bind) * Transform3D(frame,center)
  local.basis = local.basis.orthonormalized()
- return {"valid":true,"transform":local,"metadata":{"kind":"black_palmar_surface_from_skin_and_texture","shell_separation_m":absf(signed_separation),"authored_normals_agree":normal.dot(authored_normal)>.9,"image_sampling":"3D UV V flipped for CPU Image row coordinates","bone":hand,"hand_bind":hand_bind,"surface_samples":halves[selected].size(),"median_palm_luma":medians[selected],"median_dorsal_luma":medians[1-selected],"bone_local_position":[local.origin.x,local.origin.y,local.origin.z],"bone_local_basis":[[local.basis.x.x,local.basis.x.y,local.basis.x.z],[local.basis.y.x,local.basis.y.y,local.basis.y.z],[local.basis.z.x,local.basis.z.y,local.basis.z.z]],"hand_bind_frame":_transform_data(mesh.skin.get_bind_pose(hand_bind).affine_inverse()),"anatomy_user_approved":false}}
+ return {"valid":true,"transform":local,"metadata":{"kind":"black_palmar_surface_from_skin_and_texture","algorithm":"anatomical_midpalm_v2","sample_vertices":vertex_ids,"wrist_to_mcp_m":palm_length,"longitudinal_fraction":(center-wrist).dot(up)/palm_length,"shell_separation_m":absf(signed_separation),"authored_normals_agree":normal.dot(authored_normal)>.9,"image_sampling":"3D UV V flipped for CPU Image row coordinates","bone":hand,"hand_bind":hand_bind,"surface_samples":halves[selected].size(),"median_palm_luma":medians[selected],"median_dorsal_luma":medians[1-selected],"bone_local_position":[local.origin.x,local.origin.y,local.origin.z],"bone_local_basis":[[local.basis.x.x,local.basis.x.y,local.basis.x.z],[local.basis.y.x,local.basis.y.y,local.basis.y.z],[local.basis.z.x,local.basis.z.y,local.basis.z.z]],"hand_bind_frame":_transform_data(mesh.skin.get_bind_pose(hand_bind).affine_inverse()),"anatomy_user_approved":false}}
 
 static func _transform_data(value:Transform3D)->Dictionary:
  return {"origin":[value.origin.x,value.origin.y,value.origin.z],"basis":[[value.basis.x.x,value.basis.x.y,value.basis.x.z],[value.basis.y.x,value.basis.y.y,value.basis.y.z],[value.basis.z.x,value.basis.z.y,value.basis.z.z]]}

@@ -18,7 +18,7 @@ func _run()->void:
  Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
  var w=harness.weapon;w.set_physics_process(false)
  var d=harness.diagnostics
- var variant:String="legacy_v005" if harness.legacy_baseline else ("candidate_v007" if harness.candidate_mode else "static_v006")
+ var variant:String="legacy_v005" if harness.legacy_baseline else ("candidate_v008" if harness.candidate_mode else "static_v006")
  d.output_directory="res://logs/fps_rig/"+variant+"/"
  await _frames(35)
  check(harness.setup_issues.is_empty(),"palm calibration resolves real skin binds and source palette")
@@ -56,6 +56,20 @@ func _run()->void:
  bad=d.make_report("injected_missing_marker")
  check(not bad.right_grip.configured and bad.issues.has("Right hand expected contact has missing palm marker or socket"),"missing required palm marker cannot silently pass")
  d.right_palm_marker_path=path_before
+ var sight:Node3D=d.get_node(d.sight_marker_path)
+ var sight_before:Transform3D=sight.global_transform
+ var ads_before:bool=d.expect_ads_sight_centered
+ d.expect_ads_sight_centered=true
+ sight.global_position=harness.camera.global_position+harness.camera.global_basis.z
+ bad=d.make_report("injected_ads_behind_camera")
+ check(bad.issues.has("ADS sight is behind Camera3D"),"ADS sight behind camera cannot silently pass")
+ sight.global_transform=sight_before
+ var sight_path_before:NodePath=d.sight_marker_path
+ d.sight_marker_path=NodePath()
+ bad=d.make_report("injected_missing_ads_sight")
+ check(bad.issues.has("ADS sight projection is unavailable"),"missing ADS sight cannot silently pass")
+ d.sight_marker_path=sight_path_before
+ d.expect_ads_sight_centered=ads_before
  await _snapshot(harness,"Idle")
  w.set_controls(false,true,false,false);await _frames(40)
  await _snapshot(harness,"ADS")

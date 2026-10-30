@@ -1,6 +1,8 @@
 {
   "right_grip": {
+    "algorithm": "anatomical_midpalm_v2",
     "anatomy_user_approved": false,
+    "authored_normals_agree": true,
     "bone": "R_Hand",
     "bone_local_basis": [
       [
@@ -20,9 +22,9 @@
       ]
     ],
     "bone_local_position": [
-      -0.0236866474151611,
-      0.0152156949043274,
-      -0.0198544766753912
+      0.0319292992353439,
+      0.0694852471351624,
+      -0.00456870207563043
     ],
     "hand_bind": 38,
     "hand_bind_frame": {
@@ -49,10 +51,36 @@
         -0.00710058957338333
       ]
     },
+    "image_sampling": "3D UV V flipped for CPU Image row coordinates",
     "kind": "black_palmar_surface_from_skin_and_texture",
+    "longitudinal_fraction": 0.652978591840879,
     "median_dorsal_luma": 0.24705882370472,
-    "median_palm_luma": 0.13594771673282,
-    "surface_samples": 16,
+    "median_palm_luma": 0.109803922474384,
+    "sample_vertices": [
+      [
+        0,
+        4561
+      ],
+      [
+        0,
+        246
+      ],
+      [
+        0,
+        4239
+      ],
+      [
+        0,
+        2262
+      ],
+      [
+        0,
+        4240
+      ]
+    ],
+    "shell_separation_m": 0.0617385283112526,
+    "surface_samples": 53,
+    "wrist_to_mcp_m": 0.103345759212971,
     "desired_socket": {
       "origin": [
         0.0,
@@ -79,7 +107,9 @@
     }
   },
   "left_grip": {
+    "algorithm": "anatomical_midpalm_v2",
     "anatomy_user_approved": false,
+    "authored_normals_agree": true,
     "bone": "L_Hand",
     "bone_local_basis": [
       [
@@ -99,9 +129,9 @@
       ]
     ],
     "bone_local_position": [
-      0.0235652625560761,
-      0.0153370499610901,
-      -0.0198550522327423
+      -0.0319293886423111,
+      0.0694851875305176,
+      -0.00456870207563043
     ],
     "hand_bind": 13,
     "hand_bind_frame": {
@@ -128,10 +158,36 @@
         -0.00710058957338333
       ]
     },
+    "image_sampling": "3D UV V flipped for CPU Image row coordinates",
     "kind": "black_palmar_surface_from_skin_and_texture",
+    "longitudinal_fraction": 0.652977726716196,
     "median_dorsal_luma": 0.24705882370472,
-    "median_palm_luma": 0.126797390480836,
-    "surface_samples": 15,
+    "median_palm_luma": 0.109803922474384,
+    "sample_vertices": [
+      [
+        0,
+        5841
+      ],
+      [
+        0,
+        528
+      ],
+      [
+        0,
+        5839
+      ],
+      [
+        0,
+        3054
+      ],
+      [
+        0,
+        5837
+      ]
+    ],
+    "shell_separation_m": 0.0617173537611961,
+    "surface_samples": 53,
+    "wrist_to_mcp_m": 0.103345759212971,
     "desired_socket": {
       "origin": [
         0.0,

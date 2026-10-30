@@ -1,0 +1,39 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: palm calibration resolves real skin binds and source palette
+PASS: actual skeleton and both skinned meshes inventoried
+PASS: all actual mesh-to-skeleton bindings resolve
+PASS: both palm markers use real BoneAttachment3D nodes
+PASS: actual animation track targets resolve
+PASS: required palms and physically separate surface sockets are configured
+PASS: contact marker is derived from palmar geometry rather than wrist origin
+PASS: diagnostic snapshot does not change bones, animation or weapon transform
+PASS: known 20cm marker error is detected
+PASS: missing required palm marker cannot silently pass
+FPS_RIG_CAPTURE Idle issues=4 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/legacy_v005/Idle_2141.json
+PASS: JSON capture Idle
+FPS_RIG_CAPTURE ADS issues=4 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/legacy_v005/ADS_2164.json
+PASS: JSON capture ADS
+PASS: Fire uses the existing weapon authority
+FPS_RIG_CAPTURE Fire issues=4 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/legacy_v005/Fire_2186.json
+PASS: JSON capture Fire
+PASS: Reload uses the existing weapon timer
+FPS_RIG_CAPTURE Reload_start issues=4 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/legacy_v005/Reload_start_2202.json
+PASS: JSON capture Reload_start
+MAG_ATTACH phase=0.2
+FPS_RIG_CAPTURE Old_mag_grasp issues=4 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/legacy_v005/Old_mag_grasp_2219.json
+PASS: JSON capture Old_mag_grasp
+FPS_RIG_CAPTURE Old_mag_remove issues=4 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/legacy_v005/Old_mag_remove_2235.json
+PASS: JSON capture Old_mag_remove
+FPS_RIG_CAPTURE New_mag_insert issues=4 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/legacy_v005/New_mag_insert_2251.json
+PASS: JSON capture New_mag_insert
+MAG_RELEASE phase=0.995 jump=0.00000011920929
+FPS_RIG_CAPTURE Reload_end issues=4 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/legacy_v005/Reload_end_2268.json
+PASS: JSON capture Reload_end
+PASS: diagnostic state stepping preserves original ammo transfer
+FPS_RIG_FRAMEWORK failures=0 pose_issues=32 fixture=legacy_v005
+WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

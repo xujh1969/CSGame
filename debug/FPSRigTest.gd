@@ -15,18 +15,19 @@ func _ready() -> void:
  process_priority = 2
  legacy_baseline = legacy_baseline or "--legacy" in OS.get_cmdline_user_args()
  candidate_mode = "--candidate" in OS.get_cmdline_user_args()
+ if "--clean" in OS.get_cmdline_user_args(): show_marker_axes = false
  diagnostics = $RigDiagnostics
  var path := "res://scenes/levels/art/CinematicSample.tscn" if legacy_baseline else "res://scenes/levels/art/HandCalibrationSample.tscn"
  fixture = load(path).instantiate()
  if candidate_mode:
-  fixture.get_node("CinematicPresentation").calibration_asset_id = &"player_fp_arms_candidate_v007"
+  fixture.get_node("CinematicPresentation").calibration_asset_id = &"player_fp_arms_candidate_v008"
  fixture.name = "Fixture"
  add_child(fixture)
  camera = fixture.get_node("Player/Camera3D")
  arms = camera.get_node("RifleViewModel/FirstPersonArms")
  rifle = camera.get_node("RifleViewModel/CinematicRifle")
  weapon = fixture.get_node("Player/WeaponController")
- get_window().title = "TASK-009 FPS Rig Diagnostics / " + ("legacy v005" if legacy_baseline else ("candidate v007" if candidate_mode else "static v006"))
+ get_window().title = "TASK-009 FPS Rig Diagnostics / " + ("legacy v005" if legacy_baseline else ("candidate v008" if candidate_mode else "static v006"))
  var model: Node = arms.skeleton
  while model.get_parent() != arms:
   model = model.get_parent()
@@ -132,4 +133,4 @@ func _process(_delta:float)->void:
  diagnostics.expect_left_hand_on_magazine=held
  diagnostics.expect_ads_sight_centered=weapon.aiming and not weapon.reloading
  diagnostics.magazine_expected_parent_path=diagnostics.get_path_to(arms.magazine_socket if held else rifle.model)
- diagnostics.set_meta("context",{"fixture":"legacy_v005" if legacy_baseline else ("candidate_v007" if candidate_mode else "static_v006"),"approved_baseline":false,"arms_model_path":arms.model_path,"weapon_model_path":rifle.model_path,"setup_issues":setup_issues,"reload_phase":rifle.reload_phase,"weapon_reload_remaining":weapon.reload_remaining,"weapon_reloading":weapon.reloading,"arm_clip":arms.current,"reload_presentation":"legacy_unaccepted" if legacy_baseline else "frozen_pending_static_approval","frame_policy":"sample after frame_post_draw; diagnostic code does not modify bones"})
+ diagnostics.set_meta("context",{"fixture":"legacy_v005" if legacy_baseline else ("candidate_v008" if candidate_mode else "static_v006"),"approved_baseline":false,"arms_model_path":arms.model_path,"weapon_model_path":rifle.model_path,"setup_issues":setup_issues,"reload_phase":rifle.reload_phase,"weapon_reload_remaining":weapon.reload_remaining,"weapon_reloading":weapon.reloading,"arm_clip":arms.current,"reload_presentation":"legacy_unaccepted" if legacy_baseline else "frozen_pending_static_approval","frame_policy":"sample after frame_post_draw; diagnostic code does not modify bones"})

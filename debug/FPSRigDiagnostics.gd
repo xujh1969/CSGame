@@ -97,6 +97,7 @@ func make_report(stage: String = "manual") -> Dictionary:
     var warnings: Array = []
     var report: Dictionary = {
         "stage": stage,
+        "schema": "fps-rig-diagnostics/v2",
         "engine": Engine.get_version_info().get("string", "unknown"),
         "rig_bones": [],
         "issues": issues,
@@ -192,10 +193,15 @@ func make_report(stage: String = "manual") -> Dictionary:
     else:
         warnings.append("Camera/SightMarker not configured; no screen-space evaluation")
 
-    if expect_ads_sight_centered and report.has("sight_screen") and not report.sight_screen.get("behind_camera", true):
-        var xy: Array = report.sight_screen.normalized_xy
-        if Vector2(xy[0], xy[1]).distance_to(Vector2(.5, .5)) > max_sight_error_normalized:
-            issues.append("ADS sight is outside the configured reticle tolerance")
+    if expect_ads_sight_centered:
+        if not report.has("sight_screen"):
+            issues.append("ADS sight projection is unavailable")
+        elif report.sight_screen.get("behind_camera", true):
+            issues.append("ADS sight is behind Camera3D")
+        else:
+            var xy: Array = report.sight_screen.normalized_xy
+            if Vector2(xy[0], xy[1]).distance_to(Vector2(.5, .5)) > max_sight_error_normalized:
+                issues.append("ADS sight is outside the configured reticle tolerance")
     report["magazine_grip"] = _grip_info(_resolve(left_palm_marker_path) as Node3D, _resolve(magazine_socket_path) as Node3D, expect_left_hand_on_magazine, issues, "Magazine hand")
     var magazine := _resolve(magazine_path)
     var expected_parent := _resolve(magazine_expected_parent_path)
