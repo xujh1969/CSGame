@@ -1,0 +1,55 @@
+{
+  "ads_glove_blocked_rays": 0,
+  "failures": 0,
+  "fingers": [
+    {
+      "family": "index_L",
+      "tip_gun_local": [
+        -0.0276284366846085,
+        0.0846538543701172,
+        -0.248045921325684
+      ],
+      "valid": true
+    },
+    {
+      "family": "middle_L",
+      "tip_gun_local": [
+        -0.0349001586437225,
+        0.0168670415878296,
+        -0.230037212371826
+      ],
+      "valid": true
+    },
+    {
+      "family": "ring_L",
+      "tip_gun_local": [
+        0.0194346159696579,
+        0.0758404731750488,
+        -0.196529150009155
+      ],
+      "valid": true
+    },
+    {
+      "family": "pink_L",
+      "tip_gun_local": [
+        0.0291134864091873,
+        0.0518906116485596,
+        -0.170135021209717
+      ],
+      "valid": true
+    },
+    {
+      "family": "thumb_L",
+      "tip_gun_local": [
+        -0.0500749945640564,
+        0.0347445011138916,
+        -0.267836570739746
+      ],
+      "valid": true
+    }
+  ],
+  "guard_half_width": 0.0314845442771912,
+  "limitation": "Bone envelope and sampled aperture rays; not full mesh collision or visual acceptance",
+  "model": "res://assets/models/task009/v009_grip/arms_palmar_candidate.glb",
+  "right_bind_unchanged": true
+}

@@ -1,0 +1,8 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+FAIL: index_L tip=(0.053426, 0.087884, -0.253455) measured_half_width=0.03148454427719
+FAIL: middle_L tip=(0.065192, 0.075246, -0.222639) measured_half_width=0.03148454427719
+FAIL: ring_L tip=(0.061484, 0.068805, -0.190758) measured_half_width=0.03148454427719
+PASS: pink_L tip=(0.044317, 0.050376, -0.16613) measured_half_width=0.03148454427719
+FAIL: thumb_L tip=(0.032002, 0.055517, -0.281365) measured_half_width=0.03148454427719

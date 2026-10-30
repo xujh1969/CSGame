@@ -1,4 +1,5 @@
-> TASK-009 current calibration: run_cinematic_sample.bat or run_rig_candidate.bat; window title must show candidate v009. v006/v008 handedness labels were reversed and are withdrawn. v009 corrects semantic bones and skin groups. Finger wrapping remains unaccepted; Reload presentation is frozen. Default campaign unchanged.
+> TASK-009 latest isolated candidate: v009 grip. Left fingers are fitted to the guard and sampled ADS sight rays are clear; right-grip contact and full visual acceptance remain pending. Reload presentation is frozen. TASK-010 environmental additions are recorded in tasks/TASK-010.md and have not started.
+
 
 > GitHub 上传说明：当前工程位于 `task-009-rig-diagnostics` 分支，TASK-009 双手/诊断尚未验收；`main` 暂仅放仓库说明与 Git 配置，未合并未验收游戏修改。克隆后切换该分支，并执行 `git lfs pull` 获取模型和源文件。项目约 3.2GB（不含 Godot 缓存），原始高模与 Blender 源文件使用 Git LFS。
 

@@ -18,7 +18,7 @@ func _run()->void:
  Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
  var w=harness.weapon;w.set_physics_process(false)
  var d=harness.diagnostics
- var variant:String="legacy_v005" if harness.legacy_baseline else ("candidate_v009" if harness.candidate_mode else "static_v006")
+ var variant:String="legacy_v005" if harness.legacy_baseline else ("candidate_v009_grip" if harness.candidate_mode else "static_v006")
  d.output_directory="res://logs/fps_rig/"+variant+"/"
  await _frames(35)
  check(harness.setup_issues.is_empty(),"palm calibration resolves real skin binds and source palette")

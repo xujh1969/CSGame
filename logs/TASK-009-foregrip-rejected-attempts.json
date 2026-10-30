@@ -1,0 +1,17 @@
+{
+  "exported": false,
+  "rejections": [
+    {
+      "max_edge_increase_m": 0.033388650133609664,
+      "reason": "thumb-index webbing overstretch"
+    },
+    {
+      "max_edge_increase_m": 0.0333677304880336,
+      "reason": "thumb-index webbing overstretch"
+    },
+    {
+      "max_edge_increase_m": 0.038311458112767025,
+      "reason": "thumb-index webbing overstretch"
+    }
+  ]
+}

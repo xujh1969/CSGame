@@ -1,5 +1,7 @@
 """Solve a new diagnostic-only rig from measured palmar markers, not wrist guesses."""
-import bpy,json,hashlib,math
+import bpy,json,hashlib,math,sys
+sys.path.insert(0,str(__import__("pathlib").Path(__file__).resolve().parent))
+from fit_foregrip_fingers import fit_left
 from pathlib import Path
 from mathutils import Vector,Matrix,Quaternion
 r=Path(__file__).resolve().parents[2];cal=json.loads((r/'logs/TASK-009-palmar-calibration-native.json').read_text())
@@ -50,8 +52,11 @@ for side,key,suffix in [('R','left_grip','.R_'),('L','right_grip','.L_')]:
    direction=chain[i+1].bone.head_local-bone.bone.head_local if i+1<len(chain) else bone.bone.tail_local-bone.bone.head_local
    axis=direction.normalized().cross(palm_rest).normalized()
    local=bone.bone.matrix_local.to_3x3().inverted()@axis;bone.rotation_quaternion=Quaternion(local.normalized(),angle)
+ if side=='L':report['finger_surface_fit']=fit_left(rig,C,r,palm_rest)
  report['hands'][side]={'target_bone_godot':{'origin':list(target_g.translation),'basis':[list(target_g.to_3x3().col[i]) for i in range(3)]},'joint_frame_correction':[list(row) for row in correction],'palmar_calibration':data}
-bpy.context.view_layer.update();glove=bpy.data.objects['Object_7'];e=glove.evaluated_get(bpy.context.evaluated_depsgraph_get());m=e.to_mesh();excess=max((m.vertices[x.vertices[0]].co-m.vertices[x.vertices[1]].co).length-(glove.data.vertices[x.vertices[0]].co-glove.data.vertices[x.vertices[1]].co).length for x in glove.data.edges);e.to_mesh_clear();report['prebind_max_edge_length_increase']=excess
+bpy.context.view_layer.update();glove=bpy.data.objects['Object_7'];e=glove.evaluated_get(bpy.context.evaluated_depsgraph_get());m=e.to_mesh();excess=max((m.vertices[x.vertices[0]].co-m.vertices[x.vertices[1]].co).length-(glove.data.vertices[x.vertices[0]].co-glove.data.vertices[x.vertices[1]].co).length for x in glove.data.edges);bad_edges=sorted([{'increase':(m.vertices[x.vertices[0]].co-m.vertices[x.vertices[1]].co).length-(glove.data.vertices[x.vertices[0]].co-glove.data.vertices[x.vertices[1]].co).length,'weights':[[[glove.vertex_groups[g.group].name,g.weight] for g in glove.data.vertices[i].groups if g.weight>.1] for i in x.vertices]} for x in glove.data.edges],key=lambda x:x['increase'],reverse=True)[:5]
+e.to_mesh_clear();report['prebind_max_edge_length_increase']=excess;report['edge_audit']=bad_edges
+(r/'logs/TASK-009-v009-grip-build-attempt.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
 assert excess<.03,('glove webbing overstretch',excess)
 weights={o.name:str([[(g.group,g.weight) for g in v.groups] for v in o.data.vertices]) for o in meshes}
 for o in meshes:
@@ -62,12 +67,12 @@ bpy.ops.object.select_all(action='DESELECT');rig.select_set(True);bpy.context.vi
 for o in meshes:
  modifier=o.modifiers.new('Palmar_calibrated_skin','ARMATURE');modifier.object=rig
  assert weights[o.name]==str([[(g.group,g.weight) for g in v.groups] for v in o.data.vertices])
-out=r/'assets/models/task009/v009';out.mkdir(parents=True,exist_ok=True);source=r/'assets/source/task009/v009';source.mkdir(parents=True,exist_ok=True);(source/'.gdignore').touch()
+out=r/'assets/models/task009/v009_grip';out.mkdir(parents=True,exist_ok=True);source=r/'assets/source/task009/v009_grip';source.mkdir(parents=True,exist_ok=True);(source/'.gdignore').touch()
 bpy.ops.object.select_all(action='DESELECT')
 for o in [rig]+meshes:o.select_set(True)
 bpy.context.view_layer.objects.active=rig
 bpy.ops.export_scene.gltf(filepath=str(out/'arms_palmar_candidate.glb'),export_format='GLB',use_selection=True,export_yup=True,export_apply=True,export_animations=False,export_cameras=False,export_lights=False)
 bpy.ops.wm.save_as_mainfile(filepath=str(source/'Arms_Palmar_Candidate.blend'))
-report['model']='res://assets/models/task009/v009/arms_palmar_candidate.glb';report['source_blend']='res://assets/source/task009/v009/Arms_Palmar_Candidate.blend'
+report['model']='res://assets/models/task009/v009_grip/arms_palmar_candidate.glb';report['source_blend']='res://assets/source/task009/v009_grip/Arms_Palmar_Candidate.blend'
 g=report['hands']['R']['target_bone_godot'];q=matrix(g).to_quaternion();report['right_grip_socket']={'position':g['origin'],'rotation':[q.x,q.y,q.z,q.w]}
-(r/'logs/TASK-009-v009-build.json').write_text(json.dumps(report,indent=2));print('PALMAR_CANDIDATE_EXPORTED edge_increase_m=',excess,flush=True)
+(r/'logs/TASK-009-v009-grip-build.json').write_text(json.dumps(report,indent=2));print('PALMAR_CANDIDATE_EXPORTED edge_increase_m=',excess,flush=True)

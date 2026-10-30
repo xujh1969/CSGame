@@ -1,0 +1,98 @@
+{
+  "approved_baseline": false,
+  "fixture": "candidate_v009_grip",
+  "framework_failures": 0,
+  "pose_issue_count": 0,
+  "rendering": "real GPU viewport; fixed 60fps simulation, not performance measurement",
+  "snapshot_count": 8,
+  "states": [
+    {
+      "issue_count": 0,
+      "issues": [],
+      "json": "res://logs/fps_rig/candidate_v009_grip/Idle_4799.json",
+      "png": "res://logs/fps_rig/candidate_v009_grip/Idle_4799.png",
+      "stage": "Idle",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 0,
+      "issues": [],
+      "json": "res://logs/fps_rig/candidate_v009_grip/ADS_5887.json",
+      "png": "res://logs/fps_rig/candidate_v009_grip/ADS_5887.png",
+      "stage": "ADS",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 0,
+      "issues": [],
+      "json": "res://logs/fps_rig/candidate_v009_grip/Fire_6727.json",
+      "png": "res://logs/fps_rig/candidate_v009_grip/Fire_6727.png",
+      "stage": "Fire",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 0,
+      "issues": [],
+      "json": "res://logs/fps_rig/candidate_v009_grip/Reload_start_7282.json",
+      "png": "res://logs/fps_rig/candidate_v009_grip/Reload_start_7282.png",
+      "stage": "Reload_start",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 0,
+      "issues": [],
+      "json": "res://logs/fps_rig/candidate_v009_grip/Old_mag_grasp_7931.json",
+      "png": "res://logs/fps_rig/candidate_v009_grip/Old_mag_grasp_7931.png",
+      "stage": "Old_mag_grasp",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 0,
+      "issues": [],
+      "json": "res://logs/fps_rig/candidate_v009_grip/Old_mag_remove_8722.json",
+      "png": "res://logs/fps_rig/candidate_v009_grip/Old_mag_remove_8722.png",
+      "stage": "Old_mag_remove",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 0,
+      "issues": [],
+      "json": "res://logs/fps_rig/candidate_v009_grip/New_mag_insert_9370.json",
+      "png": "res://logs/fps_rig/candidate_v009_grip/New_mag_insert_9370.png",
+      "stage": "New_mag_insert",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 0,
+      "issues": [],
+      "json": "res://logs/fps_rig/candidate_v009_grip/Reload_end_10098.json",
+      "png": "res://logs/fps_rig/candidate_v009_grip/Reload_end_10098.png",
+      "stage": "Reload_end",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    }
+  ]
+}

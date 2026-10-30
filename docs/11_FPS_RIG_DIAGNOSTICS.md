@@ -1,3 +1,5 @@
+> Latest candidate is v009 grip; see logs/TASK-009-v009-GRIP.md. Direct Hand-weight filtering excludes folded fingers from palm samples. Candidate frames remain unapproved; Fire/Reload presentation remains frozen.
+
 > 2026-10-30 CORRECTION: previous v006/v008 anatomical left/right labels were reversed. Current isolated candidate v009 corrects semantic bones AND skin vertex groups together. Source native .R is anatomical RIGHT, native .L is LEFT. Historical screenshots are not approved baselines. See logs/TASK-009-v009-HANDEDNESS.md.
 
 # TASK-009 FPS Rig diagnostic contract
@@ -8,7 +10,7 @@
 
 `debug/fps_rig_test.tscn` is the isolated fixture. The default campaign scene and combat/ammo scripts are unchanged. `main` is a README/config bootstrap only; `task-009-rig-diagnostics` is a work-in-progress branch. No hand/reload visual acceptance or merge to the main game is claimed.
 
-Modes: default = static v006 (animations intentionally absent); `--legacy` = unaccepted dynamic v005; `--candidate` = palmar-marker-solved static v008. Candidate Fire/Reload snapshots deliberately preserve StaticBind: these validate instrumentation and original ammo authority, not restored animation quality. Static pose approval is required before rebuilding Reload.
+Modes: default = static v006 (animations intentionally absent); `--legacy` = unaccepted dynamic v005; `--candidate` = palmar-marker-solved static v009 grip. Candidate Fire/Reload snapshots deliberately preserve StaticBind: these validate instrumentation and original ammo authority, not restored animation quality. Static pose approval is required before rebuilding Reload.
 
 ## What is measured
 
