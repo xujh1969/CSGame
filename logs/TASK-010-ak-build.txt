@@ -1,0 +1,27 @@
+22:45:12 | INFO: Data are loaded, start creating Blender stuff
+22:45:12 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+22:45:12 | INFO: glTF import finished in 0.01s
+22:45:12 | INFO: Data are loaded, start creating Blender stuff
+22:45:12 | INFO: Blender create Mesh node node_0
+22:45:16 | INFO: glTF import finished in 4.14s
+ALIGNED ak rms 0.004213179596425197
+C:\Users\AYOU\Desktop\CS\scripts\tools\prepare_enemy_assets.py:42: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material=bpy.data.materials.new('Enemy_Cloth_PBR' if job=='body' else 'AK_Wood_Steel_PBR');material.use_nodes=True
+C:\Users\AYOU\Desktop\CS\scripts\tools\prepare_enemy_assets.py:56: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not mat or not mat.use_nodes:continue
+BAKE ak albedo
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE ak normal
+Info: Baking map saved to internal image, save it externally or pack it
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+22:45:32 | INFO: Starting glTF 2.0 export
+22:45:32 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj
+22:45:33 | INFO: Primitives created: 1
+22:45:33 | INFO: Finished glTF 2.0 export in 0.2606699466705322 s
+
+Info: Saved as "ak.blend"
+ENEMY_ASSET_READY ak
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

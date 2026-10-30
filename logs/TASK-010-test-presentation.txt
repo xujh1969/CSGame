@@ -1,0 +1,21 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: real skinned enemy asset exists
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+PASS: existing enemy uses the real skeleton presentation
+PASS: actual delivered skeleton is retained
+PASS: Fire clip resolves
+PASS: Move clip resolves
+PASS: Crouch clip resolves
+PASS: Death clip resolves
+PASS: independent AK and actual muzzle loaded
+PASS: AK attached to real right hand bone
+PASS: damage rays use the displayed gun muzzle
+PASS: moving enemy selects locomotion
+PASS: shot event selects firing pose
+PASS: shot emits short muzzle flash
+PASS: lethal hit selects actual death animation
+PASS: death does not squash the actor mesh
+PASS: death holds final frame and does not revive
+PASS: dead enemy cannot shoot
+ENEMY_PRESENTATION failures=0

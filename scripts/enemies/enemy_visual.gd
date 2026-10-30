@@ -6,6 +6,7 @@ extends Node3D
 @onready var label: Label3D = $"../Label3D"
 @onready var health = $"../HealthComponent"
 var flash_remaining := 0.0
+var presentation:Node3D
 
 func _ready() -> void:
 	body.mesh = body.mesh.duplicate()
@@ -14,12 +15,19 @@ func _ready() -> void:
 	enemy.state_changed.connect(_on_state)
 	health.health_changed.connect(_on_health)
 	$"../EnemyWeapon".fired.connect(_on_fired)
+	if ResourceLoader.exists("res://assets/models/task010/enemy_fighter.glb"):
+		presentation=preload("res://scripts/enemies/enemy_presentation.gd").new()
+		presentation.name="RiggedEnemy"
+		add_child(presentation)
+		body.hide();head.hide();$Gun/Mesh.hide();label.hide()
 	_refresh()
 
 func aim_at(point: Vector3) -> void:
 	var local: Vector3 = enemy.to_local(point)
 	rotation.y = atan2(-local.x, -local.z)
 	$Gun.rotation.x = atan2(local.y - $Gun.position.y, Vector2(local.x, local.z).length())
+	if presentation != null:
+		presentation.aim_at(point)
 
 func set_height(height: float) -> void:
 	if enemy.get_state() == &"DEAD":
@@ -28,20 +36,21 @@ func set_height(height: float) -> void:
 	body.position.y = height * 0.5
 	head.position.y = height - 0.18
 	$Gun.position.y = height - 0.38
+	if presentation!=null:presentation.crouched=height<1.4
 
 func _on_fired(_origin: Vector3, _impact: Vector3, _collider: Node) -> void:
 	flash_remaining = 0.08
 
 func _process(delta: float) -> void:
 	flash_remaining = maxf(0, flash_remaining - delta)
-	$Gun/Muzzle/Flash.visible = flash_remaining > 0 and enemy.is_alive()
+	$Gun/Muzzle/Flash.visible = presentation==null and flash_remaining > 0 and enemy.is_alive()
 
 func _on_health(_current: int, _maximum: int) -> void:
 	_refresh()
 
 func _on_state(_actor_id: StringName, state: StringName) -> void:
 	if state == &"DEAD":
-		scale.y = 0.3
+		if presentation==null:scale.y = 0.3
 		flash_remaining = 0.0
 	_refresh()
 
