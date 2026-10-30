@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: R_Hand actual=R thumb_screen_x_m=0.01996554806828
+PASS: L_Hand actual=L thumb_screen_x_m=-0.01996558532119
+CHIRALITY_FAILURES=0

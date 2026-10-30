@@ -1,0 +1,26 @@
+[
+  {
+    "native_chain": "L",
+    "classified_hand": "L",
+    "thumb_screen_x_m": -0.01986543834209442,
+    "palm_side_median_brightness": {
+      "1": 0.4784313937028249,
+      "-1": 0.13594771921634674
+    },
+    "rest_to_display_determinant": 2.6999998226528987e-05,
+    "bone_axes_negative_scale": false,
+    "animation_disabled": true
+  },
+  {
+    "native_chain": "R",
+    "classified_hand": "R",
+    "thumb_screen_x_m": 0.01986543834209442,
+    "palm_side_median_brightness": {
+      "1": 0.13594771921634674,
+      "-1": 0.4784313937028249
+    },
+    "rest_to_display_determinant": 2.6999998226528987e-05,
+    "bone_axes_negative_scale": false,
+    "animation_disabled": true
+  }
+]

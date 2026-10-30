@@ -1969,6 +1969,118 @@
           0.46530163288116455
         ]
       }
+    },
+    {
+      "id": "player_fp_arms_candidate_v009",
+      "category": "character",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v009/arms_palmar_candidate.glb",
+      "source": "https://sketchfab.com/3d-models/hand-with-gloves-5a6a434b8ec943ffacc581358781eecb",
+      "license": "CC-BY-4.0; embedded metadata, download page fetch 403",
+      "source_blend": "res://assets/source/task009/v009/Arms_Palmar_Candidate.blend",
+      "raw_sha256": {
+        "assets/models/hand_with_gloves.glb": "c93b94a69940656937e35848e9eb7f706e63c214f1972bf662ae64acc9630455"
+      },
+      "units": "meters",
+      "review_status": "anatomical_sides_corrected_pending_visual_review",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "triangles": 19734,
+      "bones": [
+        "GLTF_created_0_rootJoint",
+        "camera_2",
+        "camera_target_3",
+        "pose_controller_61",
+        "elbow_IK_L.L_4",
+        "hand_IK_L.L_5",
+        "body_58",
+        "shoulder_L.L_31",
+        "shoulder_L.R_57",
+        "elbow_IK_L.R_59",
+        "hand_IK_L.R_60",
+        "R_Upper",
+        "R_Forearm",
+        "R_Hand",
+        "thumb_L.L_8",
+        "thumb_L.002.L_7",
+        "thumb_L.001.L_6",
+        "index_L.L_12",
+        "index_L.003.L_11",
+        "index_L.002.L_10",
+        "index_L.001.L_9",
+        "middle_L.L_16",
+        "middle_L.003.L_15",
+        "middle_L.002.L_14",
+        "middle_L.001.L_13",
+        "ring_L.L_20",
+        "ring_L.001.L_19",
+        "ring_L.002.L_18",
+        "ring_L.003.L_17",
+        "pink_L.L_24",
+        "pink_L.003.L_23",
+        "pink_L.002.L_22",
+        "pink_L.001.L_21",
+        "twist_arm_1_L.L_26",
+        "twist_arm_3_L.L_27",
+        "twist_arm_2_L.L_28",
+        "L_Upper",
+        "L_Forearm",
+        "L_Hand",
+        "thumb_L.R_34",
+        "thumb_L.002.R_33",
+        "thumb_L.001.R_32",
+        "index_L.R_38",
+        "index_L.003.R_37",
+        "index_L.002.R_36",
+        "index_L.001.R_35",
+        "middle_L.R_42",
+        "middle_L.003.R_41",
+        "middle_L.002.R_40",
+        "middle_L.001.R_39",
+        "ring_L.R_46",
+        "ring_L.001.R_45",
+        "ring_L.002.R_44",
+        "ring_L.003.R_43",
+        "pink_L.R_50",
+        "pink_L.003.R_49",
+        "pink_L.002.R_48",
+        "pink_L.001.R_47",
+        "twist_arm_1_L.R_52",
+        "twist_arm_3_L.R_53",
+        "twist_arm_2_L.R_54"
+      ],
+      "animations": [],
+      "limitation": "Source-palmar-marker solved static bind pose; no restored Reload; manual approval pending",
+      "author": "JUST (https://sketchfab.com/teenjust500)",
+      "palm_axes": {
+        "R": [
+          -0.990620791912079,
+          0.043691411614418,
+          0.129466086626053
+        ],
+        "L": [
+          0.990620791912079,
+          0.043691411614418,
+          0.129466086626053
+        ]
+      },
+      "source_hand_mapping": {
+        "R": "native .R",
+        "L": "native .L"
+      },
+      "right_grip_socket": {
+        "position": [
+          0.06748239696025848,
+          -0.12239420413970947,
+          0.1890743374824524
+        ],
+        "rotation": [
+          0.5060137510299683,
+          -0.5555925965309143,
+          0.46530163288116455,
+          0.4677193760871887
+        ]
+      }
     }
   ]
 }

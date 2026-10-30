@@ -1,0 +1,35 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+TASK-000 graybox scene loaded
+PASS: initial ammo 30/90
+PASS: shot 1 accepted
+PASS: shot 2 accepted
+PASS: shot 3 accepted
+PASS: shot 4 accepted
+PASS: shot 5 accepted
+PASS: shot 6 accepted
+PASS: shot 7 accepted
+PASS: shot 8 accepted
+PASS: shot 9 accepted
+PASS: shot 10 accepted
+PASS: 10 shots produce 20/90
+PASS: reload begins
+PASS: repeated R does not restart/stack reload
+PASS: shooting during reload is rejected
+PASS: reload produces 30/80
+PASS: cooldown rejects a second immediate shot
+PASS: empty magazine cannot fire
+PASS: empty reserve cannot reload
+PASS: partial reload transfers only missing rounds
+PASS: sprint blocks ADS
+PASS: ADS available outside sprint
+PASS: low ray first hits nearest barricade
+PASS: standing ray hits solid wall before covered target
+PASS: muzzle beyond wall cannot bypass wall
+PASS: unblocked ray hits exposed target
+PASS: firing at wall does not damage covered target
+PASS: unblocked shot applies 25 damage
+TASK-000 graybox scene loaded
+PASS: scene rebuild cancels reload and restores 30/90
+PASS: scene rebuild restores target health
+TASK-002 failures: 0

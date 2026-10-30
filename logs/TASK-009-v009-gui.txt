@@ -1,0 +1,44 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.3.260 - Forward+ - Using Device #0: AMD - AMD Radeon(TM) Graphics
+
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: palm calibration resolves real skin binds and source palette
+PASS: actual skeleton and both skinned meshes inventoried
+PASS: all actual mesh-to-skeleton bindings resolve
+PASS: both palm markers use real BoneAttachment3D nodes
+PASS: actual animation track targets resolve
+PASS: required palms and physically separate surface sockets are configured
+PASS: contact marker is derived from palmar geometry rather than wrist origin
+PASS: diagnostic snapshot does not change bones, animation or weapon transform
+PASS: known 20cm marker error is detected
+PASS: missing required palm marker cannot silently pass
+PASS: ADS sight behind camera cannot silently pass
+PASS: missing ADS sight cannot silently pass
+FPS_RIG_CAPTURE Idle issues=0 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/candidate_v009/Idle_5226.json
+PASS: JSON capture Idle
+PASS: same-frame GUI capture Idle
+FPS_RIG_CAPTURE ADS issues=0 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/candidate_v009/ADS_6106.json
+PASS: JSON capture ADS
+PASS: same-frame GUI capture ADS
+PASS: Fire uses the existing weapon authority
+FPS_RIG_CAPTURE Fire issues=0 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/candidate_v009/Fire_6983.json
+PASS: JSON capture Fire
+PASS: same-frame GUI capture Fire
+PASS: Reload uses the existing weapon timer
+FPS_RIG_CAPTURE Reload_start issues=0 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/candidate_v009/Reload_start_7724.json
+PASS: JSON capture Reload_start
+PASS: same-frame GUI capture Reload_start
+FPS_RIG_CAPTURE Old_mag_grasp issues=0 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/candidate_v009/Old_mag_grasp_8349.json
+PASS: JSON capture Old_mag_grasp
+PASS: same-frame GUI capture Old_mag_grasp
+FPS_RIG_CAPTURE Old_mag_remove issues=0 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/candidate_v009/Old_mag_remove_8883.json
+PASS: JSON capture Old_mag_remove
+PASS: same-frame GUI capture Old_mag_remove
+FPS_RIG_CAPTURE New_mag_insert issues=0 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/candidate_v009/New_mag_insert_9420.json
+PASS: JSON capture New_mag_insert
+PASS: same-frame GUI capture New_mag_insert
+FPS_RIG_CAPTURE Reload_end issues=0 JSON=C:/Users/AYOU/Desktop/CS/logs/fps_rig/candidate_v009/Reload_end_9932.json
+PASS: JSON capture Reload_end
+PASS: same-frame GUI capture Reload_end
+PASS: diagnostic state stepping preserves original ammo transfer
+FPS_RIG_FRAMEWORK failures=0 pose_issues=0 fixture=candidate_v009

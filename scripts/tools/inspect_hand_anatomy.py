@@ -26,7 +26,7 @@ for native,suffix in [('L','.L_'),('R','.R_')]:
  # target columns are screen-right +X, fingers +Z, palm toward camera -Y.
  transform=(target@basis.inverted()).to_4x4()@Matrix.Diagonal((.03,.03,.03,1))@Matrix.Translation(-w)
  thumb=transform@(rig.matrix_world@f('thumb_L').head_local)
- side='R' if thumb.x<0 else 'L'
+ side='R' if thumb.x>0 else 'L'
  tint=(.65,.035,.025,1) if side=='R' else (.025,.12,.75,1)
  debug=bpy.data.materials.new('Right_red' if side=='R' else 'Left_blue');debug.diffuse_color=tint;debug.use_nodes=True;debug.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=tint
  originals=[]
@@ -50,7 +50,7 @@ c=bpy.data.cameras.new('Audit_camera');camera=bpy.data.objects.new('Audit_camera
 for row in reports:
  for other in reports:
   for o in other['objects']:o.hide_render=other!=row
- s.render.filepath=str(r/'logs'/('TASK-009-v006-'+('right' if row['classified_hand']=='R' else 'left')+'-hand.png'));bpy.ops.render.render(write_still=True)
+ s.render.filepath=str(r/'logs'/('TASK-009-v009-'+('right' if row['classified_hand']=='R' else 'left')+'-hand.png'));bpy.ops.render.render(write_still=True)
 for row in reports:del row['objects']
-p=r/'assets/source/task009/v006';p.mkdir(parents=True,exist_ok=True);(p/'.gdignore').touch();bpy.ops.wm.save_as_mainfile(filepath=str(p/'Hand_Anatomy.blend'))
-(r/'logs/TASK-009-v006-anatomy.json').write_text(json.dumps(reports,indent=2));print('ANATOMY_AUDIT',reports,flush=True)
+p=r/'assets/source/task009/v009';p.mkdir(parents=True,exist_ok=True);(p/'.gdignore').touch();bpy.ops.wm.save_as_mainfile(filepath=str(p/'Hand_Anatomy.blend'))
+(r/'logs/TASK-009-v009-anatomy.json').write_text(json.dumps(reports,indent=2));print('ANATOMY_AUDIT',reports,flush=True)

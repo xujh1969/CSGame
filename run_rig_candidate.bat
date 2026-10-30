@@ -12,8 +12,8 @@ if not exist "%GODOT_EXE%" (
     pause
     exit /b 1
 )
-echo Starting TASK-009 isolated rig candidate v008...
-"%GODOT_EXE%" --path "%PROJECT_DIR%" res://debug/fps_rig_test.tscn -- --candidate --clean
+echo Starting TASK-009 isolated rig candidate v009...
+"%GODOT_EXE%" --path "%PROJECT_DIR%" %* res://debug/fps_rig_test.tscn -- --candidate --clean
 set "GODOT_EXIT_CODE=%ERRORLEVEL%"
 echo Godot exited with code %GODOT_EXIT_CODE%.
 pause

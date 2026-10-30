@@ -1,0 +1,20 @@
+{
+  "failures": 0,
+  "hands": [
+    {
+      "anatomical_hand": "R",
+      "semantic_hand": "R",
+      "thumb_bone": "thumb_L.R_34",
+      "thumb_screen_x_m": 0.019965548068285,
+      "valid": true
+    },
+    {
+      "anatomical_hand": "L",
+      "semantic_hand": "L",
+      "thumb_bone": "thumb_L.L_8",
+      "thumb_screen_x_m": -0.019965585321188,
+      "valid": true
+    }
+  ],
+  "model": "res://assets/models/task009/v009/arms_palmar_candidate.glb"
+}
