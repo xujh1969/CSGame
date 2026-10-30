@@ -1,0 +1,5224 @@
+{
+  "bone_count": 61,
+  "camera": {
+    "basis_columns": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "basis_determinant": 1.0,
+    "far": 4000.0,
+    "fov": 75.0,
+    "local_origin": [
+      0.0,
+      1.70000004768372,
+      0.0
+    ],
+    "near": 0.0500000007450581,
+    "origin_world": [
+      0.0,
+      1.70000004768372,
+      3.0
+    ],
+    "path": "/root/FPSRigTest/Fixture/Player/Camera3D",
+    "possibly_mirrored": false,
+    "rotation_world_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "capture_frame": 34,
+  "context": {
+    "approved_baseline": false,
+    "arm_clip": "StaticBind",
+    "fixture": "static_v006",
+    "frame_policy": "sample after frame_post_draw; diagnostic code does not modify bones",
+    "reload_phase": 0.0,
+    "reload_presentation": "frozen_pending_static_approval",
+    "setup_issues": [],
+    "weapon_reload_remaining": 0.0,
+    "weapon_reloading": false
+  },
+  "engine": "4.7.2-stable (official)",
+  "inventory": {
+    "animation_players": [],
+    "animation_trees": [],
+    "bone_attachments": [
+      {
+        "bone_name": "R_Hand",
+        "override_pose": false,
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment"
+      },
+      {
+        "bone_name": "L_Hand",
+        "override_pose": false,
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment"
+      }
+    ],
+    "nodes": [
+      {
+        "class": "Node3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.160005062818527,
+            -0.229999586939812,
+            -0.280009329319
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Receiver",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Receiver",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Barrel",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0149999996647239,
+            -0.349999994039536
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.48500049114227,
+            2.36999082565308
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Barrel",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Sight",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0900000035762787,
+            -0.25
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.56000053882599,
+            2.46999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Sight",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Marker3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0000000488944351673126,
+            0.0490233637392521,
+            -0.51800000667572
+          ],
+          "origin_world": [
+            0.160005107522011,
+            1.51902389526367,
+            2.20199060440063
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Node3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle/MuzzleFlash",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005107522011,
+            1.51902389526367,
+            2.20199060440063
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle/MuzzleFlash",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle/MuzzleFlash",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle/MuzzleFlash/Mesh",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005107522011,
+            1.51902389526367,
+            2.20199060440063
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle/MuzzleFlash/Mesh",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "OmniLight3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle/MuzzleFlash",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle/MuzzleFlash/Light",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005107522011,
+            1.51902389526367,
+            2.20199060440063
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/Muzzle/MuzzleFlash/Light",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Node3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Marker3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RightWristReference",
+        "transform": {
+          "basis_columns": [
+            [
+              0.0503767728805542,
+              -0.127013325691223,
+              -0.990620911121368
+            ],
+            [
+              -0.0488249883055687,
+              0.990381121635437,
+              -0.129465520381927
+            ],
+            [
+              0.99753612279892,
+              0.0548891089856625,
+              0.0436908006668091
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0650000795722008,
+            -0.1000000461936,
+            0.177999973297119
+          ],
+          "origin_world": [
+            0.225005149841309,
+            1.37000048160553,
+            2.89799070358276
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RightWristReference",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            -0.0638452246785164,
+            0.688533425331116,
+            -0.0270779822021723,
+            0.721881031990051
+          ],
+          "scale": [
+            1.0,
+            0.999999940395355,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Node3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Optic_Glass",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Optic_Glass",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Magazine",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Magazine",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Marker3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Magazine",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Magazine/LeftMagazineGripSocket",
+        "transform": {
+          "basis_columns": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            -0.0240000002086163,
+            -0.200000002980232,
+            0.0
+          ],
+          "origin_world": [
+            0.136005058884621,
+            1.27000045776367,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Magazine/LeftMagazineGripSocket",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.5,
+            -0.5,
+            0.5,
+            -0.5
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Rifle_Body",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Rifle_Body",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Marker3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/RightGripSocket",
+        "transform": {
+          "basis_columns": [
+            [
+              0.0,
+              -1.0,
+              0.0
+            ],
+            [
+              -1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              -1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            -0.109999999403954,
+            0.155000001192093
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.36000049114227,
+            2.87499070167542
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/RightGripSocket",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.70710676908493,
+            -0.70710676908493,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Marker3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/LeftGripSocket",
+        "transform": {
+          "basis_columns": [
+            [
+              0.0,
+              0.0,
+              1.0
+            ],
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0219999998807907,
+            -0.230000004172325
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.49200046062469,
+            2.48999071121216
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/LeftGripSocket",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.5,
+            0.5,
+            0.5,
+            -0.5
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Marker3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/SightMarker",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.135000005364418,
+            0.0419999994337559
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.60500049591064,
+            2.76199078559875
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/SightMarker",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/@MeshInstance3D@77",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.135000005364418,
+            0.0199999995529652
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.60500049591064,
+            2.73999071121216
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/@MeshInstance3D@77",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Node3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Node3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Node3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Skeleton3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/Object_7",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/Object_7",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/Object_9",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/Object_9",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "BoneAttachment3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment",
+        "transform": {
+          "basis_columns": [
+            [
+              0.0503767430782318,
+              -0.127012997865677,
+              -0.990621089935303
+            ],
+            [
+              -0.997536182403564,
+              -0.0548889636993408,
+              -0.0436908304691315
+            ],
+            [
+              -0.0488249361515045,
+              0.990381240844727,
+              -0.129465162754059
+            ]
+          ],
+          "basis_determinant": 1.00000023841858,
+          "local_origin": [
+            0.0650001466274261,
+            -0.100000128149986,
+            0.17799998819828
+          ],
+          "origin_world": [
+            0.225005209445953,
+            1.37000036239624,
+            2.89799070358276
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.555592238903046,
+            -0.506013691425323,
+            -0.467719733715057,
+            -0.465301692485809
+          ],
+          "scale": [
+            1.00000011920929,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Marker3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker",
+        "transform": {
+          "basis_columns": [
+            [
+              0.000000264495611190796,
+              -1.0,
+              -0.000000566244125366211
+            ],
+            [
+              -1.0,
+              -0.000000182539224624634,
+              -0.000000120140612125397
+            ],
+            [
+              0.0000000670552253723145,
+              0.000000536441802978516,
+              -1.00000011920929
+            ]
+          ],
+          "basis_determinant": 1.00000011920929,
+          "local_origin": [
+            -0.0215036273002625,
+            0.0150416344404221,
+            -0.0259469002485275
+          ],
+          "origin_world": [
+            0.210184216499329,
+            1.34620869159698,
+            2.92199468612671
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.70710688829422,
+            -0.707106649875641,
+            -0.000000157721416371714,
+            -0.000000242673650063807
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.00000011920929
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker/@MeshInstance3D@92",
+        "transform": {
+          "basis_columns": [
+            [
+              0.000000264495611190796,
+              -1.0,
+              -0.000000566244125366211
+            ],
+            [
+              -1.0,
+              -0.000000182539224624634,
+              -0.000000120140612125397
+            ],
+            [
+              0.0000000670552253723145,
+              0.000000536441802978516,
+              -1.00000011920929
+            ]
+          ],
+          "basis_determinant": 1.00000011920929,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.210184216499329,
+            1.34620869159698,
+            2.92199468612671
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker/@MeshInstance3D@92",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.70710688829422,
+            -0.707106649875641,
+            -0.000000157721416371714,
+            -0.000000242673650063807
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.00000011920929
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker/@MeshInstance3D@93",
+        "transform": {
+          "basis_columns": [
+            [
+              0.000000264495611190796,
+              -1.0,
+              -0.000000566244125366211
+            ],
+            [
+              -1.0,
+              -0.000000182539224624634,
+              -0.000000120140612125397
+            ],
+            [
+              0.0000000670552253723145,
+              0.000000536441802978516,
+              -1.00000011920929
+            ]
+          ],
+          "basis_determinant": 1.00000011920929,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.210184216499329,
+            1.34620869159698,
+            2.92199468612671
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker/@MeshInstance3D@93",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.70710688829422,
+            -0.707106649875641,
+            -0.000000157721416371714,
+            -0.000000242673650063807
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.00000011920929
+          ]
+        }
+      },
+      {
+        "class": "BoneAttachment3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment",
+        "transform": {
+          "basis_columns": [
+            [
+              0.0503767728805542,
+              -0.990620851516724,
+              0.12701290845871
+            ],
+            [
+              0.99753612279892,
+              0.0436908900737762,
+              -0.0548887848854065
+            ],
+            [
+              0.048824667930603,
+              0.129465222358704,
+              0.990381240844727
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            -0.0778028070926666,
+            -0.00513768196105957,
+            -0.225221633911133
+          ],
+          "origin_world": [
+            0.0822022557258606,
+            1.46486282348633,
+            2.49476909637451
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            -0.0638449639081955,
+            -0.027077954262495,
+            -0.688533425331116,
+            0.721881031990051
+          ],
+          "scale": [
+            0.99999988079071,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Marker3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker",
+        "transform": {
+          "basis_columns": [
+            [
+              -0.000000633299350738525,
+              0.000000298023223876953,
+              1.0
+            ],
+            [
+              1.0,
+              -0.000000098254531621933,
+              0.00000062212347984314
+            ],
+            [
+              0.000000152271240949631,
+              0.99999988079071,
+              -0.000000134110450744629
+            ]
+          ],
+          "basis_determinant": 0.99999988079071,
+          "local_origin": [
+            0.0168105382472277,
+            0.0197403803467751,
+            -0.0285968780517578
+          ],
+          "origin_world": [
+            0.101344630122185,
+            1.44537007808685,
+            2.46749901771545
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.499999940395355,
+            0.500000178813934,
+            0.50000011920929,
+            -0.499999761581421
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            0.99999988079071
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker/@MeshInstance3D@94",
+        "transform": {
+          "basis_columns": [
+            [
+              -0.000000633299350738525,
+              0.000000298023223876953,
+              1.0
+            ],
+            [
+              1.0,
+              -0.000000098254531621933,
+              0.00000062212347984314
+            ],
+            [
+              0.000000152271240949631,
+              0.99999988079071,
+              -0.000000134110450744629
+            ]
+          ],
+          "basis_determinant": 0.99999988079071,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.101344630122185,
+            1.44537007808685,
+            2.46749901771545
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker/@MeshInstance3D@94",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.499999940395355,
+            0.500000178813934,
+            0.50000011920929,
+            -0.499999761581421
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            0.99999988079071
+          ]
+        }
+      },
+      {
+        "class": "MeshInstance3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker/@MeshInstance3D@95",
+        "transform": {
+          "basis_columns": [
+            [
+              -0.000000633299350738525,
+              0.000000298023223876953,
+              1.0
+            ],
+            [
+              1.0,
+              -0.000000098254531621933,
+              0.00000062212347984314
+            ],
+            [
+              0.000000152271240949631,
+              0.99999988079071,
+              -0.000000134110450744629
+            ]
+          ],
+          "basis_determinant": 0.99999988079071,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.101344630122185,
+            1.44537007808685,
+            2.46749901771545
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker/@MeshInstance3D@95",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.499999940395355,
+            0.500000178813934,
+            0.50000011920929,
+            -0.499999761581421
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            0.99999988079071
+          ]
+        }
+      },
+      {
+        "class": "PhysicalBoneSimulator3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/@PhysicalBoneSimulator3D@78",
+        "transform": {
+          "basis_columns": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "origin_world": [
+            0.160005062818527,
+            1.47000050544739,
+            2.71999073028564
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/@PhysicalBoneSimulator3D@78",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "class": "Node3D",
+        "parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms",
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/LeftMagazineSocket",
+        "transform": {
+          "basis_columns": [
+            [
+              0.0503767728805542,
+              -0.990620851516724,
+              0.12701290845871
+            ],
+            [
+              0.99753612279892,
+              0.0436908900737762,
+              -0.0548887848854065
+            ],
+            [
+              0.048824667930603,
+              0.129465222358704,
+              0.990381240844727
+            ]
+          ],
+          "basis_determinant": 1.0,
+          "local_origin": [
+            -0.0778028070926666,
+            -0.00513768196105957,
+            -0.225221633911133
+          ],
+          "origin_world": [
+            0.0822022557258606,
+            1.46486282348633,
+            2.49476909637451
+          ],
+          "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/LeftMagazineSocket",
+          "possibly_mirrored": false,
+          "rotation_world_xyzw": [
+            -0.0638449639081955,
+            -0.027077954262495,
+            -0.688533425331116,
+            0.721881031990051
+          ],
+          "scale": [
+            0.99999988079071,
+            1.0,
+            1.0
+          ]
+        }
+      }
+    ],
+    "skinned_meshes": [
+      {
+        "binds": [
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "GLTF_created_0_rootJoint",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "camera_2",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "camera_target_3",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "pose_controller_61",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "body_58",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "shoulder_L.L_31",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "shoulder_L.R_57",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "elbow_IK_L.L_4",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "elbow_IK_L.R_59",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000035762787,
+            "name": "hand_IK_L.L_5",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "hand_IK_L.R_60",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999582767487,
+            "name": "L_Upper",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999523162842,
+            "name": "L_Forearm",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999761581421,
+            "name": "L_Hand",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "index_L.R_38",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "index_L.003.R_37",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "index_L.002.R_36",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999701976776,
+            "name": "index_L.001.R_35",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "middle_L.R_42",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "middle_L.003.R_41",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999821186066,
+            "name": "middle_L.002.R_40",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999940395355,
+            "name": "middle_L.001.R_39",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999940395355,
+            "name": "pink_L.R_50",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999940395355,
+            "name": "pink_L.003.R_49",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999761581421,
+            "name": "pink_L.002.R_48",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999701976776,
+            "name": "pink_L.001.R_47",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999582767487,
+            "name": "ring_L.R_46",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999821186066,
+            "name": "ring_L.001.R_45",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.99999988079071,
+            "name": "ring_L.002.R_44",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999821186066,
+            "name": "ring_L.003.R_43",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "thumb_L.R_34",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "thumb_L.002.R_33",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999940395355,
+            "name": "thumb_L.001.R_32",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "twist_arm_1_L.R_52",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "twist_arm_2_L.R_54",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "twist_arm_3_L.R_53",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000023841858,
+            "name": "R_Upper",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "R_Forearm",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "R_Hand",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000083446503,
+            "name": "index_L.L_12",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "index_L.003.L_11",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "index_L.002.L_10",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "index_L.001.L_9",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "middle_L.L_16",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "middle_L.003.L_15",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000095367432,
+            "name": "middle_L.002.L_14",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000083446503,
+            "name": "middle_L.001.L_13",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "pink_L.L_24",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000083446503,
+            "name": "pink_L.003.L_23",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000083446503,
+            "name": "pink_L.002.L_22",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "pink_L.001.L_21",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "ring_L.L_20",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "ring_L.001.L_19",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "ring_L.002.L_18",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "ring_L.003.L_17",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "thumb_L.L_8",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "thumb_L.002.L_7",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "thumb_L.001.L_6",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000095367432,
+            "name": "twist_arm_1_L.L_26",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "twist_arm_2_L.L_28",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "twist_arm_3_L.L_27",
+            "resolved": true
+          }
+        ],
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/Object_7",
+        "skeleton_path": "..",
+        "surface_count": 1
+      },
+      {
+        "binds": [
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "GLTF_created_0_rootJoint",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "camera_2",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "camera_target_3",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "pose_controller_61",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "body_58",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "shoulder_L.L_31",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "shoulder_L.R_57",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "elbow_IK_L.L_4",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "elbow_IK_L.R_59",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000035762787,
+            "name": "hand_IK_L.L_5",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "hand_IK_L.R_60",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999582767487,
+            "name": "L_Upper",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999523162842,
+            "name": "L_Forearm",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999761581421,
+            "name": "L_Hand",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "index_L.R_38",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "index_L.003.R_37",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "index_L.002.R_36",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999701976776,
+            "name": "index_L.001.R_35",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "middle_L.R_42",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "middle_L.003.R_41",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999821186066,
+            "name": "middle_L.002.R_40",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999940395355,
+            "name": "middle_L.001.R_39",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999940395355,
+            "name": "pink_L.R_50",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999940395355,
+            "name": "pink_L.003.R_49",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999761581421,
+            "name": "pink_L.002.R_48",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999701976776,
+            "name": "pink_L.001.R_47",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999582767487,
+            "name": "ring_L.R_46",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999821186066,
+            "name": "ring_L.001.R_45",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.99999988079071,
+            "name": "ring_L.002.R_44",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999821186066,
+            "name": "ring_L.003.R_43",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "thumb_L.R_34",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.0,
+            "name": "thumb_L.002.R_33",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999940395355,
+            "name": "thumb_L.001.R_32",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "twist_arm_1_L.R_52",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 0.999999642372131,
+            "name": "twist_arm_2_L.R_54",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000011920929,
+            "name": "twist_arm_3_L.R_53",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000023841858,
+            "name": "R_Upper",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "R_Forearm",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "R_Hand",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000083446503,
+            "name": "index_L.L_12",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "index_L.003.L_11",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "index_L.002.L_10",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "index_L.001.L_9",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "middle_L.L_16",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "middle_L.003.L_15",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000095367432,
+            "name": "middle_L.002.L_14",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000083446503,
+            "name": "middle_L.001.L_13",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "pink_L.L_24",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000083446503,
+            "name": "pink_L.003.L_23",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000083446503,
+            "name": "pink_L.002.L_22",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "pink_L.001.L_21",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "ring_L.L_20",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "ring_L.001.L_19",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "ring_L.002.L_18",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "ring_L.003.L_17",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "thumb_L.L_8",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "thumb_L.002.L_7",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000047683716,
+            "name": "thumb_L.001.L_6",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000095367432,
+            "name": "twist_arm_1_L.L_26",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000071525574,
+            "name": "twist_arm_2_L.L_28",
+            "resolved": true
+          },
+          {
+            "bone_index": -1,
+            "determinant": 1.00000059604645,
+            "name": "twist_arm_3_L.L_27",
+            "resolved": true
+          }
+        ],
+        "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/Object_9",
+        "skeleton_path": "..",
+        "surface_count": 1
+      }
+    ]
+  },
+  "issue_count": 2,
+  "issues": [
+    "Right hand contact distance 0.070m > 0.040m",
+    "Left hand contact distance 0.078m > 0.040m"
+  ],
+  "left_grip": {
+    "configured": true,
+    "distance_m": 0.0782388374209404,
+    "expected_contact": true,
+    "palm_transform": {
+      "basis_columns": [
+        [
+          -0.000000633299350738525,
+          0.000000298023223876953,
+          1.0
+        ],
+        [
+          1.0,
+          -0.000000098254531621933,
+          0.00000062212347984314
+        ],
+        [
+          0.000000152271240949631,
+          0.99999988079071,
+          -0.000000134110450744629
+        ]
+      ],
+      "basis_determinant": 0.99999988079071,
+      "local_origin": [
+        0.0168105382472277,
+        0.0197403803467751,
+        -0.0285968780517578
+      ],
+      "origin_world": [
+        0.101344630122185,
+        1.44537007808685,
+        2.46749901771545
+      ],
+      "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker",
+      "possibly_mirrored": false,
+      "rotation_world_xyzw": [
+        0.499999940395355,
+        0.500000178813934,
+        0.50000011920929,
+        -0.499999761581421
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.99999988079071
+      ]
+    },
+    "palm_world": [
+      0.101344630122185,
+      1.44537007808685,
+      2.46749901771545
+    ],
+    "relative_orientation_deg": 0.0,
+    "socket_transform": {
+      "basis_columns": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "basis_determinant": 1.0,
+      "local_origin": [
+        0.0,
+        0.0219999998807907,
+        -0.230000004172325
+      ],
+      "origin_world": [
+        0.160005062818527,
+        1.49200046062469,
+        2.48999071121216
+      ],
+      "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/LeftGripSocket",
+      "possibly_mirrored": false,
+      "rotation_world_xyzw": [
+        0.5,
+        0.5,
+        0.5,
+        -0.5
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "socket_world": [
+      0.160005062818527,
+      1.49200046062469,
+      2.48999071121216
+    ],
+    "surface_calibration": {
+      "anatomy_user_approved": false,
+      "authored_normals_agree": true,
+      "bone": "L_Hand",
+      "bone_local_basis": [
+        [
+          0.127012744545937,
+          -0.0548893995583057,
+          0.990381240844727
+        ],
+        [
+          0.050377007573843,
+          0.99753612279892,
+          0.048825278878212
+        ],
+        [
+          -0.990620970726013,
+          0.0436910055577755,
+          0.129464954137802
+        ]
+      ],
+      "bone_local_position": [
+        0.0168105382472277,
+        0.0197403803467751,
+        -0.0285968780517578
+      ],
+      "hand_bind": 13,
+      "hand_bind_frame": {
+        "basis": [
+          [
+            0.0503769628703594,
+            -0.990621030330658,
+            0.127013012766838
+          ],
+          [
+            0.997536242008209,
+            0.0436909012496471,
+            -0.0548888444900513
+          ],
+          [
+            0.0488248504698277,
+            0.129465281963348,
+            0.990381479263306
+          ]
+        ],
+        "origin": [
+          -0.0750000923871994,
+          -0.00499994866549969,
+          -0.230000033974648
+        ]
+      },
+      "image_sampling": "3D UV V flipped for CPU Image row coordinates",
+      "kind": "black_palmar_surface_from_skin_and_texture",
+      "median_dorsal_luma": 0.24705882370472,
+      "median_palm_luma": 0.126797390480836,
+      "shell_separation_m": 0.00924220774322748,
+      "surface_samples": 15
+    }
+  },
+  "magazine_grip": {
+    "configured": true,
+    "distance_m": 0.309366941452026,
+    "expected_contact": false,
+    "palm_transform": {
+      "basis_columns": [
+        [
+          -0.000000633299350738525,
+          0.000000298023223876953,
+          1.0
+        ],
+        [
+          1.0,
+          -0.000000098254531621933,
+          0.00000062212347984314
+        ],
+        [
+          0.000000152271240949631,
+          0.99999988079071,
+          -0.000000134110450744629
+        ]
+      ],
+      "basis_determinant": 0.99999988079071,
+      "local_origin": [
+        0.0168105382472277,
+        0.0197403803467751,
+        -0.0285968780517578
+      ],
+      "origin_world": [
+        0.101344630122185,
+        1.44537007808685,
+        2.46749901771545
+      ],
+      "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker",
+      "possibly_mirrored": false,
+      "rotation_world_xyzw": [
+        0.499999940395355,
+        0.500000178813934,
+        0.50000011920929,
+        -0.499999761581421
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        0.99999988079071
+      ]
+    },
+    "palm_world": [
+      0.101344630122185,
+      1.44537007808685,
+      2.46749901771545
+    ],
+    "relative_orientation_deg": 120.000016999683,
+    "socket_transform": {
+      "basis_columns": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "basis_determinant": 1.0,
+      "local_origin": [
+        -0.0240000002086163,
+        -0.200000002980232,
+        0.0
+      ],
+      "origin_world": [
+        0.136005058884621,
+        1.27000045776367,
+        2.71999073028564
+      ],
+      "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/Magazine/LeftMagazineGripSocket",
+      "possibly_mirrored": false,
+      "rotation_world_xyzw": [
+        0.5,
+        -0.5,
+        0.5,
+        -0.5
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "socket_world": [
+      0.136005058884621,
+      1.27000045776367,
+      2.71999073028564
+    ],
+    "surface_calibration": {
+      "anatomy_user_approved": false,
+      "authored_normals_agree": true,
+      "bone": "L_Hand",
+      "bone_local_basis": [
+        [
+          0.127012744545937,
+          -0.0548893995583057,
+          0.990381240844727
+        ],
+        [
+          0.050377007573843,
+          0.99753612279892,
+          0.048825278878212
+        ],
+        [
+          -0.990620970726013,
+          0.0436910055577755,
+          0.129464954137802
+        ]
+      ],
+      "bone_local_position": [
+        0.0168105382472277,
+        0.0197403803467751,
+        -0.0285968780517578
+      ],
+      "hand_bind": 13,
+      "hand_bind_frame": {
+        "basis": [
+          [
+            0.0503769628703594,
+            -0.990621030330658,
+            0.127013012766838
+          ],
+          [
+            0.997536242008209,
+            0.0436909012496471,
+            -0.0548888444900513
+          ],
+          [
+            0.0488248504698277,
+            0.129465281963348,
+            0.990381479263306
+          ]
+        ],
+        "origin": [
+          -0.0750000923871994,
+          -0.00499994866549969,
+          -0.230000033974648
+        ]
+      },
+      "image_sampling": "3D UV V flipped for CPU Image row coordinates",
+      "kind": "black_palmar_surface_from_skin_and_texture",
+      "median_dorsal_luma": 0.24705882370472,
+      "median_palm_luma": 0.126797390480836,
+      "shell_separation_m": 0.00924220774322748,
+      "surface_samples": 15
+    }
+  },
+  "magazine_parent": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+  "rig_bones": [
+    {
+      "id": 0,
+      "name": "GLTF_created_0_rootJoint",
+      "parent": "",
+      "pose_basis": [
+        [
+          1.0,
+          -0.00000000000000104523982158211,
+          -0.0000000342285453314162
+        ],
+        [
+          0.000000000000000348413317977002,
+          1.0,
+          -0.0000000203580530211411
+        ],
+        [
+          0.0000000342285453314162,
+          0.0000000203580530211411,
+          1.0
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.160005062818527,
+        -13.4383525848389,
+        -5.13824939727783
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.160005062818527,
+        -13.4383525848389,
+        -5.13824939727783
+      ]
+    },
+    {
+      "id": 1,
+      "name": "camera_2",
+      "parent": "GLTF_created_0_rootJoint",
+      "pose_basis": [
+        [
+          1.0,
+          -0.00000000000000104523897454916,
+          -0.000000034228492040711
+        ],
+        [
+          0.000000000000000348413317977002,
+          1.0,
+          -0.0000000203580601265685
+        ],
+        [
+          0.000000034228492040711,
+          0.0000000203580601265685,
+          1.0
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.160005062818527,
+        -1.72708773612976,
+        -5.13824987411499
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.160005062818527,
+        -1.72708773612976,
+        -5.13824987411499
+      ]
+    },
+    {
+      "id": 2,
+      "name": "camera_target_3",
+      "parent": "GLTF_created_0_rootJoint",
+      "pose_basis": [
+        [
+          1.0,
+          0.00000000000000450532504776531,
+          0.0000000000000035527136788005
+        ],
+        [
+          -0.00000000000000450532504776531,
+          1.0,
+          -0.0000000203580530211411
+        ],
+        [
+          -0.0000000000000035527136788005,
+          0.0000000203580530211411,
+          1.0
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.160005062818527,
+        -1.72708868980408,
+        7.42317676544189
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.160005062818527,
+        -1.72708868980408,
+        7.42317676544189
+      ]
+    },
+    {
+      "id": 3,
+      "name": "pose_controller_61",
+      "parent": "GLTF_created_0_rootJoint",
+      "pose_basis": [
+        [
+          1.0,
+          -0.00000000000000520215067786769,
+          -0.000000238418536468998
+        ],
+        [
+          0.000000000000000348413317977002,
+          1.0,
+          -0.0000000203580530211411
+        ],
+        [
+          0.000000238418536468998,
+          0.0000000203580530211411,
+          1.0
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.160005062818527,
+        1.93685841560364,
+        3.47291851043701
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.160005062818527,
+        1.93685841560364,
+        3.47291851043701
+      ]
+    },
+    {
+      "id": 4,
+      "name": "body_58",
+      "parent": "pose_controller_61",
+      "pose_basis": [
+        [
+          1.0,
+          -0.000000000000000348420226589478,
+          0.0
+        ],
+        [
+          0.000000000000000348418532523584,
+          1.0,
+          -0.000000155967612158747
+        ],
+        [
+          0.0,
+          0.000000155967612158747,
+          1.0
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.160005062818527,
+        1.03232407569885,
+        2.71914005279541
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.160005062818527,
+        1.03232407569885,
+        2.71914005279541
+      ]
+    },
+    {
+      "id": 5,
+      "name": "shoulder_L.L_31",
+      "parent": "body_58",
+      "pose_basis": [
+        [
+          -0.000000000000000348418532523584,
+          -1.0,
+          -0.0000000233533370419536
+        ],
+        [
+          1.0,
+          -0.000000000000000348420226589478,
+          0.0
+        ],
+        [
+          -0.00000000000000000000006247874295,
+          -0.0000000233533370419536,
+          1.0
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.200334191322327,
+        1.47000050544739,
+        2.71999025344849
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.200334191322327,
+        1.47000050544739,
+        2.71999025344849
+      ]
+    },
+    {
+      "id": 6,
+      "name": "shoulder_L.R_57",
+      "parent": "body_58",
+      "pose_basis": [
+        [
+          0.000000000000000348418532523584,
+          1.0,
+          0.0000000233533370419536
+        ],
+        [
+          -1.0,
+          0.000000000000000348420226589478,
+          0.0
+        ],
+        [
+          -0.00000000000000000000006247874295,
+          -0.0000000233533370419536,
+          1.0
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.119675934314728,
+        1.47000050544739,
+        2.71999025344849
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.119675934314728,
+        1.47000050544739,
+        2.71999025344849
+      ]
+    },
+    {
+      "id": 7,
+      "name": "elbow_IK_L.L_4",
+      "parent": "pose_controller_61",
+      "pose_basis": [
+        [
+          -0.000000000000000348413317977002,
+          -1.0,
+          0.0000000203580530211411
+        ],
+        [
+          0.000000238418635944981,
+          -0.0000000203580530211411,
+          -1.0
+        ],
+        [
+          1.0,
+          0.00000000000000450532547128179,
+          0.000000238418635944981
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.647226333618164,
+        1.22980999946594,
+        2.39163875579834
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.647226333618164,
+        1.22980999946594,
+        2.39163875579834
+      ]
+    },
+    {
+      "id": 8,
+      "name": "elbow_IK_L.R_59",
+      "parent": "pose_controller_61",
+      "pose_basis": [
+        [
+          0.000000000000000348413317977002,
+          1.0,
+          -0.0000000203580530211411
+        ],
+        [
+          0.000000238418607523272,
+          -0.0000000203580512447843,
+          -0.999999940395355
+        ],
+        [
+          -1.0,
+          -0.00000000000000450532547128179,
+          -0.000000238418635944981
+        ]
+      ],
+      "pose_determinant": 0.999999940395355,
+      "pose_world": [
+        -0.327216267585754,
+        1.22980999946594,
+        2.39163875579834
+      ],
+      "rest_determinant": 0.999999940395355,
+      "rest_world": [
+        -0.327216267585754,
+        1.22980999946594,
+        2.39163875579834
+      ]
+    },
+    {
+      "id": 9,
+      "name": "hand_IK_L.L_5",
+      "parent": "pose_controller_61",
+      "pose_basis": [
+        [
+          -0.708554983139038,
+          -0.705627620220184,
+          -0.00623834598809481
+        ],
+        [
+          0.705641508102417,
+          -0.708568871021271,
+          -0.000000103521514915883
+        ],
+        [
+          -0.00442022643983364,
+          -0.00440211081877351,
+          0.999980568885803
+        ]
+      ],
+      "pose_determinant": 0.999999582767487,
+      "pose_world": [
+        0.836543440818787,
+        1.0539333820343,
+        2.712890625
+      ],
+      "rest_determinant": 0.999999701976776,
+      "rest_world": [
+        0.836543440818787,
+        1.0539333820343,
+        2.712890625
+      ]
+    },
+    {
+      "id": 10,
+      "name": "hand_IK_L.R_60",
+      "parent": "pose_controller_61",
+      "pose_basis": [
+        [
+          -0.708555221557617,
+          0.70562732219696,
+          0.00623867334797978
+        ],
+        [
+          -0.705641210079193,
+          -0.70856910943985,
+          -0.0000000208309387517147
+        ],
+        [
+          0.00442051840946078,
+          -0.00440228125080466,
+          0.999980509281158
+        ]
+      ],
+      "pose_determinant": 0.999999463558197,
+      "pose_world": [
+        -0.516533374786377,
+        1.0539333820343,
+        2.712890625
+      ],
+      "rest_determinant": 0.999999582767487,
+      "rest_world": [
+        -0.516533374786377,
+        1.0539333820343,
+        2.712890625
+      ]
+    },
+    {
+      "id": 11,
+      "name": "L_Upper",
+      "parent": "",
+      "pose_basis": [
+        [
+          0.551726043224335,
+          -0.771218419075012,
+          0.317522317171097
+        ],
+        [
+          0.481089293956757,
+          -0.0167045593261719,
+          -0.87651252746582
+        ],
+        [
+          0.681286633014679,
+          0.636351466178894,
+          0.361808598041534
+        ]
+      ],
+      "pose_determinant": 1.00000011920929,
+      "pose_world": [
+        -0.219999998807907,
+        1.45000004768372,
+        3.00999999046326
+      ],
+      "rest_determinant": 1.00000035762787,
+      "rest_world": [
+        -0.159994959831238,
+        1.21000051498413,
+        2.91999077796936
+      ]
+    },
+    {
+      "id": 12,
+      "name": "L_Forearm",
+      "parent": "L_Upper",
+      "pose_basis": [
+        [
+          0.447537124156952,
+          -0.870856285095215,
+          0.203272938728333
+        ],
+        [
+          0.536287546157837,
+          0.0794631987810135,
+          -0.840286374092102
+        ],
+        [
+          0.715615928173065,
+          0.48507222533226,
+          0.502592146396637
+        ]
+      ],
+      "pose_determinant": 0.999999940395355,
+      "pose_world": [
+        -0.0564295202493668,
+        1.44432055950165,
+        2.71198558807373
+      ],
+      "rest_determinant": 1.00000023841858,
+      "rest_world": [
+        -0.0784905701875687,
+        1.29914176464081,
+        2.60216856002808
+      ]
+    },
+    {
+      "id": 13,
+      "name": "L_Hand",
+      "parent": "L_Forearm",
+      "pose_basis": [
+        [
+          0.0503767728805542,
+          -0.990620851516724,
+          0.12701290845871
+        ],
+        [
+          0.99753612279892,
+          0.0436908900737762,
+          -0.0548887848854065
+        ],
+        [
+          0.048824667930603,
+          0.129465222358704,
+          0.990381240844727
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.0822022557258606,
+        1.46486282348633,
+        2.49476909637451
+      ],
+      "rest_determinant": 0.99999988079071,
+      "rest_world": [
+        0.0850049704313278,
+        1.46500062942505,
+        2.48999071121216
+      ]
+    },
+    {
+      "id": 14,
+      "name": "index_L.R_38",
+      "parent": "L_Hand",
+      "pose_basis": [
+        [
+          0.471938729286194,
+          -0.863629341125488,
+          0.177251219749451
+        ],
+        [
+          0.869589567184448,
+          0.489103317260742,
+          0.0677629262208939
+        ],
+        [
+          -0.145216196775436,
+          0.122155994176865,
+          0.981829941272736
+        ]
+      ],
+      "pose_determinant": 0.999999761581421,
+      "pose_world": [
+        0.175575196743011,
+        1.47052240371704,
+        2.52010130882263
+      ],
+      "rest_determinant": 0.999999642372131,
+      "rest_world": [
+        0.178377896547318,
+        1.47066009044647,
+        2.51532292366028
+      ]
+    },
+    {
+      "id": 15,
+      "name": "index_L.003.R_37",
+      "parent": "index_L.R_38",
+      "pose_basis": [
+        [
+          0.921678841114044,
+          -0.343508958816528,
+          0.18030346930027
+        ],
+        [
+          0.343532174825668,
+          0.938591718673706,
+          0.0321042165160179
+        ],
+        [
+          -0.180259466171265,
+          0.0323504135012627,
+          0.983086884021759
+        ]
+      ],
+      "pose_determinant": 0.999999403953552,
+      "pose_world": [
+        0.213955640792847,
+        1.49210953712463,
+        2.52309203147888
+      ],
+      "rest_determinant": 0.999999642372131,
+      "rest_world": [
+        0.216758355498314,
+        1.49224734306335,
+        2.51831388473511
+      ]
+    },
+    {
+      "id": 16,
+      "name": "index_L.002.R_36",
+      "parent": "index_L.003.R_37",
+      "pose_basis": [
+        [
+          0.975220024585724,
+          -0.135419338941574,
+          0.174949198961258
+        ],
+        [
+          0.123680613934994,
+          0.989376842975616,
+          0.0763940960168839
+        ],
+        [
+          -0.18343597650528,
+          -0.052863072603941,
+          0.981609284877777
+        ]
+      ],
+      "pose_determinant": 0.999999701976776,
+      "pose_world": [
+        0.225585669279099,
+        1.52388525009155,
+        2.52417898178101
+      ],
+      "rest_determinant": 0.99999988079071,
+      "rest_world": [
+        0.228388369083405,
+        1.52402305603027,
+        2.51940059661865
+      ]
+    },
+    {
+      "id": 17,
+      "name": "index_L.001.R_35",
+      "parent": "index_L.002.R_36",
+      "pose_basis": [
+        [
+          0.97019374370575,
+          -0.16859969496727,
+          0.174062997102737
+        ],
+        [
+          0.164359137415886,
+          0.985644578933716,
+          0.0386027880012989
+        ],
+        [
+          -0.178072720766068,
+          -0.00884319469332695,
+          0.983977556228638
+        ]
+      ],
+      "pose_determinant": 0.999999463558197,
+      "pose_world": [
+        0.230269744992256,
+        1.56135535240173,
+        2.5270721912384
+      ],
+      "rest_determinant": 0.999999701976776,
+      "rest_world": [
+        0.233072429895401,
+        1.56149315834045,
+        2.52229380607605
+      ]
+    },
+    {
+      "id": 18,
+      "name": "middle_L.R_42",
+      "parent": "L_Hand",
+      "pose_basis": [
+        [
+          0.450759291648865,
+          -0.874253749847412,
+          0.180266857147217
+        ],
+        [
+          0.892553508281708,
+          0.438529849052429,
+          -0.105068482458591
+        ],
+        [
+          0.0128041207790375,
+          0.20825856924057,
+          0.977989971637726
+        ]
+      ],
+      "pose_determinant": 0.999999582767487,
+      "pose_world": [
+        0.185547962784767,
+        1.46486282348633,
+        2.49476909637451
+      ],
+      "rest_determinant": 0.999999582767487,
+      "rest_world": [
+        0.188350677490234,
+        1.46500062942505,
+        2.48999094963074
+      ]
+    },
+    {
+      "id": 19,
+      "name": "middle_L.003.R_41",
+      "parent": "middle_L.R_42",
+      "pose_basis": [
+        [
+          0.887308418750763,
+          -0.424491405487061,
+          0.180251240730286
+        ],
+        [
+          0.440070867538452,
+          0.896235883235931,
+          -0.0556676387786865
+        ],
+        [
+          -0.137917175889015,
+          0.128717809915543,
+          0.982043981552124
+        ]
+      ],
+      "pose_determinant": 0.999999701976776,
+      "pose_world": [
+        0.219285950064659,
+        1.48144054412842,
+        2.49079751968384
+      ],
+      "rest_determinant": 0.999999761581421,
+      "rest_world": [
+        0.222088649868965,
+        1.48157835006714,
+        2.48601913452148
+      ]
+    },
+    {
+      "id": 20,
+      "name": "middle_L.002.R_40",
+      "parent": "middle_L.003.R_41",
+      "pose_basis": [
+        [
+          0.977858245372772,
+          -0.110282145440578,
+          0.177850514650345
+        ],
+        [
+          0.124169133603573,
+          0.989865601062775,
+          -0.068907342851162
+        ],
+        [
+          -0.168448820710182,
+          0.0894652530550957,
+          0.981641888618469
+        ]
+      ],
+      "pose_determinant": 0.999999761581421,
+      "pose_world": [
+        0.23703433573246,
+        1.51758635044098,
+        2.48855233192444
+      ],
+      "rest_determinant": 0.99999988079071,
+      "rest_world": [
+        0.239837050437927,
+        1.51772403717041,
+        2.48377394676209
+      ]
+    },
+    {
+      "id": 21,
+      "name": "middle_L.001.R_39",
+      "parent": "middle_L.002.R_40",
+      "pose_basis": [
+        [
+          0.982851684093475,
+          -0.061213456094265,
+          0.173939630389214
+        ],
+        [
+          0.0757104530930519,
+          0.994077205657959,
+          -0.0779645517468452
+        ],
+        [
+          -0.168136924505234,
+          0.089796744287014,
+          0.981665015220642
+        ]
+      ],
+      "pose_determinant": 0.999999701976776,
+      "pose_world": [
+        0.240818202495575,
+        1.54775202274323,
+        2.48645234107971
+      ],
+      "rest_determinant": 0.99999988079071,
+      "rest_world": [
+        0.243620917201042,
+        1.54788982868195,
+        2.48167419433594
+      ]
+    },
+    {
+      "id": 22,
+      "name": "pink_L.R_50",
+      "parent": "L_Hand",
+      "pose_basis": [
+        [
+          0.393014192581177,
+          -0.917810201644897,
+          0.0562501326203346
+        ],
+        [
+          0.891427874565125,
+          0.365280270576477,
+          -0.268191516399384
+        ],
+        [
+          0.225601837038994,
+          0.155546128749847,
+          0.961721956729889
+        ]
+      ],
+      "pose_determinant": 0.999999940395355,
+      "pose_world": [
+        0.177160054445267,
+        1.47052240371704,
+        2.44312286376953
+      ],
+      "rest_determinant": 0.999999701976776,
+      "rest_world": [
+        0.179962754249573,
+        1.47066009044647,
+        2.43834447860718
+      ]
+    },
+    {
+      "id": 23,
+      "name": "pink_L.003.R_49",
+      "parent": "pink_L.R_50",
+      "pose_basis": [
+        [
+          0.904676675796509,
+          -0.42447429895401,
+          0.037170335650444
+        ],
+        [
+          0.420490503311157,
+          0.875259220600128,
+          -0.238974377512932
+        ],
+        [
+          0.0689047873020172,
+          0.231824442744255,
+          0.970314085483551
+        ]
+      ],
+      "pose_determinant": 0.999999761581421,
+      "pose_world": [
+        0.201202198863029,
+        1.48037421703339,
+        2.43588972091675
+      ],
+      "rest_determinant": 0.999999761581421,
+      "rest_world": [
+        0.204004898667336,
+        1.48051190376282,
+        2.43111133575439
+      ]
+    },
+    {
+      "id": 24,
+      "name": "pink_L.002.R_48",
+      "parent": "pink_L.003.R_49",
+      "pose_basis": [
+        [
+          0.988746106624603,
+          -0.144557759165764,
+          0.0385235920548439
+        ],
+        [
+          0.149580150842667,
+          0.950766205787659,
+          -0.271420121192932
+        ],
+        [
+          0.00260892510414124,
+          0.27412810921669,
+          0.961689531803131
+        ]
+      ],
+      "pose_determinant": 0.999999642372131,
+      "pose_world": [
+        0.210938185453415,
+        1.5006400346756,
+        2.43035697937012
+      ],
+      "rest_determinant": 0.999999642372131,
+      "rest_world": [
+        0.213740885257721,
+        1.50077772140503,
+        2.42557859420776
+      ]
+    },
+    {
+      "id": 25,
+      "name": "pink_L.001.R_47",
+      "parent": "pink_L.002.R_48",
+      "pose_basis": [
+        [
+          0.990373075008392,
+          -0.134107664227486,
+          0.0342899039387703
+        ],
+        [
+          0.138381242752075,
+          0.95320200920105,
+          -0.268804550170898
+        ],
+        [
+          0.00336351757869124,
+          0.270962119102478,
+          0.962584137916565
+        ]
+      ],
+      "pose_determinant": 0.999999463558197,
+      "pose_world": [
+        0.214407801628113,
+        1.5226936340332,
+        2.42406105995178
+      ],
+      "rest_determinant": 0.999999642372131,
+      "rest_world": [
+        0.217210501432419,
+        1.52283143997192,
+        2.41928267478943
+      ]
+    },
+    {
+      "id": 26,
+      "name": "ring_L.R_46",
+      "parent": "L_Hand",
+      "pose_basis": [
+        [
+          0.403872668743134,
+          -0.89542144536972,
+          0.187367588281631
+        ],
+        [
+          0.913377344608307,
+          0.383211076259613,
+          -0.137444719672203
+        ],
+        [
+          0.051269643008709,
+          0.226647645235062,
+          0.972626566886902
+        ]
+      ],
+      "pose_determinant": 0.999999701976776,
+      "pose_world": [
+        0.18606424331665,
+        1.46699213981628,
+        2.46518158912659
+      ],
+      "rest_determinant": 0.999999761581421,
+      "rest_world": [
+        0.188866943120956,
+        1.46712982654572,
+        2.46040320396423
+      ]
+    },
+    {
+      "id": 27,
+      "name": "ring_L.001.R_45",
+      "parent": "ring_L.R_46",
+      "pose_basis": [
+        [
+          0.917591392993927,
+          -0.359053820371628,
+          0.17060412466526
+        ],
+        [
+          0.381368488073349,
+          0.916214764118195,
+          -0.122914612293243
+        ],
+        [
+          -0.112177088856697,
+          0.177848607301712,
+          0.977643132209778
+        ]
+      ],
+      "pose_determinant": 0.999999344348907,
+      "pose_world": [
+        0.217738151550293,
+        1.48028099536896,
+        2.46041536331177
+      ],
+      "rest_determinant": 0.999999523162842,
+      "rest_world": [
+        0.220540851354599,
+        1.48041880130768,
+        2.45563697814941
+      ]
+    },
+    {
+      "id": 28,
+      "name": "ring_L.002.R_44",
+      "parent": "ring_L.001.R_45",
+      "pose_basis": [
+        [
+          0.973500788211823,
+          -0.140462130308151,
+          0.180461779236794
+        ],
+        [
+          0.166939571499825,
+          0.975830256938934,
+          -0.141017928719521
+        ],
+        [
+          -0.156292393803597,
+          0.167407408356667,
+          0.973420560359955
+        ]
+      ],
+      "pose_determinant": 0.999999761581421,
+      "pose_world": [
+        0.230893194675446,
+        1.51188516616821,
+        2.4561755657196
+      ],
+      "rest_determinant": 0.999999821186066,
+      "rest_world": [
+        0.233695894479752,
+        1.51202297210693,
+        2.45139718055725
+      ]
+    },
+    {
+      "id": 29,
+      "name": "ring_L.003.R_43",
+      "parent": "ring_L.002.R_44",
+      "pose_basis": [
+        [
+          0.97761470079422,
+          -0.114416114985943,
+          0.176573365926743
+        ],
+        [
+          0.142111733555794,
+          0.977934062480927,
+          -0.153130978345871
+        ],
+        [
+          -0.155156463384628,
+          0.174796357750893,
+          0.972302913665771
+        ]
+      ],
+      "pose_determinant": 0.999999940395355,
+      "pose_world": [
+        0.235943406820297,
+        1.5414057970047,
+        2.45190954208374
+      ],
+      "rest_determinant": 1.00000023841858,
+      "rest_world": [
+        0.238746106624603,
+        1.54154360294342,
+        2.44713115692139
+      ]
+    },
+    {
+      "id": 30,
+      "name": "thumb_L.R_34",
+      "parent": "L_Hand",
+      "pose_basis": [
+        [
+          0.409335792064667,
+          -0.89312756061554,
+          0.186459332704544
+        ],
+        [
+          0.705551326274872,
+          0.43943527340889,
+          0.555961906909943
+        ],
+        [
+          -0.57848185300827,
+          -0.0960184186697006,
+          0.81002402305603
+        ]
+      ],
+      "pose_determinant": 0.999999582767487,
+      "pose_world": [
+        0.121037252247334,
+        1.48781490325928,
+        2.51473474502563
+      ],
+      "rest_determinant": 0.999999523162842,
+      "rest_world": [
+        0.12383995950222,
+        1.48795258998871,
+        2.50995635986328
+      ]
+    },
+    {
+      "id": 31,
+      "name": "thumb_L.002.R_33",
+      "parent": "thumb_L.R_34",
+      "pose_basis": [
+        [
+          0.623967349529266,
+          -0.768804550170898,
+          0.140014499425888
+        ],
+        [
+          0.729411125183105,
+          0.637281358242035,
+          0.248659998178482
+        ],
+        [
+          -0.280399680137634,
+          -0.053027518093586,
+          0.958417296409607
+        ]
+      ],
+      "pose_determinant": 0.999999642372131,
+      "pose_world": [
+        0.160778164863586,
+        1.512566447258,
+        2.54604983329773
+      ],
+      "rest_determinant": 0.999999642372131,
+      "rest_world": [
+        0.163580864667892,
+        1.51270425319672,
+        2.54127144813538
+      ]
+    },
+    {
+      "id": 32,
+      "name": "thumb_L.001.R_32",
+      "parent": "thumb_L.002.R_33",
+      "pose_basis": [
+        [
+          0.669465780258179,
+          -0.731312990188599,
+          0.130371019244194
+        ],
+        [
+          0.630765795707703,
+          0.652336061000824,
+          0.420228749513626
+        ],
+        [
+          -0.392364531755447,
+          -0.199095100164413,
+          0.898003697395325
+        ]
+      ],
+      "pose_determinant": 0.999999523162842,
+      "pose_world": [
+        0.187389820814133,
+        1.53581690788269,
+        2.55512189865112
+      ],
+      "rest_determinant": 0.999999761581421,
+      "rest_world": [
+        0.190192520618439,
+        1.53595471382141,
+        2.55034351348877
+      ]
+    },
+    {
+      "id": 33,
+      "name": "twist_arm_1_L.R_52",
+      "parent": "L_Forearm",
+      "pose_basis": [
+        [
+          0.452759593725204,
+          -0.867284774780273,
+          0.206943795084953
+        ],
+        [
+          0.536287546157837,
+          0.0794631764292717,
+          -0.840286374092102
+        ],
+        [
+          0.712323129177094,
+          0.491429209709167,
+          0.501091837882996
+        ]
+      ],
+      "pose_determinant": 0.999999940395355,
+      "pose_world": [
+        -0.0564294308423996,
+        1.44432055950165,
+        2.71198558807373
+      ],
+      "rest_determinant": 1.00000011920929,
+      "rest_world": [
+        -0.0784904658794403,
+        1.29914176464081,
+        2.60216856002808
+      ]
+    },
+    {
+      "id": 34,
+      "name": "twist_arm_2_L.R_54",
+      "parent": "L_Forearm",
+      "pose_basis": [
+        [
+          0.452759593725204,
+          -0.867284774780273,
+          0.206943780183792
+        ],
+        [
+          0.536287486553192,
+          0.0794631913304329,
+          -0.840286314487457
+        ],
+        [
+          0.712323069572449,
+          0.491429179906845,
+          0.501091778278351
+        ]
+      ],
+      "pose_determinant": 0.999999642372131,
+      "pose_world": [
+        -0.0102188736200333,
+        1.45116758346558,
+        2.63958024978638
+      ],
+      "rest_determinant": 0.999999940395355,
+      "rest_world": [
+        -0.0239919126033783,
+        1.35442769527435,
+        2.5647759437561
+      ]
+    },
+    {
+      "id": 35,
+      "name": "twist_arm_3_L.R_53",
+      "parent": "L_Forearm",
+      "pose_basis": [
+        [
+          0.452759772539139,
+          -0.867284715175629,
+          0.206943765282631
+        ],
+        [
+          0.536291480064392,
+          0.0794660523533821,
+          -0.840283513069153
+        ],
+        [
+          0.71232008934021,
+          0.491428911685944,
+          0.501096487045288
+        ]
+      ],
+      "pose_determinant": 0.99999988079071,
+      "pose_world": [
+        0.0359915047883987,
+        1.45801556110382,
+        2.56717419624329
+      ],
+      "rest_determinant": 1.0,
+      "rest_world": [
+        0.0305062830448151,
+        1.40971446037292,
+        2.52738308906555
+      ]
+    },
+    {
+      "id": 36,
+      "name": "R_Upper",
+      "parent": "",
+      "pose_basis": [
+        [
+          0.273117423057556,
+          -0.160390913486481,
+          0.94851553440094
+        ],
+        [
+          0.50003582239151,
+          -0.818661332130432,
+          -0.282414317131042
+        ],
+        [
+          0.821809649467468,
+          0.551423966884613,
+          -0.143389463424683
+        ]
+      ],
+      "pose_determinant": 1.00000011920929,
+      "pose_world": [
+        0.219999998807907,
+        1.45000004768372,
+        3.00999999046326
+      ],
+      "rest_determinant": 0.999999701976776,
+      "rest_world": [
+        0.430005073547363,
+        1.19000053405762,
+        3.06999063491821
+      ]
+    },
+    {
+      "id": 37,
+      "name": "R_Forearm",
+      "parent": "R_Upper",
+      "pose_basis": [
+        [
+          -0.301211178302765,
+          -0.322902947664261,
+          -0.897221148014069
+        ],
+        [
+          -0.638317823410034,
+          0.767284631729126,
+          -0.0618465915322304
+        ],
+        [
+          0.708394289016724,
+          0.554083168506622,
+          -0.437229305505753
+        ]
+      ],
+      "pose_determinant": 1.00000035762787,
+      "pose_world": [
+        0.390012145042419,
+        1.17165493965149,
+        2.91397905349731
+      ],
+      "rest_determinant": 0.999999523162842,
+      "rest_world": [
+        0.354408532381058,
+        1.21226680278778,
+        2.73924994468689
+      ]
+    },
+    {
+      "id": 38,
+      "name": "R_Hand",
+      "parent": "R_Forearm",
+      "pose_basis": [
+        [
+          0.0503767430782318,
+          -0.127012997865677,
+          -0.990621089935303
+        ],
+        [
+          -0.997536182403564,
+          -0.0548889636993408,
+          -0.0436908304691315
+        ],
+        [
+          -0.0488249361515045,
+          0.990381240844727,
+          -0.129465162754059
+        ]
+      ],
+      "pose_determinant": 1.00000023841858,
+      "pose_world": [
+        0.225005209445953,
+        1.37000036239624,
+        2.89799070358276
+      ],
+      "rest_determinant": 0.999999284744263,
+      "rest_world": [
+        0.225005149841309,
+        1.37000048160553,
+        2.89799070358276
+      ]
+    },
+    {
+      "id": 39,
+      "name": "index_L.L_12",
+      "parent": "R_Hand",
+      "pose_basis": [
+        [
+          0.828211069107056,
+          -0.17725096642971,
+          -0.531646907329559
+        ],
+        [
+          -0.528648316860199,
+          0.0677626430988312,
+          -0.846132040023804
+        ],
+        [
+          0.186003431677818,
+          0.98183012008667,
+          -0.037581630051136
+        ]
+      ],
+      "pose_determinant": 1.00000011920929,
+      "pose_world": [
+        0.131632208824158,
+        1.39533257484436,
+        2.89233112335205
+      ],
+      "rest_determinant": 0.999999105930328,
+      "rest_world": [
+        0.131632193922997,
+        1.39533257484436,
+        2.89233112335205
+      ]
+    },
+    {
+      "id": 40,
+      "name": "index_L.003.L_11",
+      "parent": "index_L.L_12",
+      "pose_basis": [
+        [
+          0.951368093490601,
+          -0.18030309677124,
+          -0.249778866767883
+        ],
+        [
+          -0.248113438487053,
+          0.032103955745697,
+          -0.968198895454407
+        ],
+        [
+          0.182588070631027,
+          0.983087003231049,
+          -0.0141929164528847
+        ]
+      ],
+      "pose_determinant": 0.999999940395355,
+      "pose_world": [
+        0.108299612998962,
+        1.39832329750061,
+        2.85498595237732
+      ],
+      "rest_determinant": 0.999998927116394,
+      "rest_world": [
+        0.108299598097801,
+        1.3983234167099,
+        2.8549861907959
+      ]
+    },
+    {
+      "id": 41,
+      "name": "index_L.002.L_10",
+      "parent": "index_L.003.L_11",
+      "pose_basis": [
+        [
+          0.956828653812408,
+          -0.174948796629906,
+          -0.232102811336517
+        ],
+        [
+          -0.221836060285568,
+          0.0763938575983047,
+          -0.972086846828461
+        ],
+        [
+          0.18779656291008,
+          0.981609284877777,
+          0.0342859104275703
+        ]
+      ],
+      "pose_determinant": 0.99999988079071,
+      "pose_world": [
+        0.0998999550938606,
+        1.39941024780273,
+        2.82220792770386
+      ],
+      "rest_determinant": 0.999998986721039,
+      "rest_world": [
+        0.09989994764328,
+        1.39941024780273,
+        2.82220816612244
+      ]
+    },
+    {
+      "id": 42,
+      "name": "index_L.001.L_9",
+      "parent": "index_L.002.L_10",
+      "pose_basis": [
+        [
+          0.948515057563782,
+          -0.174062579870224,
+          -0.264615416526794
+        ],
+        [
+          -0.261938512325287,
+          0.0386027544736862,
+          -0.964312255382538
+        ],
+        [
+          0.17806550860405,
+          0.983977735042572,
+          -0.00897837802767754
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.0914984941482544,
+        1.40230345726013,
+        2.78539276123047
+      ],
+      "rest_determinant": 0.999999284744263,
+      "rest_world": [
+        0.0914984941482544,
+        1.40230345726013,
+        2.78539276123047
+      ]
+    },
+    {
+      "id": 43,
+      "name": "middle_L.L_16",
+      "parent": "R_Hand",
+      "pose_basis": [
+        [
+          0.723211109638214,
+          -0.18026664853096,
+          -0.66668576002121
+        ],
+        [
+          -0.688069343566895,
+          -0.105069026350975,
+          -0.717998027801514
+        ],
+        [
+          0.0593829751014709,
+          0.977990031242371,
+          -0.200023040175438
+        ]
+      ],
+      "pose_determinant": 1.00000023841858,
+      "pose_world": [
+        0.121659457683563,
+        1.37000036239624,
+        2.89799070358276
+      ],
+      "rest_determinant": 0.999999165534973,
+      "rest_world": [
+        0.121659435331821,
+        1.37000048160553,
+        2.89799070358276
+      ]
+    },
+    {
+      "id": 44,
+      "name": "middle_L.003.L_15",
+      "parent": "middle_L.L_16",
+      "pose_basis": [
+        [
+          0.952115952968597,
+          -0.180250972509384,
+          0.246950820088387
+        ],
+        [
+          0.240786164999008,
+          -0.0556677281856537,
+          -0.968980550765991
+        ],
+        [
+          0.188406765460968,
+          0.982044219970703,
+          -0.0096002072095871
+        ]
+      ],
+      "pose_determinant": 1.00000011920929,
+      "pose_world": [
+        0.0956514030694962,
+        1.36602866649628,
+        2.87084937095642
+      ],
+      "rest_determinant": 0.999999105930328,
+      "rest_world": [
+        0.095651388168335,
+        1.36602866649628,
+        2.87084937095642
+      ]
+    },
+    {
+      "id": 45,
+      "name": "middle_L.002.L_14",
+      "parent": "middle_L.003.L_15",
+      "pose_basis": [
+        [
+          0.621138036251068,
+          -0.177850216627121,
+          0.763253927230835
+        ],
+        [
+          0.765854358673096,
+          -0.0689077004790306,
+          -0.639311194419861
+        ],
+        [
+          0.166295632719994,
+          0.981642067432404,
+          0.0934061855077744
+        ]
+      ],
+      "pose_determinant": 0.99999988079071,
+      "pose_world": [
+        0.105362437665462,
+        1.36378347873688,
+        2.83176970481873
+      ],
+      "rest_determinant": 0.999998927116394,
+      "rest_world": [
+        0.105362415313721,
+        1.36378359794617,
+        2.83176970481873
+      ]
+    },
+    {
+      "id": 46,
+      "name": "middle_L.001.L_13",
+      "parent": "middle_L.002.L_14",
+      "pose_basis": [
+        [
+          0.582546055316925,
+          -0.17393933236599,
+          0.79396778345108
+        ],
+        [
+          0.795580744743347,
+          -0.0779644399881363,
+          -0.600809991359711
+        ],
+        [
+          0.166405707597733,
+          0.981665432453156,
+          0.0929649323225021
+        ]
+      ],
+      "pose_determinant": 0.99999988079071,
+      "pose_world": [
+        0.128701567649841,
+        1.36168360710144,
+        2.81228709220886
+      ],
+      "rest_determinant": 0.999998986721039,
+      "rest_world": [
+        0.128701537847519,
+        1.36168360710144,
+        2.81228709220886
+      ]
+    },
+    {
+      "id": 47,
+      "name": "pink_L.L_24",
+      "parent": "R_Hand",
+      "pose_basis": [
+        [
+          0.683902025222778,
+          -0.0562499836087227,
+          -0.72740226984024
+        ],
+        [
+          -0.712129175662994,
+          -0.268191605806351,
+          -0.648803174495697
+        ],
+        [
+          -0.158588096499443,
+          0.961722016334534,
+          -0.223474025726318
+        ]
+      ],
+      "pose_determinant": 1.00000023841858,
+      "pose_world": [
+        0.130047380924225,
+        1.31835412979126,
+        2.89233112335205
+      ],
+      "rest_determinant": 0.999999344348907,
+      "rest_world": [
+        0.130047351121902,
+        1.31835424900055,
+        2.89233112335205
+      ]
+    },
+    {
+      "id": 48,
+      "name": "pink_L.003.L_23",
+      "parent": "pink_L.L_24",
+      "pose_basis": [
+        [
+          0.965388894081116,
+          -0.0371700376272202,
+          0.258152723312378
+        ],
+        [
+          0.242248490452766,
+          -0.238975033164024,
+          -0.940322816371918
+        ],
+        [
+          0.096643790602684,
+          0.970313966274261,
+          -0.221699357032776
+        ]
+      ],
+      "pose_determinant": 1.00000023841858,
+      "pose_world": [
+        0.110841006040573,
+        1.31112086772919,
+        2.87483263015747
+      ],
+      "rest_determinant": 0.999999403953552,
+      "rest_world": [
+        0.110840991139412,
+        1.31112098693848,
+        2.87483263015747
+      ]
+    },
+    {
+      "id": 49,
+      "name": "pink_L.002.L_22",
+      "parent": "pink_L.003.L_23",
+      "pose_basis": [
+        [
+          0.655863106250763,
+          -0.0385234877467155,
+          0.753896474838257
+        ],
+        [
+          0.719223916530609,
+          -0.271420449018478,
+          -0.63956892490387
+        ],
+        [
+          0.229261204600334,
+          0.961689472198486,
+          -0.150307476520538
+        ]
+      ],
+      "pose_determinant": 1.00000023841858,
+      "pose_world": [
+        0.116450101137161,
+        1.30558812618256,
+        2.85306024551392
+      ],
+      "rest_determinant": 0.999999582767487,
+      "rest_world": [
+        0.116450078785419,
+        1.30558812618256,
+        2.85306024551392
+      ]
+    },
+    {
+      "id": 50,
+      "name": "pink_L.001.L_21",
+      "parent": "pink_L.002.L_22",
+      "pose_basis": [
+        [
+          0.647948682308197,
+          -0.0342896692454815,
+          0.760912001132965
+        ],
+        [
+          0.727324604988098,
+          -0.268804877996445,
+          -0.631461322307587
+        ],
+        [
+          0.226189360022545,
+          0.96258407831192,
+          -0.149231880903244
+        ]
+      ],
+      "pose_determinant": 1.00000047683716,
+      "pose_world": [
+        0.133132964372635,
+        1.29929232597351,
+        2.83822512626648
+      ],
+      "rest_determinant": 0.999999761581421,
+      "rest_world": [
+        0.133132934570313,
+        1.29929232597351,
+        2.83822512626648
+      ]
+    },
+    {
+      "id": 51,
+      "name": "ring_L.L_20",
+      "parent": "R_Hand",
+      "pose_basis": [
+        [
+          0.686425149440765,
+          -0.187367498874664,
+          -0.702647745609283
+        ],
+        [
+          -0.726599514484406,
+          -0.137445211410522,
+          -0.673173069953918
+        ],
+        [
+          0.0295550636947155,
+          0.972626507282257,
+          -0.230487018823624
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.12114317715168,
+        1.34041285514832,
+        2.89586138725281
+      ],
+      "rest_determinant": 0.999999046325684,
+      "rest_world": [
+        0.121143154799938,
+        1.34041285514832,
+        2.89586138725281
+      ]
+    },
+    {
+      "id": 52,
+      "name": "ring_L.001.L_19",
+      "parent": "ring_L.L_20",
+      "pose_basis": [
+        [
+          0.933121621608734,
+          -0.170603945851326,
+          0.316508859395981
+        ],
+        [
+          0.298555105924606,
+          -0.12291469424963,
+          -0.94644433259964
+        ],
+        [
+          0.200370579957962,
+          0.977643132209778,
+          -0.0637596994638443
+        ]
+      ],
+      "pose_determinant": 0.999999642372131,
+      "pose_world": [
+        0.0959462970495224,
+        1.33564651012421,
+        2.87251734733582
+      ],
+      "rest_determinant": 0.999998807907104,
+      "rest_world": [
+        0.0959462821483612,
+        1.33564651012421,
+        2.87251734733582
+      ]
+    },
+    {
+      "id": 53,
+      "name": "ring_L.002.L_18",
+      "parent": "ring_L.001.L_19",
+      "pose_basis": [
+        [
+          0.644179463386536,
+          -0.180461511015892,
+          0.743280649185181
+        ],
+        [
+          0.730935037136078,
+          -0.141018688678741,
+          -0.667718172073364
+        ],
+        [
+          0.225313782691956,
+          0.97342050075531,
+          0.0410642996430397
+        ]
+      ],
+      "pose_determinant": 0.999999761581421,
+      "pose_world": [
+        0.106244742870331,
+        1.33140671253204,
+        2.83987045288086
+      ],
+      "rest_determinant": 0.999998986721039,
+      "rest_world": [
+        0.106244720518589,
+        1.33140671253204,
+        2.83987045288086
+      ]
+    },
+    {
+      "id": 54,
+      "name": "ring_L.003.L_17",
+      "parent": "ring_L.002.L_18",
+      "pose_basis": [
+        [
+          0.624485194683075,
+          -0.176573142409325,
+          0.760815441608429
+        ],
+        [
+          0.746120035648346,
+          -0.153131276369095,
+          -0.647962689399719
+        ],
+        [
+          0.230917304754257,
+          0.972302913665771,
+          0.0361165404319763
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.128356844186783,
+        1.32714056968689,
+        2.81967067718506
+      ],
+      "rest_determinant": 0.999999165534973,
+      "rest_world": [
+        0.12835681438446,
+        1.32714056968689,
+        2.81967067718506
+      ]
+    },
+    {
+      "id": 55,
+      "name": "thumb_L.L_8",
+      "parent": "R_Hand",
+      "pose_basis": [
+        [
+          0.409335851669312,
+          -0.186459332704544,
+          -0.893127799034119
+        ],
+        [
+          -0.705551624298096,
+          0.555961906909943,
+          -0.439435243606567
+        ],
+        [
+          0.578481793403625,
+          0.810024261474609,
+          0.0960185304284096
+        ]
+      ],
+      "pose_determinant": 1.00000023841858,
+      "pose_world": [
+        0.186170190572739,
+        1.38996589183807,
+        2.87503862380981
+      ],
+      "rest_determinant": 0.999999225139618,
+      "rest_world": [
+        0.186170145869255,
+        1.38996601104736,
+        2.87503862380981
+      ]
+    },
+    {
+      "id": 56,
+      "name": "thumb_L.002.L_7",
+      "parent": "thumb_L.L_8",
+      "pose_basis": [
+        [
+          0.623967349529266,
+          -0.140014216303825,
+          -0.768804848194122
+        ],
+        [
+          -0.729411482810974,
+          0.248659759759903,
+          -0.637281239032745
+        ],
+        [
+          0.280399113893509,
+          0.958417415618896,
+          0.0530276596546173
+        ]
+      ],
+      "pose_determinant": 0.99999988079071,
+      "pose_world": [
+        0.146429270505905,
+        1.42128109931946,
+        2.85028696060181
+      ],
+      "rest_determinant": 0.999998986721039,
+      "rest_world": [
+        0.146429240703583,
+        1.42128109931946,
+        2.85028696060181
+      ]
+    },
+    {
+      "id": 57,
+      "name": "thumb_L.001.L_6",
+      "parent": "thumb_L.002.L_7",
+      "pose_basis": [
+        [
+          0.669466018676758,
+          -0.130370810627937,
+          -0.731313049793243
+        ],
+        [
+          -0.630765974521637,
+          0.420228511095047,
+          -0.652336180210114
+        ],
+        [
+          0.392364025115967,
+          0.898003816604614,
+          0.199095338582993
+        ]
+      ],
+      "pose_determinant": 0.999999821186066,
+      "pose_world": [
+        0.119817599654198,
+        1.43035316467285,
+        2.8270366191864
+      ],
+      "rest_determinant": 0.999998927116394,
+      "rest_world": [
+        0.119817584753037,
+        1.43035316467285,
+        2.8270366191864
+      ]
+    },
+    {
+      "id": 58,
+      "name": "twist_arm_1_L.L_26",
+      "parent": "R_Forearm",
+      "pose_basis": [
+        [
+          -0.3063845038414,
+          -0.326947003602982,
+          -0.893998980522156
+        ],
+        [
+          -0.638317763805389,
+          0.767284512519836,
+          -0.0618465729057789
+        ],
+        [
+          0.706172108650208,
+          0.551706492900848,
+          -0.443780124187469
+        ]
+      ],
+      "pose_determinant": 1.0,
+      "pose_world": [
+        0.390012085437775,
+        1.17165505886078,
+        2.91397905349731
+      ],
+      "rest_determinant": 0.999998986721039,
+      "rest_world": [
+        0.35440856218338,
+        1.21226680278778,
+        2.73925018310547
+      ]
+    },
+    {
+      "id": 59,
+      "name": "twist_arm_2_L.L_28",
+      "parent": "R_Forearm",
+      "pose_basis": [
+        [
+          -0.306384652853012,
+          -0.326947063207626,
+          -0.893998980522156
+        ],
+        [
+          -0.638317763805389,
+          0.767284572124481,
+          -0.0618465393781662
+        ],
+        [
+          0.706172049045563,
+          0.551706433296204,
+          -0.443780273199081
+        ]
+      ],
+      "pose_determinant": 1.00000011920929,
+      "pose_world": [
+        0.335009872913361,
+        1.23777008056641,
+        2.90864992141724
+      ],
+      "rest_determinant": 0.999999284744263,
+      "rest_world": [
+        0.311274290084839,
+        1.26484441757202,
+        2.79216384887695
+      ]
+    },
+    {
+      "id": 60,
+      "name": "twist_arm_3_L.L_27",
+      "parent": "R_Forearm",
+      "pose_basis": [
+        [
+          -0.306384772062302,
+          -0.326947391033173,
+          -0.893998742103577
+        ],
+        [
+          -0.638313889503479,
+          0.76728755235672,
+          -0.0618491731584072
+        ],
+        [
+          0.70617550611496,
+          0.551701962947845,
+          -0.443780243396759
+        ]
+      ],
+      "pose_determinant": 0.99999988079071,
+      "pose_world": [
+        0.280007094144821,
+        1.30388510227203,
+        2.90332007408142
+      ],
+      "rest_determinant": 0.999999046325684,
+      "rest_world": [
+        0.268139183521271,
+        1.31742238998413,
+        2.84507703781128
+      ]
+    }
+  ],
+  "right_grip": {
+    "configured": true,
+    "distance_m": 0.0701251477003098,
+    "expected_contact": true,
+    "palm_transform": {
+      "basis_columns": [
+        [
+          0.000000264495611190796,
+          -1.0,
+          -0.000000566244125366211
+        ],
+        [
+          -1.0,
+          -0.000000182539224624634,
+          -0.000000120140612125397
+        ],
+        [
+          0.0000000670552253723145,
+          0.000000536441802978516,
+          -1.00000011920929
+        ]
+      ],
+      "basis_determinant": 1.00000011920929,
+      "local_origin": [
+        -0.0215036273002625,
+        0.0150416344404221,
+        -0.0259469002485275
+      ],
+      "origin_world": [
+        0.210184216499329,
+        1.34620869159698,
+        2.92199468612671
+      ],
+      "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker",
+      "possibly_mirrored": false,
+      "rotation_world_xyzw": [
+        0.70710688829422,
+        -0.707106649875641,
+        -0.000000157721416371714,
+        -0.000000242673650063807
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.00000011920929
+      ]
+    },
+    "palm_world": [
+      0.210184216499329,
+      1.34620869159698,
+      2.92199468612671
+    ],
+    "relative_orientation_deg": 0.0,
+    "socket_transform": {
+      "basis_columns": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "basis_determinant": 1.0,
+      "local_origin": [
+        0.0,
+        -0.109999999403954,
+        0.155000001192093
+      ],
+      "origin_world": [
+        0.160005062818527,
+        1.36000049114227,
+        2.87499070167542
+      ],
+      "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/RightGripSocket",
+      "possibly_mirrored": false,
+      "rotation_world_xyzw": [
+        0.70710676908493,
+        -0.70710676908493,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "socket_world": [
+      0.160005062818527,
+      1.36000049114227,
+      2.87499070167542
+    ],
+    "surface_calibration": {
+      "anatomy_user_approved": false,
+      "authored_normals_agree": true,
+      "bone": "R_Hand",
+      "bone_local_basis": [
+        [
+          0.12701353430748,
+          0.0548887960612774,
+          -0.990381121635437
+        ],
+        [
+          -0.0503766350448132,
+          0.99753612279892,
+          0.0488246865570545
+        ],
+        [
+          0.990620851516724,
+          0.0436906777322292,
+          0.129465699195862
+        ]
+      ],
+      "bone_local_position": [
+        -0.0215036273002625,
+        0.0150416344404221,
+        -0.0259469002485275
+      ],
+      "hand_bind": 38,
+      "hand_bind_frame": {
+        "basis": [
+          [
+            0.0503770783543587,
+            -0.127013176679611,
+            -0.990620732307434
+          ],
+          [
+            -0.997535765171051,
+            -0.054889228194952,
+            -0.0436909757554531
+          ],
+          [
+            -0.0488247498869896,
+            0.990380942821503,
+            -0.129465326666832
+          ]
+        ],
+        "origin": [
+          0.0650000646710396,
+          -0.10000005364418,
+          0.178000018000603
+        ]
+      },
+      "image_sampling": "3D UV V flipped for CPU Image row coordinates",
+      "kind": "black_palmar_surface_from_skin_and_texture",
+      "median_dorsal_luma": 0.24705882370472,
+      "median_palm_luma": 0.126797390480836,
+      "shell_separation_m": 0.00874254945665598,
+      "surface_samples": 15
+    }
+  },
+  "screenshot_status": "captured",
+  "sight_screen": {
+    "behind_camera": false,
+    "normalized_xy": [
+      0.746406412124634,
+      0.760086144341363
+    ],
+    "pixels": [
+      955.400207519531,
+      547.262023925781
+    ],
+    "viewport_size": [
+      1280.0,
+      720.0
+    ]
+  },
+  "skeleton_transform": {
+    "basis_columns": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "basis_determinant": 1.0,
+    "local_origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "origin_world": [
+      0.160005062818527,
+      1.47000050544739,
+      2.71999073028564
+    ],
+    "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D",
+    "possibly_mirrored": false,
+    "rotation_world_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "stage": "Idle",
+  "viewmodel_root": {
+    "basis_columns": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "basis_determinant": 1.0,
+    "local_origin": [
+      0.160005062818527,
+      -0.229999586939812,
+      -0.280009329319
+    ],
+    "origin_world": [
+      0.160005062818527,
+      1.47000050544739,
+      2.71999073028564
+    ],
+    "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel",
+    "possibly_mirrored": false,
+    "rotation_world_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "warnings": [
+    "AnimationPlayer intentionally absent in static bind fixture",
+    "AnimationTree absent; no state machine transitions to inspect"
+  ],
+  "weapon_root": {
+    "basis_columns": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "basis_determinant": 1.0,
+    "local_origin": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "origin_world": [
+      0.160005062818527,
+      1.47000050544739,
+      2.71999073028564
+    ],
+    "path": "/root/FPSRigTest/Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel",
+    "possibly_mirrored": false,
+    "rotation_world_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

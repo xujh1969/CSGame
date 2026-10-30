@@ -1,0 +1,56 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.3.260 - Forward+ - Using Device #0: AMD - AMD Radeon(TM) Graphics
+
+PASS: new scene starts running
+PASS: HUD initializes from real ammo and health
+PASS: HUD shows initial encounter objective
+PASS: ten real shots update HUD to 20/90
+PASS: effective firing emits muzzle flash and impact/smoke
+PASS: nine synthesized audio streams load
+PASS: 3D audio has bounded distance and voice budget
+PASS: render saved: pause-720
+PASS: pause freezes scene tree
+PASS: pause freezes reload without transferring ammo
+PASS: pause freezes player physics
+PASS: pause freezes active enemy reaction timer
+PASS: pause menu visible with released mouse
+PASS: low quality disables smoke/dust and dynamic shadows
+PASS: low-quality essential spark effects stay within six instances
+PASS: impact effect is offset to front of hit normal
+Resume diagnostic: backend=Windows state=0 paused=false mouse_mode=2
+PASS: resume restores running game
+PASS: graphical resume restores OS mouse capture
+PASS: resumed reload completes exactly to 30/80
+PASS: damage updates real HP and visible flash
+PASS: render saved: hud-720
+PASS: render saved: pause-1080
+PASS: pause panel remains inside 1080p viewport
+PASS: finish area alone cannot win before enemies cleared
+PASS: same-frame death takes priority over victory and resolves once
+PASS: failure freezes combat and shows retry screen
+PASS: render saved: failed
+PASS: terminal failure cannot be resumed or replaced by victory
+PASS: retry button rebuilds running scene
+PASS: retry resets player health and ammo
+PASS: retry resets encounters and three dormant enemies
+PASS: full gameplay route reaches point 1
+PASS: real player shots clear E01
+PASS: full cycle spends ten rounds before reload
+PASS: full cycle reload transfers correct reserve
+PASS: full gameplay route reaches point 2
+PASS: full gameplay route reaches point 3
+PASS: real player shots clear E02
+PASS: full gameplay route reaches point 4
+PASS: full gameplay route reaches point 5
+PASS: real player shots clear E03
+PASS: full gameplay route reaches point 6
+PASS: full gameplay route reaches point 7
+PASS: full gameplay route reaches point 8
+PASS: full route clears all three encounters
+PASS: alive player reaches actual finish area and wins
+PASS: victory screen matches true game outcome
+PASS: victory cue replaces combat voices even at voice budget
+PASS: render saved: victory
+PASS: victory replay starts a fresh running scene
+Audio shutdown mix cycles: 3
+TASK-005 failures: 0

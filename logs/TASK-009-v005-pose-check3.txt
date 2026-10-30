@@ -1,0 +1,84 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.3.260 - Forward+ - Using Device #0: AMD - AMD Radeon(TM) Graphics
+
+PASS: cinematic sample exists
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: actual arms skin and hold/reload animations load
+PASS: both shoulder joints remain anchored behind the camera
+PASS: downloaded glove source SHA256 remains unchanged
+PASS: right palm faces inward toward the pistol grip
+PASS: left palm supports the handguard from below
+ARM REACHABILITY ERRORS { "R": 0.0, "L": 0.0 }
+PASS: both authored wrist targets are anatomically reachable within 15mm
+PASS: real GLB body and independent magazine load
+PASS: optic has real separate coated transparent glass mesh
+PASS: old box weapon hidden only in cinematic sample
+PASS: shot marker aligns with modeled bore
+PASS: user source rifle hashes remain unchanged
+PASS: actual imported rifle matches registered bounded geometry and PBR textures
+ACTUAL RIFLE TRIANGLES 7585
+PASS: actual imported rifle retains its registered PBR finish
+PASS: first-person weapon does not cast an orphan floating gun shadow
+PASS: all split component and optic-bore faces have explicit materials
+PASS: real scope body has an open sight-axis aperture
+PASS: layered distant building mesh exists
+PASS: actual distant mesh includes tall landmark silhouette
+PASS: camera owns active conservative DOF attributes
+PASS: entire 24m combat range remains inside sharp far region
+GLOVE MAX EDGE LENGTH INCREASE 0.02194546535611
+PASS: Idle glove skin has no edge stretched by more than 30mm
+PASS: actual render saved: hip
+PASS: ADS aligns open reflex sight without opaque overlay
+PASS: ADS positions actual sight center on camera axis
+PASS: actual render saved: ads
+OPTIC THROUGH-VIEW mean_rgb_difference=0.02916811612348
+PASS: rendered sight glass transmits actual scene rather than an opaque panel
+PASS: new viewmodel fires once through original ammo authority
+PASS: actual firing selects the authored finger Fire clip
+GLOVE MAX EDGE LENGTH INCREASE 0.02205003798008
+PASS: Fire preserves the glove webbing without a flattened sheet
+PASS: actual render saved: fire
+PASS: original reload starts
+PASS: actual render saved: reload_start
+PASS: real magazine visibly extracts during actual reload
+MAGAZINE FRAMING rect=[P: (559.9224, 476.0957), S: (94.4408, 162.4697)] viewport=(1280.0, 720.0) ratio=1.0
+PASS: extracted magazine remains clearly inside the actual camera frame
+PASS: reload does not move open shoulder cuts into view
+PASS: reload wrist targets remain anatomically reachable
+PASS: extracted magazine is actually parented to the left-hand socket
+GLOVE MAX EDGE LENGTH INCREASE 0.02166233956814
+PASS: Reload glove skin has no edge stretched by more than 30mm
+PASS: actual render saved: reload
+PASS: pause freezes reload and visual presentation
+PASS: pause freezes the actual arm pose
+PASS: actual render saved: reload_insert
+RELOAD MINIMUM ARM CENTERLINE CLEARANCE 0.1849834471941
+PASS: entire reload keeps arm centerlines at least 120mm apart
+FAIL: left wrist approaches and leaves magazine from the camera left side
+PASS: reload transfers exactly one round without animation duplicating ammo
+PASS: magazine returns to socket after reload
+MAGAZINE ATTACHMENT JUMP 0.11815279722214
+FAIL: magazine returns to weapon parent with less than 5mm attachment discontinuity
+PASS: reload preserves original upper-arm and forearm lengths
+PASS: actual render saved: post_reload
+PASS: 180 frames of sprinting and turning do not accumulate arm stretch
+PASS: actual render saved: post_sprint
+PASS: near-wall sphere cast retracts weapon
+PASS: entire rendered hip weapon remains in front of wall surface
+PASS: retracted muzzle still cannot shoot through real wall
+PASS: actual render saved: wall
+PASS: entire rendered ADS weapon remains in front of wall surface
+PASS: ADS weapon remains outside oblique wall -30
+PASS: ADS weapon remains outside oblique wall 30
+PASS: weapon smoothly recovers after leaving wall
+PASS: Low disables all added DOF
+PASS: actual render saved: low
+PASS: Medium restores conservative DOF
+PASS: new rifle fixture physically reaches route point 1
+PASS: new rifle fixture physically reaches route point 2
+PASS: new rifle fixture physically reaches route point 3
+PASS: new muzzle and lens retain actual combat victory
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: retry retains cinematic scene and rifle
+Audio shutdown mix cycles: 3
+TASK-009 failures: 2

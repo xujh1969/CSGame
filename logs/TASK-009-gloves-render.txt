@@ -1,0 +1,7 @@
+00:03.859  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v004\Gloves_Inspection.blend"
+C:\Users\AYOU\Desktop\CS\scripts\tools\render_gloves_source.py:10: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  s.world=bpy.data.worlds.new('world');s.world.use_nodes=True;s.world.node_tree.nodes['Background'].inputs[0].default_value=(.25,.25,.25,1)
+00:09.219  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-gloves-source.png'
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

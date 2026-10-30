@@ -1,0 +1,314 @@
+[gd_scene load_steps=40 format=3]
+
+[sub_resource type="StandardMaterial3D" id="R1"]
+albedo_color = Color(0.19, 0.21, 0.22, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(20, 0.3, 92)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R3"]
+size = Vector3(20, 0.3, 92)
+
+[sub_resource type="StandardMaterial3D" id="R4"]
+albedo_color = Color(0.48, 0.49, 0.46, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(2, 0.08, 92)
+material = SubResource("R4")
+
+[sub_resource type="BoxShape3D" id="R6"]
+size = Vector3(2, 0.08, 92)
+
+[sub_resource type="StandardMaterial3D" id="R7"]
+albedo_color = Color(0.44, 0.4, 0.36, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(0.6, 4, 92)
+material = SubResource("R7")
+
+[sub_resource type="BoxShape3D" id="R9"]
+size = Vector3(0.6, 4, 92)
+
+[sub_resource type="BoxMesh" id="R10"]
+size = Vector3(2, 0.08, 92)
+material = SubResource("R4")
+
+[sub_resource type="BoxShape3D" id="R11"]
+size = Vector3(2, 0.08, 92)
+
+[sub_resource type="BoxMesh" id="R12"]
+size = Vector3(0.6, 4, 92)
+material = SubResource("R7")
+
+[sub_resource type="BoxShape3D" id="R13"]
+size = Vector3(0.6, 4, 92)
+
+[sub_resource type="BoxMesh" id="R14"]
+size = Vector3(20, 4, 0.6)
+material = SubResource("R7")
+
+[sub_resource type="BoxShape3D" id="R15"]
+size = Vector3(20, 4, 0.6)
+
+[sub_resource type="BoxMesh" id="R16"]
+size = Vector3(20, 4, 0.6)
+material = SubResource("R7")
+
+[sub_resource type="BoxShape3D" id="R17"]
+size = Vector3(20, 4, 0.6)
+
+[sub_resource type="StandardMaterial3D" id="R18"]
+albedo_color = Color(0.68, 0.66, 0.54, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R19"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R20"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R21"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R22"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R23"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R24"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R25"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R26"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R27"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R28"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R29"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R30"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R31"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R32"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R33"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R34"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R35"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R36"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R37"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R38"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[sub_resource type="BoxMesh" id="R39"]
+size = Vector3(0.1, 0.012, 1.5)
+material = SubResource("R18")
+
+[node name="RoadStrip" type="Node3D"]
+
+
+[node name="Ground" type="StaticBody3D" parent="."]
+position = Vector3(0, -0.15, -38)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("R2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("R3")
+
+[node name="Sidewalk-1" type="StaticBody3D" parent="."]
+position = Vector3(-5, 0.04, -38)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalk-1"]
+mesh = SubResource("R5")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sidewalk-1"]
+shape = SubResource("R6")
+
+[node name="Boundary-1" type="StaticBody3D" parent="."]
+position = Vector3(-9.7, 2, -38)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Boundary-1"]
+mesh = SubResource("R8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Boundary-1"]
+shape = SubResource("R9")
+
+[node name="Sidewalk1" type="StaticBody3D" parent="."]
+position = Vector3(5, 0.04, -38)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalk1"]
+mesh = SubResource("R10")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sidewalk1"]
+shape = SubResource("R11")
+
+[node name="Boundary1" type="StaticBody3D" parent="."]
+position = Vector3(9.7, 2, -38)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Boundary1"]
+mesh = SubResource("R12")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Boundary1"]
+shape = SubResource("R13")
+
+[node name="EndBoundary8" type="StaticBody3D" parent="."]
+position = Vector3(0, 2, 8)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="EndBoundary8"]
+mesh = SubResource("R14")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EndBoundary8"]
+shape = SubResource("R15")
+
+[node name="EndBoundary-84" type="StaticBody3D" parent="."]
+position = Vector3(0, 2, -84)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="EndBoundary-84"]
+mesh = SubResource("R16")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EndBoundary-84"]
+shape = SubResource("R17")
+
+[node name="RoadDash0" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, 0)
+mesh = SubResource("R19")
+
+[node name="RoadDash4" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -4)
+mesh = SubResource("R20")
+
+[node name="RoadDash8" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -8)
+mesh = SubResource("R21")
+
+[node name="RoadDash12" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -12)
+mesh = SubResource("R22")
+
+[node name="RoadDash16" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -16)
+mesh = SubResource("R23")
+
+[node name="RoadDash20" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -20)
+mesh = SubResource("R24")
+
+[node name="RoadDash24" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -24)
+mesh = SubResource("R25")
+
+[node name="RoadDash28" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -28)
+mesh = SubResource("R26")
+
+[node name="RoadDash32" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -32)
+mesh = SubResource("R27")
+
+[node name="RoadDash36" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -36)
+mesh = SubResource("R28")
+
+[node name="RoadDash40" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -40)
+mesh = SubResource("R29")
+
+[node name="RoadDash44" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -44)
+mesh = SubResource("R30")
+
+[node name="RoadDash48" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -48)
+mesh = SubResource("R31")
+
+[node name="RoadDash52" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -52)
+mesh = SubResource("R32")
+
+[node name="RoadDash56" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -56)
+mesh = SubResource("R33")
+
+[node name="RoadDash60" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -60)
+mesh = SubResource("R34")
+
+[node name="RoadDash64" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -64)
+mesh = SubResource("R35")
+
+[node name="RoadDash68" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -68)
+mesh = SubResource("R36")
+
+[node name="RoadDash72" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -72)
+mesh = SubResource("R37")
+
+[node name="RoadDash76" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -76)
+mesh = SubResource("R38")
+
+[node name="RoadDash80" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.006, -80)
+mesh = SubResource("R39")

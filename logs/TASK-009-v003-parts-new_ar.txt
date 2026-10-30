@@ -1,0 +1,22 @@
+00:03.406  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v003\new_ar\Baked.blend"
+C:\Users\AYOU\Desktop\CS\scripts\tools\assemble_v003_assets.py:63: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  dark.use_nodes=True
+C:\Users\AYOU\Desktop\CS\scripts\tools\assemble_v003_assets.py:88: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('Coated_optic_glass'); mat.use_nodes=True
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+00:08:16 | INFO: Starting glTF 2.0 export
+00:08:16 | INFO: Extracting primitive: Fitted_lens_surface
+00:08:16 | INFO: Primitives created: 1
+00:08:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.001
+00:08:16 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+00:08:16 | INFO: Primitives created: 2
+00:08:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj
+00:08:17 | INFO: Primitives created: 2
+00:08:17 | INFO: Finished glTF 2.0 export in 0.9279847145080566 s
+
+Info: Saved as "Derived.blend"
+ASSEMBLED new_ar {'asset': 'new_ar', 'variants': [], 'components': {'Rifle_Body': 7395, 'Magazine': 256, 'Optic_Glass': 62}, 'muzzle_godot': [4.889443516731262e-08, 0.04902336396276952, -0.518], 'sight_center_godot': [0, 0.135, 0.042], 'lens_fit': {'source_center': [-0.0030274689197540283, 0.15136709809303284, 0.094], 'radii': [0.018890624418854713, 0.018418388664722445], 'surface': 'single fitted plane'}, 'runtime_glb': 'assets/models/task009/v003/ar15_revision.glb', 'source_blend': 'assets/source/task009/v003/new_ar/Derived.blend'}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

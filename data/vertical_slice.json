@@ -1,0 +1,299 @@
+{
+  "schema_version": "1.0",
+  "id": "vertical_slice_01",
+  "status": "baked_gameplay_with_seeded_visual_decoration",
+  "seed": 20261027,
+  "units": "meters",
+  "axis_convention": {
+    "up": "+Y",
+    "forward": "-Z"
+  },
+  "bounds": {
+    "z_start": 4,
+    "z_end": -80,
+    "road_width": 8.0,
+    "sidewalk_width_each": 2.0
+  },
+  "player_spawn": {
+    "id": "player_spawn",
+    "position": [
+      0,
+      0,
+      4
+    ],
+    "yaw_degrees": 0,
+    "camera_eye_height_m": 1.7,
+    "note": "Godot Camera3D 默认朝 -Z；yaw=0 为关卡前进方向；角色根节点在地面附近"
+  },
+  "landmarks": [
+    {
+      "id": "s1_residential",
+      "z_range": [
+        -28,
+        0
+      ],
+      "style": "residential"
+    },
+    {
+      "id": "s2_window",
+      "z_range": [
+        -55,
+        -28
+      ],
+      "style": "corner_shops"
+    },
+    {
+      "id": "s3_narrow",
+      "z_range": [
+        -80,
+        -55
+      ],
+      "style": "narrow_ruin"
+    }
+  ],
+  "covers": [
+    {
+      "id": "cover_01",
+      "kind": "low_concrete_wall",
+      "position": [
+        -1.5,
+        0,
+        -20
+      ],
+      "width_m": 2.0,
+      "height_m": 1.1
+    },
+    {
+      "id": "cover_02",
+      "kind": "jersey_barrier",
+      "position": [
+        1.7,
+        0,
+        -43
+      ],
+      "width_m": 2.5,
+      "height_m": 1.0
+    },
+    {
+      "id": "cover_03",
+      "kind": "wooden_crates",
+      "position": [
+        -1.6,
+        0,
+        -63
+      ],
+      "width_m": 1.8,
+      "height_m": 1.2
+    }
+  ],
+  "encounters": [
+    {
+      "id": "T1",
+      "activate_at_z": -13,
+      "enemy_id": "E01",
+      "style": "corner_ambusher",
+      "facing_yaw_degrees": 180,
+      "cover_marker_id": "C01",
+      "peek_position": [
+        3.0,
+        0,
+        -25
+      ],
+      "spawn_position": [
+        4.7,
+        0.08,
+        -25
+      ],
+      "note": "脚点在人行道表面 0.08m；预摆在翼墙后，T1 激活后沿烘焙导航短路径探出"
+    },
+    {
+      "id": "T2",
+      "activate_at_z": -32,
+      "enemy_id": "E02",
+      "style": "window_sentry",
+      "facing_yaw_degrees": -159,
+      "cover_marker_id": "C02",
+      "peek_position": [
+        -5.4,
+        4.2,
+        -46
+      ],
+      "spawn_position": [
+        -5.4,
+        4.2,
+        -46
+      ],
+      "note": "固定窗口狙击点，非移动导航"
+    },
+    {
+      "id": "T3",
+      "activate_at_z": -56,
+      "enemy_id": "E03",
+      "style": "cover_rifleman",
+      "facing_yaw_degrees": 180,
+      "cover_marker_id": "C03",
+      "peek_position": [
+        2.6,
+        0,
+        -70
+      ],
+      "spawn_position": [
+        2.6,
+        0,
+        -70
+      ],
+      "note": "由关卡实际碰撞调整"
+    }
+  ],
+  "objective": {
+    "finish_z": -78,
+    "required_enemies": [
+      "E01",
+      "E02",
+      "E03"
+    ]
+  },
+  "validation_notes": [
+    "Fixed gameplay is baked by scripts/tools/build_vertical_slice.py; runtime checks its source hash.",
+    "Only visual decoration uses seed; no collision, navigation, spawn or trigger randomization.",
+    "Decoration sockets stay outside the road and above the player; validated at runtime."
+  ],
+  "decoration": {
+    "max_instances": 24,
+    "chance": 0.85,
+    "variants": [
+      "facade_ac_A",
+      "facade_vent_A"
+    ],
+    "sockets": [
+      {
+        "id": "Facade_L_4",
+        "position": [
+          -5.5,
+          3.4,
+          -4
+        ]
+      },
+      {
+        "id": "Facade_L_12",
+        "position": [
+          -5.5,
+          3.4,
+          -12
+        ]
+      },
+      {
+        "id": "Facade_L_20",
+        "position": [
+          -5.5,
+          3.4,
+          -20
+        ]
+      },
+      {
+        "id": "Facade_L_32",
+        "position": [
+          -5.5,
+          3.4,
+          -32
+        ]
+      },
+      {
+        "id": "Facade_L_40",
+        "position": [
+          -5.5,
+          3.4,
+          -40
+        ]
+      },
+      {
+        "id": "Facade_L_60",
+        "position": [
+          -5.5,
+          3.4,
+          -60
+        ]
+      },
+      {
+        "id": "Facade_L_68",
+        "position": [
+          -5.5,
+          3.4,
+          -68
+        ]
+      },
+      {
+        "id": "Facade_L_76",
+        "position": [
+          -5.5,
+          3.4,
+          -76
+        ]
+      },
+      {
+        "id": "Facade_R_4",
+        "position": [
+          5.5,
+          3.4,
+          -4
+        ]
+      },
+      {
+        "id": "Facade_R_12",
+        "position": [
+          5.5,
+          3.4,
+          -12
+        ]
+      },
+      {
+        "id": "Facade_R_20",
+        "position": [
+          5.5,
+          3.4,
+          -20
+        ]
+      },
+      {
+        "id": "Facade_R_32",
+        "position": [
+          5.5,
+          3.4,
+          -32
+        ]
+      },
+      {
+        "id": "Facade_R_40",
+        "position": [
+          5.5,
+          3.4,
+          -40
+        ]
+      },
+      {
+        "id": "Facade_R_60",
+        "position": [
+          5.5,
+          3.4,
+          -60
+        ]
+      },
+      {
+        "id": "Facade_R_68",
+        "position": [
+          5.5,
+          3.4,
+          -68
+        ]
+      },
+      {
+        "id": "Facade_R_76",
+        "position": [
+          5.5,
+          3.4,
+          -76
+        ]
+      }
+    ]
+  }
+}

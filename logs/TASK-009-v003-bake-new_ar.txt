@@ -1,0 +1,24 @@
+00:02.734  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v003\new_ar\Inspection.blend"
+C:\Users\AYOU\Desktop\CS\scripts\tools\prepare_v003_assets.py:58: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material.use_nodes=True
+BAKE new_ar albedo
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE new_ar normal
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE new_ar roughness
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE new_ar metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Saved as "Baked.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+19:28:15 | INFO: Starting glTF 2.0 export
+19:28:15 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj
+19:28:15 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:28:15 | INFO: Primitives created: 1
+19:28:15 | INFO: Finished glTF 2.0 export in 0.47838687896728516 s
+
+BAKED new_ar {'asset': 'new_ar', 'raw_sha256': {'AR-15-1.glb': '57d9148714bbf834bd19a842adcc4ad561133ac4e6577ec766207c0d7b2391a4', 'AR-15-1低模.glb': '10a9da3c56f27e2bae2c6d11f13292611d9a386a9b9cb717a4e341e0e35bf9d1'}, 'raw_files_unchanged': True, 'rotation_degrees': 180.0, 'target_dimensions_blender': [0.0859760220348835, 0.9299999999999999, 0.3935542994737625], 'triangles': 6145, 'texture_resolution': [2048, 2048], 'skin_adjustment': None}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

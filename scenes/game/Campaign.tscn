@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/campaign_session.gd" id="1"]
+
+[node name="Campaign" type="Node"]
+process_mode = 3
+script = ExtResource("1")
+
+[node name="LevelHost" type="Node3D" parent="."]
+process_mode = 1
+
+[node name="Status" type="CanvasLayer" parent="."]
+layer = 30
+
+[node name="Block" type="ColorRect" parent="Status"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.03, 0.04, 0.05, 0.98)
+
+[node name="Center" type="CenterContainer" parent="Status/Block"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="PanelContainer" parent="Status/Block/Center"]
+custom_minimum_size = Vector2(540, 180)
+
+[node name="Margin" type="MarginContainer" parent="Status/Block/Center/Panel"]
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Column" type="VBoxContainer" parent="Status/Block/Center/Panel/Margin"]
+theme_override_constants/separation = 20
+
+[node name="Message" type="Label" parent="Status/Block/Center/Panel/Margin/Column"]
+custom_minimum_size = Vector2(490, 80)
+theme_override_font_sizes/font_size = 22
+text = "正在载入验证关…"
+autowrap_mode = 3
+
+[node name="Retry" type="Button" parent="Status/Block/Center/Panel/Margin/Column"]
+visible = false
+custom_minimum_size = Vector2(0, 42)
+text = "重试载入"

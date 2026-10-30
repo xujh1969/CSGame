@@ -1,0 +1,227 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: production level catalog validates
+PASS: invalid catalog rejected: duplicate
+PASS: invalid catalog rejected: scene
+PASS: invalid catalog rejected: next
+PASS: invalid catalog rejected: cycle
+PASS: invalid catalog rejected: start
+PASS: invalid catalog rejected: encounter
+PASS: transition completes without error
+PASS: campaign boots first level exactly once
+PASS: first real trigger, player rays and physical walk clear enemy
+PASS: first physical finish area produces alive victory
+PASS: first player actually overlaps finish trigger
+ROUTE first frames=351 shots=5 hp=100
+PASS: victory allows transition to next level
+PASS: duplicate next/retry is rejected during transition
+ERROR: FAIL: transition completes without error
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: next loads second level once
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:45)
+       [2] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: old level and spatial audio owner are freed
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:46)
+       [2] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: new level starts HP100 and 30/90
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:49)
+       [2] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: new level resets pause and starts running
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:50)
+       [2] _settle (res://tests/test_campaign.gd:98)
+PASS: cannot skip running level
+ERROR: FAIL: second level can fail independently
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:55)
+ERROR: Node not found: "Enemies/BGuard" (relative to "/root/Campaign/LevelHost/Entry").
+   at: get_node (scene/main/node.cpp:1975)
+   GDScript backtrace (most recent call first):
+       [0] _run (res://tests/test_campaign.gd:56)
+ERROR: FAIL: transition completes without error
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: failure retry rebuilds current level, not campaign start
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:59)
+       [2] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: retry restores player and encounter state
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:60)
+       [2] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: final real trigger, player rays and physical walk clear enemy
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _play_level (res://tests/test_campaign.gd:133)
+ERROR: FAIL: final physical finish area produces alive victory
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _play_level (res://tests/test_campaign.gd:134)
+PASS: final player actually overlaps finish trigger
+ROUTE final frames=0 shots=0 hp=0
+ERROR: FAIL: final level has no next level
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:62)
+       [2] _play_level (res://tests/test_campaign.gd:137)
+ERROR: FAIL: final victory UI shows completion without next button
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:64)
+       [2] _play_level (res://tests/test_campaign.gd:137)
+PASS: unknown level request preserves current level
+ERROR: FAIL: transition completes without error
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: transition completes without error
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: transition completes without error
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: transition completes without error
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: four restarts keep one level, flow and audio owner without node growth
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:78)
+       [2] _settle (res://tests/test_campaign.gd:98)
+PASS: current level pauses
+ERROR: FAIL: transition completes without error
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _settle (res://tests/test_campaign.gd:98)
+ERROR: FAIL: paused retry resets pause while preserving current level id
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_campaign.gd:13)
+       [1] _run (res://tests/test_campaign.gd:84)
+       [2] _settle (res://tests/test_campaign.gd:98)
+CAMPAIGN load_count=1 stable_nodes=198 static_memory_bytes=58548832.0
+Audio shutdown mix cycles: 3
+Audio shutdown mix cycles: 3
+TASK-007 failures: 20
+WARNING: 2 RIDs of type "Canvas" were leaked.
+   at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2735)
+WARNING: 33 RIDs of type "CanvasItem" were leaked.
+   at: _free_rids (servers/rendering/renderer_canvas_cull.cpp:2735)
+ERROR: Pages in use exist at exit in PagedAllocator: N20RasterizerSceneDummy21GeometryInstanceDummyE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+ERROR: 19 RID allocations of type 'P11GodotBody3D' were leaked at exit.
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+ERROR: 2 RID allocations of type 'P11GodotArea3D' were leaked at exit.
+ERROR: 14 RID allocations of type 'P12GodotShape3D' were leaked at exit.
+ERROR: 1 RID allocations of type 'N16RendererViewport8ViewportE' were leaked at exit.
+ERROR: 1 RID allocations of type 'N26RendererEnvironmentStorage11EnvironmentE' were leaked at exit.
+ERROR: 20 RID allocations of type 'N13RendererDummy15MaterialStorage13DummyMaterialE' were leaked at exit.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+ERROR: 2 RID allocations of type 'N13RendererDummy15MaterialStorage11DummyShaderE' were leaked at exit.
+ERROR: 32 RID allocations of type 'N13RendererDummy9DummyMeshE' were leaked at exit.
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+ERROR: 21 RID allocations of type 'PN13RendererDummy14TextureStorage12DummyTextureE' were leaked at exit.
+ERROR: 49 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+ERROR: 1 RID allocations of type 'N17RendererSceneCull6CameraE' were leaked at exit.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+ERROR: 37 RID allocations of type 'PN18TextServerAdvanced22ShapedTextDataAdvancedE' were leaked at exit.
+ERROR: 1 RID allocations of type 'PN18TextServerAdvanced12FontAdvancedE' were leaked at exit.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: Leaked instance dependency: Bug - did not call instance_notify_deleted when freeing.
+   at: ~Dependency (servers/rendering/storage/utilities.cpp:56)
+WARNING: 409 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 76 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

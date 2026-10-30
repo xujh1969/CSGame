@@ -1,0 +1,551 @@
+[gd_scene load_steps=39 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/levels/modules/RoadStrip.tscn" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/levels/modules/Residential.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/levels/modules/Shopfront.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/levels/modules/Ruin.tscn" id="4"]
+
+[ext_resource type="PackedScene" path="res://scenes/levels/modules/HighWindowFacade.tscn" id="5"]
+
+[ext_resource type="PackedScene" path="res://scenes/cover/ConcreteLowWall.tscn" id="6"]
+
+[ext_resource type="PackedScene" path="res://scenes/cover/JerseyBarrier.tscn" id="7"]
+
+[ext_resource type="PackedScene" path="res://scenes/cover/WoodenCrates.tscn" id="8"]
+
+[ext_resource type="PackedScene" path="res://scenes/enemies/EnemyBase.tscn" id="9"]
+
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="10"]
+
+[ext_resource type="NavigationMesh" path="res://scenes/levels/CornerNavigation.tres" id="11"]
+
+[ext_resource type="Script" path="res://scripts/game/encounter_manager.gd" id="12"]
+
+[ext_resource type="Script" path="res://scripts/game/game_flow.gd" id="13"]
+
+[ext_resource type="Script" path="res://scripts/fx/battle_presentation.gd" id="14"]
+
+[ext_resource type="Script" path="res://scripts/game/level_runtime.gd" id="15"]
+
+[ext_resource type="Script" path="res://scripts/game/level_debug.gd" id="16"]
+
+[sub_resource type="Environment" id="R1"]
+background_mode = 1
+background_color = Color(0.43, 0.51, 0.59, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.75, 0.8, 0.9, 1)
+ambient_light_energy = 0.65
+
+[sub_resource type="StandardMaterial3D" id="R2"]
+albedo_color = Color(0.43, 0.5, 0.49, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(2, 2.6, 0.4)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(2, 2.6, 0.4)
+
+[sub_resource type="StandardMaterial3D" id="R5"]
+albedo_color = Color(0.44, 0.4, 0.36, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R6"]
+size = Vector3(2.1, 3, 20)
+material = SubResource("R5")
+
+[sub_resource type="BoxShape3D" id="R7"]
+size = Vector3(2.1, 3, 20)
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(2.1, 3, 20)
+material = SubResource("R5")
+
+[sub_resource type="BoxShape3D" id="R9"]
+size = Vector3(2.1, 3, 20)
+
+[sub_resource type="StandardMaterial3D" id="R10"]
+albedo_color = Color(0.46, 0.47, 0.44, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(2.6, 1.1, 0.5)
+material = SubResource("R10")
+
+[sub_resource type="BoxShape3D" id="R12"]
+size = Vector3(2.6, 1.1, 0.5)
+
+[sub_resource type="BoxShape3D" id="R13"]
+size = Vector3(12, 3, 1)
+
+[sub_resource type="StandardMaterial3D" id="R14"]
+albedo_color = Color(0.15, 0.65, 0.7, 1)
+roughness = 0.9
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(8, 0.015, 0.12)
+material = SubResource("R14")
+
+[sub_resource type="BoxShape3D" id="R16"]
+size = Vector3(12, 3, 1)
+
+[sub_resource type="BoxMesh" id="R17"]
+size = Vector3(8, 0.015, 0.12)
+material = SubResource("R14")
+
+[sub_resource type="BoxShape3D" id="R18"]
+size = Vector3(12, 3, 1)
+
+[sub_resource type="BoxMesh" id="R19"]
+size = Vector3(8, 0.015, 0.12)
+material = SubResource("R14")
+
+[sub_resource type="BoxShape3D" id="R20"]
+size = Vector3(12, 3, 1)
+
+[sub_resource type="StandardMaterial3D" id="R21"]
+albedo_color = Color(0.26, 0.78, 0.48, 1)
+roughness = 0.9
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="R22"]
+size = Vector3(8, 0.02, 0.4)
+material = SubResource("R21")
+
+[node name="VerticalSlice01" type="Node3D"]
+
+metadata/layout_source = "res://data/vertical_slice.json"
+metadata/layout_sha256 = "09597abaa5c77ed0d83af6b8d048a6d16830a171ab9bdab87ec21ca83aefba68"
+metadata/seed = 20261027
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("R1")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-50, -25, 0)
+light_energy = 1.2
+shadow_enabled = true
+
+[node name="WorldGeo" parent="." instance=ExtResource("1")]
+
+
+[node name="Facades" type="Node3D" parent="."]
+
+
+[node name="Residential_-1_4" parent="Facades" instance=ExtResource("2")]
+position = Vector3(-6, 0, -4)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="Residential_-1_12" parent="Facades" instance=ExtResource("2")]
+position = Vector3(-6, 0, -12)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="Residential_-1_20" parent="Facades" instance=ExtResource("2")]
+position = Vector3(-6, 0, -20)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="Shopfront_-1_32" parent="Facades" instance=ExtResource("3")]
+position = Vector3(-6, 0, -32)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="Shopfront_-1_40" parent="Facades" instance=ExtResource("3")]
+position = Vector3(-6, 0, -40)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="Ruin_-1_60" parent="Facades" instance=ExtResource("4")]
+position = Vector3(-6, 0, -60)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="Ruin_-1_68" parent="Facades" instance=ExtResource("4")]
+position = Vector3(-6, 0, -68)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="Ruin_-1_76" parent="Facades" instance=ExtResource("4")]
+position = Vector3(-6, 0, -76)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="Residential_1_4" parent="Facades" instance=ExtResource("2")]
+position = Vector3(6, 0, -4)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Residential_1_12" parent="Facades" instance=ExtResource("2")]
+position = Vector3(6, 0, -12)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Residential_1_20" parent="Facades" instance=ExtResource("2")]
+position = Vector3(6, 0, -20)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Shopfront_1_32" parent="Facades" instance=ExtResource("3")]
+position = Vector3(6, 0, -32)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Shopfront_1_40" parent="Facades" instance=ExtResource("3")]
+position = Vector3(6, 0, -40)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Shopfront_1_48" parent="Facades" instance=ExtResource("3")]
+position = Vector3(6, 0, -48)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Ruin_1_60" parent="Facades" instance=ExtResource("4")]
+position = Vector3(6, 0, -60)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Ruin_1_68" parent="Facades" instance=ExtResource("4")]
+position = Vector3(6, 0, -68)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Ruin_1_76" parent="Facades" instance=ExtResource("4")]
+position = Vector3(6, 0, -76)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="HighWindow" parent="Facades" instance=ExtResource("5")]
+position = Vector3(-6, 0, -46)
+rotation = Vector3(0, 1.570796, 0)
+
+[node name="CornerWing" type="StaticBody3D" parent="WorldGeo"]
+position = Vector3(4.5, 1.3, -24)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldGeo/CornerWing"]
+mesh = SubResource("R3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldGeo/CornerWing"]
+shape = SubResource("R4")
+
+[node name="NarrowPier-1" type="StaticBody3D" parent="WorldGeo"]
+position = Vector3(-4.15, 1.5, -70)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldGeo/NarrowPier-1"]
+mesh = SubResource("R6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldGeo/NarrowPier-1"]
+shape = SubResource("R7")
+
+[node name="NarrowPier1" type="StaticBody3D" parent="WorldGeo"]
+position = Vector3(4.15, 1.5, -70)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldGeo/NarrowPier1"]
+mesh = SubResource("R8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldGeo/NarrowPier1"]
+shape = SubResource("R9")
+
+[node name="Cover" type="Node3D" parent="."]
+
+
+[node name="cover_01" parent="Cover" instance=ExtResource("6")]
+position = Vector3(-1.5, 0, -20)
+metadata/kind = "low_concrete_wall"
+
+[node name="cover_01Sign" type="Label3D" parent="Cover"]
+position = Vector3(-1.5, 1.9, -20)
+text = "LOW CONCRETE WALL"
+billboard = 1
+font_size = 26
+pixel_size = 0.008
+
+[node name="cover_02" parent="Cover" instance=ExtResource("7")]
+position = Vector3(1.7, 0, -43)
+metadata/kind = "jersey_barrier"
+
+[node name="cover_02Sign" type="Label3D" parent="Cover"]
+position = Vector3(1.7, 1.9, -43)
+text = "JERSEY BARRIER"
+billboard = 1
+font_size = 26
+pixel_size = 0.008
+
+[node name="cover_03" parent="Cover" instance=ExtResource("8")]
+position = Vector3(-1.6, 0, -63)
+metadata/kind = "wooden_crates"
+
+[node name="cover_03Sign" type="Label3D" parent="Cover"]
+position = Vector3(-1.6, 1.9, -63)
+text = "WOODEN CRATES"
+billboard = 1
+font_size = 26
+pixel_size = 0.008
+
+[node name="EnemyLowWall" type="StaticBody3D" parent="Cover"]
+position = Vector3(2.6, 0.55, -68.5)
+collision_layer = 2
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Cover/EnemyLowWall"]
+mesh = SubResource("R11")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cover/EnemyLowWall"]
+shape = SubResource("R12")
+
+[node name="SpawnMarkers" type="Node3D" parent="."]
+
+
+[node name="CoverMarkers" type="Node3D" parent="."]
+
+
+[node name="PeekMarkers" type="Node3D" parent="."]
+
+
+[node name="Enemies" type="Node3D" parent="."]
+
+
+[node name="Triggers" type="Node3D" parent="."]
+
+
+[node name="E01" type="Marker3D" parent="SpawnMarkers"]
+position = Vector3(4.7, 0.08, -25)
+rotation_degrees = Vector3(0, 180, 0)
+metadata/encounter_id = "T1"
+metadata/trigger_id = "T1"
+metadata/archetype = "corner_ambusher"
+metadata/cover_marker_id = "C01"
+
+[node name="C01" type="Marker3D" parent="CoverMarkers"]
+position = Vector3(4.7, 0.08, -25)
+
+[node name="E01" type="Marker3D" parent="PeekMarkers"]
+position = Vector3(3.0, 0, -25)
+
+[node name="E01" parent="Enemies" instance=ExtResource("9")]
+position = Vector3(4.7, 0.08, -25)
+rotation_degrees = Vector3(0, 180, 0)
+archetype = "corner_ambusher"
+cover_path = NodePath("../../CoverMarkers/C01")
+peek_path = NodePath("../../PeekMarkers/E01")
+tint = Color(0.85, 0.30, 0.15, 1)
+view_distance = 25.0
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="Enemies/E01"]
+path_desired_distance = 0.2
+target_desired_distance = 0.15
+radius = 0.28
+height = 1.8
+
+[node name="T1" type="Area3D" parent="Triggers"]
+position = Vector3(0, 1.5, -13)
+collision_layer = 32
+collision_mask = 4
+metadata/enemy_id = "E01"
+metadata/activate_at_z = -13
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Triggers/T1"]
+shape = SubResource("R13")
+
+[node name="T1Line" type="MeshInstance3D" parent="Triggers"]
+position = Vector3(0, 0.012, -13)
+mesh = SubResource("R15")
+
+[node name="T1Sign" type="Label3D" parent="Triggers"]
+position = Vector3(-3.5, 2.4, -13)
+text = "T1 / CORNER AMBUSHER"
+billboard = 1
+font_size = 30
+pixel_size = 0.008
+
+[node name="E02" type="Marker3D" parent="SpawnMarkers"]
+position = Vector3(-5.4, 4.2, -46)
+rotation_degrees = Vector3(0, -159, 0)
+metadata/encounter_id = "T2"
+metadata/trigger_id = "T2"
+metadata/archetype = "window_sentry"
+metadata/cover_marker_id = "C02"
+
+[node name="C02" type="Marker3D" parent="CoverMarkers"]
+position = Vector3(-5.4, 4.2, -46)
+
+[node name="E02" type="Marker3D" parent="PeekMarkers"]
+position = Vector3(-5.4, 4.2, -46)
+
+[node name="E02" parent="Enemies" instance=ExtResource("9")]
+position = Vector3(-5.4, 4.2, -46)
+rotation_degrees = Vector3(0, -159, 0)
+archetype = "window_sentry"
+cover_path = NodePath("../../CoverMarkers/C02")
+peek_path = NodePath("../../PeekMarkers/E02")
+tint = Color(0.12, 0.55, 0.9, 1)
+view_distance = 35.0
+
+[node name="T2" type="Area3D" parent="Triggers"]
+position = Vector3(0, 1.5, -32)
+collision_layer = 32
+collision_mask = 4
+metadata/enemy_id = "E02"
+metadata/activate_at_z = -32
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Triggers/T2"]
+shape = SubResource("R16")
+
+[node name="T2Line" type="MeshInstance3D" parent="Triggers"]
+position = Vector3(0, 0.012, -32)
+mesh = SubResource("R17")
+
+[node name="T2Sign" type="Label3D" parent="Triggers"]
+position = Vector3(-3.5, 2.4, -32)
+text = "T2 / WINDOW SENTRY"
+billboard = 1
+font_size = 30
+pixel_size = 0.008
+
+[node name="E03" type="Marker3D" parent="SpawnMarkers"]
+position = Vector3(2.6, 0, -70)
+rotation_degrees = Vector3(0, 180, 0)
+metadata/encounter_id = "T3"
+metadata/trigger_id = "T3"
+metadata/archetype = "cover_rifleman"
+metadata/cover_marker_id = "C03"
+
+[node name="C03" type="Marker3D" parent="CoverMarkers"]
+position = Vector3(2.6, 0, -70)
+
+[node name="E03" type="Marker3D" parent="PeekMarkers"]
+position = Vector3(2.6, 0, -70)
+
+[node name="E03" parent="Enemies" instance=ExtResource("9")]
+position = Vector3(2.6, 0, -70)
+rotation_degrees = Vector3(0, 180, 0)
+archetype = "cover_rifleman"
+cover_path = NodePath("../../CoverMarkers/C03")
+peek_path = NodePath("../../PeekMarkers/E03")
+tint = Color(0.8, 0.18, 0.25, 1)
+view_distance = 25.0
+
+[node name="T3" type="Area3D" parent="Triggers"]
+position = Vector3(0, 1.5, -56)
+collision_layer = 32
+collision_mask = 4
+metadata/enemy_id = "E03"
+metadata/activate_at_z = -56
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Triggers/T3"]
+shape = SubResource("R18")
+
+[node name="T3Line" type="MeshInstance3D" parent="Triggers"]
+position = Vector3(0, 0.012, -56)
+mesh = SubResource("R19")
+
+[node name="T3Sign" type="Label3D" parent="Triggers"]
+position = Vector3(-3.5, 2.4, -56)
+text = "T3 / COVER RIFLEMAN"
+billboard = 1
+font_size = 30
+pixel_size = 0.008
+
+[node name="Section5" type="Label3D" parent="."]
+position = Vector3(0, 4.0, -5)
+text = "01 / RESIDENTIAL + CORNER"
+billboard = 1
+font_size = 40
+pixel_size = 0.008
+
+[node name="Section31" type="Label3D" parent="."]
+position = Vector3(0, 4.0, -31)
+text = "02 / SHOPS + HIGH WINDOW"
+billboard = 1
+font_size = 40
+pixel_size = 0.008
+
+[node name="Section57" type="Label3D" parent="."]
+position = Vector3(0, 4.0, -57)
+text = "03 / NARROW + COVER"
+billboard = 1
+font_size = 40
+pixel_size = 0.008
+
+[node name="Route" type="Node3D" parent="."]
+
+
+[node name="P00" type="Marker3D" parent="Route"]
+position = Vector3(0, 0, 4)
+metadata/clearance_m = 1.2
+
+[node name="P01" type="Marker3D" parent="Route"]
+position = Vector3(1, 0, -18)
+metadata/clearance_m = 1.2
+
+[node name="P02" type="Marker3D" parent="Route"]
+position = Vector3(1, 0, -24)
+metadata/clearance_m = 1.2
+
+[node name="P03" type="Marker3D" parent="Route"]
+position = Vector3(-1, 0, -40)
+metadata/clearance_m = 1.2
+
+[node name="P04" type="Marker3D" parent="Route"]
+position = Vector3(-1, 0, -46)
+metadata/clearance_m = 1.2
+
+[node name="P05" type="Marker3D" parent="Route"]
+position = Vector3(0.4, 0, -60)
+metadata/clearance_m = 1.2
+
+[node name="P06" type="Marker3D" parent="Route"]
+position = Vector3(0.4, 0, -65)
+metadata/clearance_m = 1.2
+
+[node name="P07" type="Marker3D" parent="Route"]
+position = Vector3(0, 0, -73)
+metadata/clearance_m = 1.2
+
+[node name="P08" type="Marker3D" parent="Route"]
+position = Vector3(0, 0, -78)
+metadata/clearance_m = 1.2
+
+[node name="PlayerSpawn" type="Marker3D" parent="."]
+position = Vector3(0, 0, 4)
+
+[node name="Player" parent="." instance=ExtResource("10")]
+position = Vector3(0, 0, 4)
+
+[node name="CornerNavigation" type="NavigationRegion3D" parent="."]
+navigation_mesh = ExtResource("11")
+
+[node name="EncounterManager" type="Node" parent="."]
+script = ExtResource("12")
+
+[node name="FinishMarker" type="Marker3D" parent="."]
+position = Vector3(0, 0, -78)
+
+[node name="FinishArea" type="Area3D" parent="."]
+position = Vector3(0, 1.5, -78)
+collision_layer = 32
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FinishArea"]
+shape = SubResource("R20")
+
+[node name="FinishLine" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.015, -78)
+mesh = SubResource("R22")
+
+[node name="FinishSign" type="Label3D" parent="."]
+position = Vector3(0, 3.5, -78)
+text = "FINISH / ROUTE END"
+billboard = 1
+font_size = 55
+pixel_size = 0.008
+
+[node name="GameFlow" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("13")
+
+[node name="BattlePresentation" type="Node3D" parent="."]
+script = ExtResource("14")
+
+[node name="LevelRuntime" type="Node3D" parent="."]
+script = ExtResource("15")
+
+[node name="LevelDebug" type="Node3D" parent="."]
+process_mode = 3
+script = ExtResource("16")

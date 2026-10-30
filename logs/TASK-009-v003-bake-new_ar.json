@@ -1,0 +1,20 @@
+{
+  "asset": "new_ar",
+  "raw_sha256": {
+    "AR-15-1.glb": "57d9148714bbf834bd19a842adcc4ad561133ac4e6577ec766207c0d7b2391a4",
+    "AR-15-1\u4f4e\u6a21.glb": "10a9da3c56f27e2bae2c6d11f13292611d9a386a9b9cb717a4e341e0e35bf9d1"
+  },
+  "raw_files_unchanged": true,
+  "rotation_degrees": 180.0,
+  "target_dimensions_blender": [
+    0.0859760220348835,
+    0.9299999999999999,
+    0.3935542994737625
+  ],
+  "triangles": 6145,
+  "texture_resolution": [
+    2048,
+    2048
+  ],
+  "skin_adjustment": null
+}

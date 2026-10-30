@@ -1,0 +1,122 @@
+{
+  "approved_baseline": false,
+  "fixture": "static_v006",
+  "framework_failures": 0,
+  "pose_issue_count": 16,
+  "rendering": "real GPU viewport; fixed 60fps simulation, not performance measurement",
+  "snapshot_count": 8,
+  "states": [
+    {
+      "issue_count": 2,
+      "issues": [
+        "Right hand contact distance 0.070m > 0.040m",
+        "Left hand contact distance 0.078m > 0.040m"
+      ],
+      "json": "res://logs/fps_rig/static_v006/Idle_5904.json",
+      "png": "res://logs/fps_rig/static_v006/Idle_5904.png",
+      "stage": "Idle",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 2,
+      "issues": [
+        "Right hand contact distance 0.070m > 0.040m",
+        "Left hand contact distance 0.078m > 0.040m"
+      ],
+      "json": "res://logs/fps_rig/static_v006/ADS_6943.json",
+      "png": "res://logs/fps_rig/static_v006/ADS_6943.png",
+      "stage": "ADS",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 2,
+      "issues": [
+        "Right hand contact distance 0.070m > 0.040m",
+        "Left hand contact distance 0.078m > 0.040m"
+      ],
+      "json": "res://logs/fps_rig/static_v006/Fire_7849.json",
+      "png": "res://logs/fps_rig/static_v006/Fire_7849.png",
+      "stage": "Fire",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 2,
+      "issues": [
+        "Right hand contact distance 0.070m > 0.040m",
+        "Left hand contact distance 0.078m > 0.040m"
+      ],
+      "json": "res://logs/fps_rig/static_v006/Reload_start_8545.json",
+      "png": "res://logs/fps_rig/static_v006/Reload_start_8545.png",
+      "stage": "Reload_start",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 2,
+      "issues": [
+        "Right hand contact distance 0.070m > 0.040m",
+        "Left hand contact distance 0.078m > 0.040m"
+      ],
+      "json": "res://logs/fps_rig/static_v006/Old_mag_grasp_9320.json",
+      "png": "res://logs/fps_rig/static_v006/Old_mag_grasp_9320.png",
+      "stage": "Old_mag_grasp",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 2,
+      "issues": [
+        "Right hand contact distance 0.070m > 0.040m",
+        "Left hand contact distance 0.078m > 0.040m"
+      ],
+      "json": "res://logs/fps_rig/static_v006/Old_mag_remove_10064.json",
+      "png": "res://logs/fps_rig/static_v006/Old_mag_remove_10064.png",
+      "stage": "Old_mag_remove",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 2,
+      "issues": [
+        "Right hand contact distance 0.070m > 0.040m",
+        "Left hand contact distance 0.078m > 0.040m"
+      ],
+      "json": "res://logs/fps_rig/static_v006/New_mag_insert_10799.json",
+      "png": "res://logs/fps_rig/static_v006/New_mag_insert_10799.png",
+      "stage": "New_mag_insert",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 2,
+      "issues": [
+        "Right hand contact distance 0.070m > 0.040m",
+        "Left hand contact distance 0.078m > 0.040m"
+      ],
+      "json": "res://logs/fps_rig/static_v006/Reload_end_11551.json",
+      "png": "res://logs/fps_rig/static_v006/Reload_end_11551.png",
+      "stage": "Reload_end",
+      "warnings": [
+        "AnimationPlayer intentionally absent in static bind fixture",
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    }
+  ]
+}

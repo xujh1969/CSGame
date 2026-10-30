@@ -1,0 +1,96 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/enemies/enemy_brain.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_perception.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_weapon.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/enemies/enemy_visual.gd" id="4"]
+[ext_resource type="Script" path="res://scripts/player/health_component.gd" id="5"]
+
+[sub_resource type="StandardMaterial3D" id="BodyMaterial"]
+shading_mode = 0
+albedo_color = Color(0.8, 0.3, 0.16, 1)
+
+[sub_resource type="StandardMaterial3D" id="GunMaterial"]
+albedo_color = Color(0.1, 0.12, 0.14, 1)
+
+[sub_resource type="StandardMaterial3D" id="FlashMaterial"]
+shading_mode = 0
+albedo_color = Color(1, 0.75, 0.1, 1)
+
+[sub_resource type="CapsuleShape3D" id="BodyShape"]
+resource_local_to_scene = true
+radius = 0.28
+height = 1.8
+
+[sub_resource type="CapsuleMesh" id="BodyMesh"]
+radius = 0.28
+height = 1.8
+radial_segments = 12
+rings = 6
+
+[sub_resource type="SphereMesh" id="HeadMesh"]
+radius = 0.16
+height = 0.32
+radial_segments = 12
+rings = 6
+
+[sub_resource type="BoxMesh" id="GunMesh"]
+size = Vector3(0.08, 0.08, 0.5)
+material = SubResource("GunMaterial")
+
+[sub_resource type="SphereMesh" id="FlashMesh"]
+radius = 0.055
+height = 0.11
+material = SubResource("FlashMaterial")
+
+[node name="EnemyBase" type="CharacterBody3D"]
+collision_layer = 8
+collision_mask = 15
+script = ExtResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.9, 0)
+shape = SubResource("BodyShape")
+
+[node name="HealthComponent" type="Node" parent="."]
+script = ExtResource("5")
+
+[node name="Perception" type="Node3D" parent="."]
+position = Vector3(0, 1.65, 0)
+script = ExtResource("2")
+
+[node name="VisualRoot" type="Node3D" parent="."]
+script = ExtResource("4")
+
+[node name="Body" type="MeshInstance3D" parent="VisualRoot"]
+position = Vector3(0, 0.9, 0)
+mesh = SubResource("BodyMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="Head" type="MeshInstance3D" parent="VisualRoot"]
+position = Vector3(0, 1.62, 0)
+mesh = SubResource("HeadMesh")
+material_override = SubResource("BodyMaterial")
+
+[node name="Gun" type="Node3D" parent="VisualRoot"]
+position = Vector3(0, 1.42, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="VisualRoot/Gun"]
+position = Vector3(0, 0, -0.25)
+mesh = SubResource("GunMesh")
+
+[node name="Muzzle" type="Marker3D" parent="VisualRoot/Gun"]
+position = Vector3(0, 0, -0.55)
+
+[node name="Flash" type="MeshInstance3D" parent="VisualRoot/Gun/Muzzle"]
+visible = false
+mesh = SubResource("FlashMesh")
+
+[node name="EnemyWeapon" type="Node3D" parent="."]
+script = ExtResource("3")
+
+[node name="Label3D" type="Label3D" parent="."]
+position = Vector3(0, 2.15, 0)
+billboard = 1
+font_size = 30
+pixel_size = 0.006

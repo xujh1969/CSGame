@@ -1,0 +1,4 @@
+Core baseline files checked: 6
+Changed baseline files: 1
+Expected planned change: scripts/weapons/weapon_controller.gd (death cancellation API only)
+Unchanged: player motor, health component, rifle viewmodel, old range, weapon tests

@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/asset_visual_slot.gd" id="1"]
+
+[sub_resource type="StandardMaterial3D" id="R1"]
+albedo_color = Color(0.46, 0.47, 0.44, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(2.5, 0.25, 0.9)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R3"]
+size = Vector3(2.5, 0.25, 0.9)
+
+[sub_resource type="BoxMesh" id="R4"]
+size = Vector3(2.5, 0.75, 0.45)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R5"]
+size = Vector3(2.5, 0.75, 0.45)
+
+[sub_resource type="StandardMaterial3D" id="R6"]
+albedo_color = Color(0.95, 0.59, 0.12, 1)
+roughness = 0.9
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(2.3, 0.14, 0.015)
+material = SubResource("R6")
+
+[node name="JerseyBarrier" type="Node3D"]
+
+
+[node name="Base" type="StaticBody3D" parent="."]
+position = Vector3(0, 0.125, 0)
+collision_layer = 2
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Base"]
+mesh = SubResource("R2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Base"]
+shape = SubResource("R3")
+
+[node name="Upper" type="StaticBody3D" parent="."]
+position = Vector3(0, 0.625, 0)
+collision_layer = 2
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Upper"]
+mesh = SubResource("R4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Upper"]
+shape = SubResource("R5")
+
+[node name="SafetyStripe" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.7, 0.228)
+mesh = SubResource("R7")
+
+[node name="VisualSlot" type="Node3D" parent="."]
+script = ExtResource("1")
+asset_id = "cover_barrier_A"

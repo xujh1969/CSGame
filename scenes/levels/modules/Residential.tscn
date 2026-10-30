@@ -1,0 +1,182 @@
+[gd_scene load_steps=24 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/asset_visual_slot.gd" id="1"]
+
+[sub_resource type="StandardMaterial3D" id="R1"]
+albedo_color = Color(0.55, 0.52, 0.46, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(8, 8.5, 0.6)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R3"]
+size = Vector3(8, 8.5, 0.6)
+
+[sub_resource type="StandardMaterial3D" id="R4"]
+albedo_color = Color(0.1, 0.15, 0.18, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R5"]
+size = Vector3(1.1, 1.5, 0.05)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R6"]
+size = Vector3(1.1, 1.5, 0.05)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(1.1, 1.5, 0.05)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(1.1, 1.5, 0.05)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(1.1, 1.5, 0.05)
+material = SubResource("R4")
+
+[sub_resource type="BoxMesh" id="R10"]
+size = Vector3(1.1, 1.5, 0.05)
+material = SubResource("R4")
+
+[sub_resource type="StandardMaterial3D" id="R11"]
+albedo_color = Color(0.46, 0.47, 0.44, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R12"]
+size = Vector3(1.7, 0.18, 1.1)
+material = SubResource("R11")
+
+[sub_resource type="BoxShape3D" id="R13"]
+size = Vector3(1.7, 0.18, 1.1)
+
+[sub_resource type="StandardMaterial3D" id="R14"]
+albedo_color = Color(0.26, 0.31, 0.33, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(1.7, 0.65, 0.14)
+material = SubResource("R14")
+
+[sub_resource type="BoxShape3D" id="R16"]
+size = Vector3(1.7, 0.65, 0.14)
+
+[sub_resource type="BoxMesh" id="R17"]
+size = Vector3(1.7, 0.18, 1.1)
+material = SubResource("R11")
+
+[sub_resource type="BoxShape3D" id="R18"]
+size = Vector3(1.7, 0.18, 1.1)
+
+[sub_resource type="BoxMesh" id="R19"]
+size = Vector3(1.7, 0.65, 0.14)
+material = SubResource("R14")
+
+[sub_resource type="BoxShape3D" id="R20"]
+size = Vector3(1.7, 0.65, 0.14)
+
+[sub_resource type="BoxMesh" id="R21"]
+size = Vector3(8.1, 0.16, 0.8)
+material = SubResource("R11")
+
+[sub_resource type="BoxShape3D" id="R22"]
+size = Vector3(8.1, 0.16, 0.8)
+
+[node name="Residential" type="Node3D"]
+
+
+[node name="Wall" type="StaticBody3D" parent="."]
+position = Vector3(0, 4.25, -0.3)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Wall"]
+mesh = SubResource("R2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall"]
+shape = SubResource("R3")
+
+[node name="Window_-2_5_4_5" type="MeshInstance3D" parent="."]
+position = Vector3(-2.5, 4.5, 0.025)
+mesh = SubResource("R5")
+
+[node name="Window_-2_5_7_0" type="MeshInstance3D" parent="."]
+position = Vector3(-2.5, 7.0, 0.025)
+mesh = SubResource("R6")
+
+[node name="Window_0_4_5" type="MeshInstance3D" parent="."]
+position = Vector3(0, 4.5, 0.025)
+mesh = SubResource("R7")
+
+[node name="Window_0_7_0" type="MeshInstance3D" parent="."]
+position = Vector3(0, 7.0, 0.025)
+mesh = SubResource("R8")
+
+[node name="Window_2_5_4_5" type="MeshInstance3D" parent="."]
+position = Vector3(2.5, 4.5, 0.025)
+mesh = SubResource("R9")
+
+[node name="Window_2_5_7_0" type="MeshInstance3D" parent="."]
+position = Vector3(2.5, 7.0, 0.025)
+mesh = SubResource("R10")
+
+[node name="Balcony_-2_5" type="StaticBody3D" parent="."]
+position = Vector3(-2.5, 3.7, 0.55)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Balcony_-2_5"]
+mesh = SubResource("R12")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Balcony_-2_5"]
+shape = SubResource("R13")
+
+[node name="Parapet_-2_5" type="StaticBody3D" parent="."]
+position = Vector3(-2.5, 4.1, 1.0)
+collision_layer = 1
+metadata/surface_type = "metal"
+
+[node name="Mesh" type="MeshInstance3D" parent="Parapet_-2_5"]
+mesh = SubResource("R15")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Parapet_-2_5"]
+shape = SubResource("R16")
+
+[node name="Balcony_2_5" type="StaticBody3D" parent="."]
+position = Vector3(2.5, 3.7, 0.55)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Balcony_2_5"]
+mesh = SubResource("R17")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Balcony_2_5"]
+shape = SubResource("R18")
+
+[node name="Parapet_2_5" type="StaticBody3D" parent="."]
+position = Vector3(2.5, 4.1, 1.0)
+collision_layer = 1
+metadata/surface_type = "metal"
+
+[node name="Mesh" type="MeshInstance3D" parent="Parapet_2_5"]
+mesh = SubResource("R19")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Parapet_2_5"]
+shape = SubResource("R20")
+
+[node name="RoofCap" type="StaticBody3D" parent="."]
+position = Vector3(0, 8.58, -0.3)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="RoofCap"]
+mesh = SubResource("R21")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoofCap"]
+shape = SubResource("R22")
+
+[node name="VisualSlot" type="Node3D" parent="."]
+script = ExtResource("1")
+asset_id = "facade_residential_A"

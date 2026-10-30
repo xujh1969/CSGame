@@ -1,0 +1,5 @@
+Baked scenes checked: 8
+Repeated bake byte differences: 0
+Existing gameplay/test files checked: 10
+Existing gameplay/test byte differences: 0
+Git baseline: unavailable (directory is not a repository)

@@ -1,0 +1,33 @@
+00:02.484  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\user_rifle\AR15_SourceInspection_v001.blend"
+NORMALIZED DIAGNOSTIC {'bounds_godot': [[-0.04353409260511398, -0.19996902346611023, -0.4650000035762787], [0.043534085154533386, 0.19996902346611023, 0.4650000035762787]], 'optic': [[-0.04353409260511398, 0.08037009835243225, -0.05836436524987221], [0.034923046827316284, 0.19996902346611023, 0.1435185968875885]], 'magazine': [[-0.022484594956040382, -0.19996902346611023, -0.05740763619542122], [0.013873548246920109, -0.07175906002521515, 0.05740763619542122]]}
+C:\Users\AYOU\Desktop\CS\scripts\tools\prepare_user_rifle.py:52: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material.use_nodes=True
+USER AR BAKE albedo
+Info: Baking map saved to internal image, save it externally or pack it
+USER AR BAKE normal
+Info: Baking map saved to internal image, save it externally or pack it
+USER AR BAKE roughness
+Info: Baking map saved to internal image, save it externally or pack it
+USER AR BAKE metallic
+C:\Users\AYOU\Desktop\CS\scripts\tools\prepare_user_rifle.py:134: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  dark.use_nodes=True
+C:\Users\AYOU\Desktop\CS\scripts\tools\prepare_user_rifle.py:148: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  glass_material.use_nodes=True
+Info: Baking map saved to internal image, save it externally or pack it
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+17:52:40 | INFO: Starting glTF 2.0 export
+17:52:40 | INFO: Extracting primitive: Cylinder.001
+17:52:40 | INFO: Primitives created: 1
+17:52:40 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.001
+17:52:40 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+17:52:40 | INFO: Primitives created: 2
+17:52:40 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj
+17:52:40 | INFO: Primitives created: 2
+17:52:40 | INFO: Finished glTF 2.0 export in 0.319042444229126 s
+
+Info: Saved as "AR15_Prepared_v001.blend"
+USER AR PREPARED {"source_tool": "Hunyuan3D, confirmed by user", "runtime_glb": "assets/models/task009/user_ar15_v001.glb", "source_blend": "assets/source/task009/user_rifle/AR15_Prepared_v001.blend", "raw_sha256": {"assets/models/AR-15\u4f4e\u6a21.glb": "de10d9ba0c9872340143b213ee5cf83478a105c7925e96228628b8ce3765be77", "assets/models/AR-15.glb": "7bc1c2706857791624ba6d8fa6b6690224382f7154e583fb271cd5f392bb7582"}, "raw_files_unchanged": true, "components": {"Rifle_Body": 6528, "Magazine": 328, "Optic_Glass": 188}, "muzzle_godot": [0.0004728611961007118, 0.04336412124335766, -0.536], "sight_center_godot": [0, 0.135, 0.042], "texture_size": [2048, 2048], "scope_bore_radius": 0.019, "license": "User-supplied Hunyuan3D output; terms not supplied; local evaluation"}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

@@ -1,0 +1,150 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/asset_visual_slot.gd" id="1"]
+
+[sub_resource type="StandardMaterial3D" id="R1"]
+albedo_color = Color(0.43, 0.5, 0.49, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(8, 4.2, 0.4)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R3"]
+size = Vector3(8, 4.2, 0.4)
+
+[sub_resource type="BoxMesh" id="R4"]
+size = Vector3(2.8, 2.1, 0.4)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R5"]
+size = Vector3(2.8, 2.1, 0.4)
+
+[sub_resource type="BoxMesh" id="R6"]
+size = Vector3(2.8, 2.1, 0.4)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R7"]
+size = Vector3(2.8, 2.1, 0.4)
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(8, 1.2, 0.4)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R9"]
+size = Vector3(8, 1.2, 0.4)
+
+[sub_resource type="StandardMaterial3D" id="R10"]
+albedo_color = Color(0.46, 0.47, 0.44, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(3, 0.2, 2.2)
+material = SubResource("R10")
+
+[sub_resource type="BoxShape3D" id="R12"]
+size = Vector3(3, 0.2, 2.2)
+
+[sub_resource type="StandardMaterial3D" id="R13"]
+albedo_color = Color(0.1, 0.15, 0.18, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R14"]
+size = Vector3(8, 7.4, 0.4)
+material = SubResource("R13")
+
+[sub_resource type="BoxShape3D" id="R15"]
+size = Vector3(8, 7.4, 0.4)
+
+[sub_resource type="StandardMaterial3D" id="R16"]
+albedo_color = Color(0.95, 0.59, 0.12, 1)
+roughness = 0.9
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="R17"]
+size = Vector3(2.4, 0.06, 0.08)
+material = SubResource("R16")
+
+[node name="HighWindowFacade" type="Node3D"]
+
+
+[node name="LowerWall" type="StaticBody3D" parent="."]
+position = Vector3(0, 2.1, 0.9)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="LowerWall"]
+mesh = SubResource("R2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowerWall"]
+shape = SubResource("R3")
+
+[node name="WindowSide_-2_6" type="StaticBody3D" parent="."]
+position = Vector3(-2.6, 5.25, 0.9)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WindowSide_-2_6"]
+mesh = SubResource("R4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WindowSide_-2_6"]
+shape = SubResource("R5")
+
+[node name="WindowSide_2_6" type="StaticBody3D" parent="."]
+position = Vector3(2.6, 5.25, 0.9)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WindowSide_2_6"]
+mesh = SubResource("R6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WindowSide_2_6"]
+shape = SubResource("R7")
+
+[node name="Lintel" type="StaticBody3D" parent="."]
+position = Vector3(0, 6.9, 0.9)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Lintel"]
+mesh = SubResource("R8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lintel"]
+shape = SubResource("R9")
+
+[node name="WindowFloor" type="StaticBody3D" parent="."]
+position = Vector3(0, 4.1, 0.0)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WindowFloor"]
+mesh = SubResource("R11")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WindowFloor"]
+shape = SubResource("R12")
+
+[node name="RearWall" type="StaticBody3D" parent="."]
+position = Vector3(0, 3.7, -2)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="RearWall"]
+mesh = SubResource("R14")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RearWall"]
+shape = SubResource("R15")
+
+[node name="SillHighlight" type="MeshInstance3D" parent="."]
+position = Vector3(0, 4.23, 1.11)
+mesh = SubResource("R17")
+
+[node name="WindowSign" type="Label3D" parent="."]
+position = Vector3(0, 7.8, 1.0)
+text = "02 / HIGH WINDOW"
+billboard = 1
+font_size = 40
+pixel_size = 0.008
+
+[node name="VisualSlot" type="Node3D" parent="."]
+script = ExtResource("1")
+asset_id = "facade_high_window_A"

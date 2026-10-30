@@ -1,0 +1,7 @@
+Registered 7 environment GLBs; delivered ready vehicle entry is preserved. Original slots unchanged.
+PASS: environment re-registration preserves delivered car entry byte-for-byte as data
+Raw high FBX importer: [remap]
+
+importer="keep"
+
+Imported high FBX artifacts: []

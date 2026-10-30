@@ -1,0 +1,31 @@
+FBX version: 7400
+12:02:03 | INFO: Data are loaded, start creating Blender stuff
+12:02:03 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+12:02:03 | INFO: glTF import finished in 0.02s
+C:\Users\AYOU\Desktop\CS\scripts\tools\prepare_vehicle_asset.py:68: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material.use_nodes = True
+BAKE START albedo
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE COMPLETE albedo 6.541833299997961
+BAKE START normal
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE COMPLETE normal 4.99910909999744
+BAKE START roughness
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE COMPLETE roughness 5.9147202000021935
+BAKE START metallic
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE COMPLETE metallic 5.2136944999947445
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+12:02:41 | INFO: Starting glTF 2.0 export
+12:02:41 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj
+12:02:42 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+12:02:42 | INFO: Primitives created: 1
+12:02:42 | INFO: Finished glTF 2.0 export in 0.5953965187072754 s
+
+Info: Saved as "VehicleBake_v001.blend"
+VEHICLE PREPARE COMPLETE {"source_tool": "Hunyuan3D (confirmed by user)", "blender_version": "5.2.3 LTS", "raw_sha256": {"assets\\models\\废弃汽车-低模.glb": "24a74e143f4b57a1d9f0e9f8a40c3ccfc2596a8a7e846875308766afabca4714", "assets\\models\\废弃汽车.fbx": "4ddeb7e3b9dbd7ac47fcdc011ab2d72ec0a9da0fad27a9642d3c62d1083d7851"}, "raw_files_unchanged": true, "pca_rotation_degrees": -0.537651677528927, "normalization": [{"object": "Vehicle_High_Source", "native_rotated_dimensions": [0.6093871593475342, 1.1399846076965332, 0.4529399823047928], "scale": [2.953787214563637, 3.6842602712738124, 3.311697042878009]}, {"object": "Vehicle_Low_Runtime", "native_rotated_dimensions": [0.8008750081062317, 1.5018868446350098, 0.5957030057907104], "scale": [2.2475417284606287, 2.7964823148981566, 2.5180332907821485]}], "low_triangles": 9614, "high_triangles": 1499788, "runtime_dimensions_godot": [1.8, 1.5, 4.2], "uv_layers": ["UV_Baked"], "texture_size": [2048, 2048], "bake_seconds": {"albedo": 6.541833299997961, "normal": 4.99910909999744, "roughness": 5.9147202000021935, "metallic": 5.2136944999947445}, "runtime_glb": "assets\\models\\task008\\vehicle_final_v001.glb", "runtime_bytes": 6017696, "source_blend": "assets\\source\\task008\\vehicle\\VehicleBake_v001.blend", "license": "User-supplied Hunyuan3D output; usage terms not provided; local sample evaluation"}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

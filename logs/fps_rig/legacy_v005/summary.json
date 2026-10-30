@@ -1,0 +1,130 @@
+{
+  "approved_baseline": false,
+  "fixture": "legacy_v005",
+  "framework_failures": 0,
+  "pose_issue_count": 32,
+  "rendering": "no PNG available",
+  "snapshot_count": 8,
+  "states": [
+    {
+      "issue_count": 4,
+      "issues": [
+        "Right hand contact distance 0.043m > 0.040m",
+        "Right hand grip angle 90.0deg > 25.0deg",
+        "Left hand contact distance 0.178m > 0.040m",
+        "Left hand grip angle 180.0deg > 25.0deg"
+      ],
+      "json": "res://logs/fps_rig/legacy_v005/Idle_2306.json",
+      "png": "",
+      "stage": "Idle",
+      "warnings": [
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 4,
+      "issues": [
+        "Right hand contact distance 0.043m > 0.040m",
+        "Right hand grip angle 90.0deg > 25.0deg",
+        "Left hand contact distance 0.172m > 0.040m",
+        "Left hand grip angle 180.0deg > 25.0deg"
+      ],
+      "json": "res://logs/fps_rig/legacy_v005/ADS_2326.json",
+      "png": "",
+      "stage": "ADS",
+      "warnings": [
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 4,
+      "issues": [
+        "Right hand contact distance 0.043m > 0.040m",
+        "Right hand grip angle 90.0deg > 25.0deg",
+        "Left hand contact distance 0.172m > 0.040m",
+        "Left hand grip angle 180.0deg > 25.0deg"
+      ],
+      "json": "res://logs/fps_rig/legacy_v005/Fire_2345.json",
+      "png": "",
+      "stage": "Fire",
+      "warnings": [
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 4,
+      "issues": [
+        "Right hand contact distance 0.043m > 0.040m",
+        "Right hand grip angle 90.0deg > 25.0deg",
+        "Left hand contact distance 0.178m > 0.040m",
+        "Left hand grip angle 180.0deg > 25.0deg"
+      ],
+      "json": "res://logs/fps_rig/legacy_v005/Reload_start_2362.json",
+      "png": "",
+      "stage": "Reload_start",
+      "warnings": [
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 4,
+      "issues": [
+        "Right hand contact distance 0.043m > 0.040m",
+        "Right hand grip angle 90.0deg > 25.0deg",
+        "Magazine hand contact distance 0.047m > 0.040m",
+        "Magazine hand grip angle 180.0deg > 25.0deg"
+      ],
+      "json": "res://logs/fps_rig/legacy_v005/Old_mag_grasp_2381.json",
+      "png": "",
+      "stage": "Old_mag_grasp",
+      "warnings": [
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 4,
+      "issues": [
+        "Right hand contact distance 0.043m > 0.040m",
+        "Right hand grip angle 90.0deg > 25.0deg",
+        "Magazine hand contact distance 0.047m > 0.040m",
+        "Magazine hand grip angle 180.0deg > 25.0deg"
+      ],
+      "json": "res://logs/fps_rig/legacy_v005/Old_mag_remove_2400.json",
+      "png": "",
+      "stage": "Old_mag_remove",
+      "warnings": [
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 4,
+      "issues": [
+        "Right hand contact distance 0.043m > 0.040m",
+        "Right hand grip angle 90.0deg > 25.0deg",
+        "Magazine hand contact distance 0.047m > 0.040m",
+        "Magazine hand grip angle 180.0deg > 25.0deg"
+      ],
+      "json": "res://logs/fps_rig/legacy_v005/New_mag_insert_2428.json",
+      "png": "",
+      "stage": "New_mag_insert",
+      "warnings": [
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    },
+    {
+      "issue_count": 4,
+      "issues": [
+        "Right hand contact distance 0.043m > 0.040m",
+        "Right hand grip angle 90.0deg > 25.0deg",
+        "Left hand contact distance 0.178m > 0.040m",
+        "Left hand grip angle 180.0deg > 25.0deg"
+      ],
+      "json": "res://logs/fps_rig/legacy_v005/Reload_end_2454.json",
+      "png": "",
+      "stage": "Reload_end",
+      "warnings": [
+        "AnimationTree absent; no state machine transitions to inspect"
+      ]
+    }
+  ]
+}

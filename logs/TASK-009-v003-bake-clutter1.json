@@ -1,0 +1,20 @@
+{
+  "asset": "clutter1",
+  "raw_sha256": {
+    "\u6742\u72691.glb": "e57439b8c3c8348398c1b084d1840222f5be7faf26e8753e52e3a3faa8ddeb6d",
+    "\u6742\u72691-\u4f4e\u6a21.glb": "320cfc32865cb9ffb6aa47b6388e9855e2505d483780e300a86fb4ba07bd6abe"
+  },
+  "raw_files_unchanged": true,
+  "rotation_degrees": 0.0,
+  "target_dimensions_blender": [
+    1.6644595590467561,
+    1.9999999999999998,
+    0.6215827155408298
+  ],
+  "triangles": 10314,
+  "texture_resolution": [
+    2048,
+    2048
+  ],
+  "skin_adjustment": null
+}

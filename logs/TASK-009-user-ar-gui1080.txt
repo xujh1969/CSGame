@@ -1,0 +1,56 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.3.260 - Forward+ - Using Device #0: AMD - AMD Radeon(TM) Graphics
+
+PASS: cinematic sample exists
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: real GLB body and independent magazine load
+PASS: optic has real separate coated transparent glass mesh
+PASS: old box weapon hidden only in cinematic sample
+PASS: shot marker aligns with modeled bore
+PASS: user source rifle hashes remain unchanged
+PASS: actual imported rifle matches registered bounded geometry and PBR textures
+ACTUAL RIFLE TRIANGLES 7044
+PASS: actual imported rifle retains its registered PBR finish
+PASS: first-person weapon does not cast an orphan floating gun shadow
+PASS: all split component and optic-bore faces have explicit materials
+PASS: real scope body has an open sight-axis aperture
+PASS: layered distant building mesh exists
+PASS: actual distant mesh includes tall landmark silhouette
+PASS: camera owns active conservative DOF attributes
+PASS: entire 24m combat range remains inside sharp far region
+PASS: actual render saved: hip
+PASS: ADS aligns open reflex sight without opaque overlay
+PASS: ADS positions actual sight center on camera axis
+PASS: actual render saved: ads
+OPTIC THROUGH-VIEW mean_rgb_difference=0.07604904204453
+PASS: rendered sight glass transmits actual scene rather than an opaque panel
+PASS: new viewmodel fires once through original ammo authority
+PASS: original reload starts
+PASS: real magazine visibly extracts during actual reload
+MAGAZINE FRAMING rect=[P: (613.4728, 449.6776), S: (76.76636, 89.45779)] viewport=(1280.0, 720.0) ratio=1.0
+PASS: extracted magazine remains clearly inside the actual camera frame
+PASS: actual render saved: reload
+PASS: pause freezes reload and visual presentation
+PASS: reload transfers exactly one round without animation duplicating ammo
+PASS: magazine returns to socket after reload
+PASS: near-wall sphere cast retracts weapon
+PASS: entire rendered hip weapon remains in front of wall surface
+PASS: retracted muzzle still cannot shoot through real wall
+PASS: actual render saved: wall
+PASS: entire rendered ADS weapon remains in front of wall surface
+PASS: ADS weapon remains outside oblique wall -30
+PASS: ADS weapon remains outside oblique wall 30
+PASS: weapon smoothly recovers after leaving wall
+PASS: Low disables all added DOF
+PASS: actual render saved: low
+CINEMATIC PERFORMANCE low=true resolution=(1920, 1080) median_ms=7.959 p95_ms=9.334 max_ms=12.491 engine_video_memory_bytes=656095664.0 GPU=AMD Radeon(TM) Graphics
+PASS: Medium restores conservative DOF
+CINEMATIC PERFORMANCE low=false resolution=(1920, 1080) median_ms=20.611 p95_ms=21.537 max_ms=27.376 engine_video_memory_bytes=670251440.0 GPU=AMD Radeon(TM) Graphics
+PASS: new rifle fixture physically reaches route point 1
+PASS: new rifle fixture physically reaches route point 2
+PASS: new rifle fixture physically reaches route point 3
+PASS: new muzzle and lens retain actual combat victory
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: retry retains cinematic scene and rifle
+Audio shutdown mix cycles: 3
+TASK-009 failures: 0

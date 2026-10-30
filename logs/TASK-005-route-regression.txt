@@ -1,0 +1,45 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: fixed layout seed matches JSON
+PASS: baked scene traces exact source JSON
+PASS: player spawn matches JSON
+PASS: finish position matches JSON
+PASS: E01 editor marker matches JSON
+PASS: T1 trigger matches JSON and observes player layer
+PASS: E02 editor marker matches JSON
+PASS: T2 trigger matches JSON and observes player layer
+PASS: E03 editor marker matches JSON
+PASS: T3 trigger matches JSON and observes player layer
+PASS: Residential facade present on side -1
+PASS: Shopfront facade present on side -1
+PASS: Ruin facade present on side -1
+PASS: Residential facade present on side 1
+PASS: Shopfront facade present on side 1
+PASS: Ruin facade present on side 1
+PASS: E01 foot matches physical support surface
+PASS: E02 foot matches physical support surface
+PASS: E03 foot matches physical support surface
+PASS: cover_01 position matches JSON
+PASS: low_concrete_wall blocks real shot ray
+PASS: cover_02 position matches JSON
+PASS: jersey_barrier blocks real shot ray
+PASS: cover_03 position matches JSON
+PASS: wooden_crates blocks real shot ray
+PASS: high-window marker stands on real 4.2m platform
+PASS: high-window opening has visible upper-body sight line
+PASS: corner marker concealed by physical wing wall
+PASS: third marker lower body shielded by low wall
+PASS: entire sampled route has at least 1.2m capsule clearance
+PASS: physical walking reaches route point 1
+PASS: physical walking reaches route point 2
+PASS: physical walking reaches route point 3
+PASS: physical walking reaches route point 4
+PASS: physical walking reaches route point 5
+PASS: physical walking reaches route point 6
+PASS: physical walking reaches route point 7
+PASS: physical walking reaches route point 8
+PASS: walk remains on ground without jumping or falling
+PASS: physical player reaches finish trigger
+Walk frames: 1232; final position: (0.000081, 0.000838, -77.90866)
+Audio shutdown mix cycles: 3
+TASK-003 failures: 0

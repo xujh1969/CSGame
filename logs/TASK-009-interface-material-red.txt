@@ -1,0 +1,3 @@
+Old derived v001 explicit GLB material check
+Missing material references: [('mesh_rep_0_ori_repair_quad.obj.001', 1), ('mesh_rep_0_ori_repair_quad.obj', 1)]
+FAIL

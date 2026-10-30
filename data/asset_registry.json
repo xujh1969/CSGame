@@ -1,0 +1,1862 @@
+{
+  "schema_version": "1.0",
+  "notice": "规划资产槽位；列为 missing 的路径不存在时必须生成灰盒替代，不能谎称模型已存在",
+  "entries": [
+    {
+      "id": "cover_wall_A",
+      "category": "cover",
+      "proposed_path": "res://assets/models/cover_concrete_wall_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "generated_box_mesh",
+      "fallback_scene": "res://scenes/cover/ConcreteLowWall.tscn",
+      "collision": "simple_boxes"
+    },
+    {
+      "id": "cover_box_A",
+      "category": "cover",
+      "proposed_path": "res://assets/models/prop_crate_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "generated_box_mesh",
+      "fallback_scene": "res://scenes/cover/WoodenCrates.tscn",
+      "collision": "box"
+    },
+    {
+      "id": "cover_barrier_A",
+      "category": "cover",
+      "proposed_path": "res://assets/models/cover_jersey_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "compound_box_mesh",
+      "fallback_scene": "res://scenes/cover/JerseyBarrier.tscn",
+      "collision": "simple_boxes"
+    },
+    {
+      "id": "facade_residential_A",
+      "category": "building",
+      "proposed_path": "res://assets/models/facade_residential_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "compound_box_mesh",
+      "fallback_scene": "res://scenes/levels/modules/Residential.tscn",
+      "collision": "simple_boxes"
+    },
+    {
+      "id": "facade_shopfront_A",
+      "category": "building",
+      "proposed_path": "res://assets/models/facade_shopfront_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "compound_box_mesh",
+      "fallback_scene": "res://scenes/levels/modules/Shopfront.tscn",
+      "collision": "simple_boxes"
+    },
+    {
+      "id": "facade_ruin_A",
+      "category": "building",
+      "proposed_path": "res://assets/models/facade_ruin_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "compound_box_mesh",
+      "fallback_scene": "res://scenes/levels/modules/Ruin.tscn",
+      "collision": "simple_boxes"
+    },
+    {
+      "id": "facade_high_window_A",
+      "category": "building",
+      "proposed_path": "res://assets/models/facade_high_window_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "compound_box_mesh",
+      "fallback_scene": "res://scenes/levels/modules/HighWindowFacade.tscn",
+      "collision": "compound_boxes_with_opening"
+    },
+    {
+      "id": "rifle_A",
+      "category": "weapon_viewmodel",
+      "proposed_path": "res://assets/models/rifle_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "simple_mesh_placeholder",
+      "collision": "none"
+    },
+    {
+      "id": "enemy_light_A",
+      "category": "character",
+      "proposed_path": "res://assets/models/enemy_masked_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "capsule_placeholder",
+      "fallback_scene": "res://scenes/enemies/EnemyBase.tscn",
+      "collision": "capsule"
+    },
+    {
+      "id": "vehicle_A",
+      "category": "prop",
+      "proposed_path": "res://assets/models/car_damaged_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "primitive_mesh",
+      "collision": "simple_primitive"
+    },
+    {
+      "id": "audio_shot_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/shot.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "audio_reload_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/reload.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "audio_hurt_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/hurt.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "audio_step_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/step.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "audio_alert_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/alert.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "audio_empty_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/empty.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "audio_jump_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/jump.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "audio_land_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/land.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "audio_victory_placeholder",
+      "category": "audio",
+      "proposed_path": "res://assets/audio/victory.wav",
+      "status": "ready",
+      "required_for_mvp": true,
+      "placeholder": true,
+      "fallback": "local_procedural_synthesis",
+      "source": "scripts/tools/generate_placeholder_audio.py",
+      "license": "project-generated placeholder; no third-party recording",
+      "usage_restrictions": "temporary synthetic sound; not a final production asset"
+    },
+    {
+      "id": "facade_ac_A",
+      "category": "decoration",
+      "proposed_path": "res://assets/models/facade_ac_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "generated_box_mesh",
+      "fallback_scene": "res://scenes/levels/modules/FacadeAC.tscn",
+      "collision": "none"
+    },
+    {
+      "id": "facade_vent_A",
+      "category": "decoration",
+      "proposed_path": "res://assets/models/facade_vent_A.glb",
+      "status": "missing",
+      "required_for_mvp": false,
+      "fallback": "generated_box_mesh",
+      "fallback_scene": "res://scenes/levels/modules/FacadeVent.tscn",
+      "collision": "none"
+    },
+    {
+      "id": "sample_residential_A",
+      "category": "sample_environment",
+      "proposed_path": "res://assets/models/task008/residential_v002.glb",
+      "status": "ready",
+      "required_for_mvp": false,
+      "source": "scripts/tools/build_sample_assets.py",
+      "source_blend": "res://assets/source/task008/StreetKit_v002.blend",
+      "license": "Original project-generated mesh and mathematical maps; imagegen plaster albedo; sample use, release review pending",
+      "units": "meters",
+      "forward_axis": "+Z",
+      "triangles": 3136,
+      "bounds_godot": [
+        [
+          -4.05,
+          0.0,
+          -1.8
+        ],
+        [
+          4.05,
+          8.620000000000001,
+          1.13
+        ]
+      ],
+      "collision": "separate_authored_simple_shapes",
+      "review_status": "sample_art_pending_visual_acceptance",
+      "usage_restrictions": "TASK-008 sample; not approved as final reference-quality art",
+      "preview_file": "docs/asset_requests/TASK-008/preview_residential_v002.png"
+    },
+    {
+      "id": "sample_shopfront_A",
+      "category": "sample_environment",
+      "proposed_path": "res://assets/models/task008/shopfront_v001.glb",
+      "status": "ready",
+      "required_for_mvp": false,
+      "source": "scripts/tools/build_sample_assets.py",
+      "source_blend": "res://assets/source/task008/StreetKit_v002.blend",
+      "license": "Original project-generated mesh and mathematical maps; imagegen plaster albedo; sample use, release review pending",
+      "units": "meters",
+      "forward_axis": "+Z",
+      "triangles": 1712,
+      "bounds_godot": [
+        [
+          -4.05,
+          0.0,
+          -1.8
+        ],
+        [
+          4.05,
+          7.619999999999999,
+          1.35
+        ]
+      ],
+      "collision": "separate_authored_simple_shapes",
+      "review_status": "sample_art_pending_visual_acceptance",
+      "usage_restrictions": "TASK-008 sample; not approved as final reference-quality art",
+      "preview_file": "docs/asset_requests/TASK-008/preview_shopfront_v001.png"
+    },
+    {
+      "id": "sample_road_A",
+      "category": "sample_environment",
+      "proposed_path": "res://assets/models/task008/road_v001.glb",
+      "status": "ready",
+      "required_for_mvp": false,
+      "source": "scripts/tools/build_sample_assets.py",
+      "source_blend": "res://assets/source/task008/StreetKit_v002.blend",
+      "license": "Original project-generated mesh and mathematical maps; imagegen plaster albedo; sample use, release review pending",
+      "units": "meters",
+      "forward_axis": "+Z",
+      "triangles": 1044,
+      "bounds_godot": [
+        [
+          -8.0,
+          -0.3,
+          -28.0
+        ],
+        [
+          8.0,
+          0.01,
+          6.0
+        ]
+      ],
+      "collision": "separate_authored_simple_shapes",
+      "review_status": "sample_art_pending_visual_acceptance",
+      "usage_restrictions": "TASK-008 sample; not approved as final reference-quality art",
+      "preview_file": "docs/asset_requests/TASK-008/preview_road_v001.png"
+    },
+    {
+      "id": "sample_barrier_A",
+      "category": "sample_environment",
+      "proposed_path": "res://assets/models/task008/barrier_v001.glb",
+      "status": "ready",
+      "required_for_mvp": false,
+      "source": "scripts/tools/build_sample_assets.py",
+      "source_blend": "res://assets/source/task008/StreetKit_v002.blend",
+      "license": "Original project-generated mesh and mathematical maps; imagegen plaster albedo; sample use, release review pending",
+      "units": "meters",
+      "forward_axis": "+Z",
+      "triangles": 1968,
+      "bounds_godot": [
+        [
+          -1.25,
+          0.0,
+          -0.45
+        ],
+        [
+          1.25,
+          1.0779999494552612,
+          0.45
+        ]
+      ],
+      "collision": "separate_authored_simple_shapes",
+      "review_status": "sample_art_pending_visual_acceptance",
+      "usage_restrictions": "TASK-008 sample; not approved as final reference-quality art",
+      "preview_file": "docs/asset_requests/TASK-008/preview_barrier_v001.png"
+    },
+    {
+      "id": "sample_crates_A",
+      "category": "sample_environment",
+      "proposed_path": "res://assets/models/task008/crates_v001.glb",
+      "status": "ready",
+      "required_for_mvp": false,
+      "source": "scripts/tools/build_sample_assets.py",
+      "source_blend": "res://assets/source/task008/StreetKit_v002.blend",
+      "license": "Original project-generated mesh and mathematical maps; imagegen plaster albedo; sample use, release review pending",
+      "units": "meters",
+      "forward_axis": "+Z",
+      "triangles": 3240,
+      "bounds_godot": [
+        [
+          -0.9,
+          0.0,
+          -0.4225
+        ],
+        [
+          0.9,
+          1.2,
+          0.4225
+        ]
+      ],
+      "collision": "separate_authored_simple_shapes",
+      "review_status": "sample_art_pending_visual_acceptance",
+      "usage_restrictions": "TASK-008 sample; not approved as final reference-quality art",
+      "preview_file": "docs/asset_requests/TASK-008/preview_crates_v001.png"
+    },
+    {
+      "id": "sample_vehicle_proxy",
+      "category": "sample_environment",
+      "proposed_path": "res://assets/models/task008/vehicle_proxy_v001.glb",
+      "status": "ready",
+      "required_for_mvp": false,
+      "source": "scripts/tools/build_sample_assets.py",
+      "source_blend": "res://assets/source/task008/StreetKit_v002.blend",
+      "license": "Original project-generated mesh and mathematical maps; imagegen plaster albedo; sample use, release review pending",
+      "units": "meters",
+      "forward_axis": "+Z",
+      "triangles": 200,
+      "bounds_godot": [
+        [
+          -0.949999988079071,
+          0.0,
+          -2.1
+        ],
+        [
+          0.949999988079071,
+          1.295,
+          2.1
+        ]
+      ],
+      "collision": "separate_authored_simple_shapes",
+      "review_status": "sample_art_pending_visual_acceptance",
+      "usage_restrictions": "TASK-008 sample; not approved as final reference-quality art",
+      "preview_file": "docs/asset_requests/TASK-008/preview_vehicle_proxy_v001.png",
+      "placeholder": true
+    },
+    {
+      "id": "sample_street_details_A",
+      "category": "sample_environment",
+      "proposed_path": "res://assets/models/task008/street_details_v002.glb",
+      "status": "ready",
+      "required_for_mvp": false,
+      "source": "scripts/tools/build_sample_assets.py",
+      "source_blend": "res://assets/source/task008/StreetKit_v002.blend",
+      "license": "Original project-generated mesh and mathematical maps; imagegen plaster albedo; sample use, release review pending",
+      "units": "meters",
+      "forward_axis": "+Z",
+      "triangles": 8224,
+      "bounds_godot": [
+        [
+          -5.8016486167907715,
+          0.0002936394833884109,
+          -26.114370483559608
+        ],
+        [
+          5.8051335127272194,
+          6.310260772705078,
+          3.6319115850394135
+        ]
+      ],
+      "collision": "separate_authored_simple_shapes",
+      "review_status": "sample_art_pending_visual_acceptance",
+      "usage_restrictions": "TASK-008 sample; not approved as final reference-quality art",
+      "preview_file": "docs/asset_requests/TASK-008/preview_street_details_v002.png"
+    },
+    {
+      "id": "sample_vehicle_final",
+      "category": "prop",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task008/vehicle_final_v001.glb",
+      "required_for_mvp": false,
+      "fallback_asset": "sample_vehicle_proxy",
+      "handoff": "docs/asset_requests/TASK-008_FIRST_BATCH.md",
+      "collision": "two_convex_support_hulls",
+      "source": "User delivery, Hunyuan3D; low geometry + high model material bake",
+      "source_blend": "res://assets/source/task008/vehicle/VehicleBake_v001.blend",
+      "license": "User-supplied Hunyuan3D output; usage terms not provided; local sample evaluation",
+      "units": "meters",
+      "forward_axis": "-Z",
+      "triangles": 9614,
+      "dimensions_m": [
+        1.8,
+        1.5,
+        4.2
+      ],
+      "texture_resolution": [
+        2048,
+        2048
+      ],
+      "collision_hulls": [
+        [
+          [
+            -0.0195454228669405,
+            0.590164065361023,
+            2.0999999046325684
+          ],
+          [
+            -0.40127062797546387,
+            0.3147541582584381,
+            2.0736961364746094
+          ],
+          [
+            -0.4978410005569458,
+            0.4918046295642853,
+            2.072568416595459
+          ],
+          [
+            0.4372135400772095,
+            0.3147541582584381,
+            2.0725595951080322
+          ],
+          [
+            0.5470752120018005,
+            0.590164065361023,
+            2.0574569702148438
+          ],
+          [
+            0.18729856610298157,
+            0.7819676995277405,
+            2.0314066410064697
+          ],
+          [
+            0.5823974609375,
+            0.3147541582584381,
+            2.030557870864868
+          ],
+          [
+            -0.6203349232673645,
+            0.3147541582584381,
+            2.016515016555786
+          ],
+          [
+            0.6131246089935303,
+            0.590164065361023,
+            2.030916690826416
+          ],
+          [
+            -0.6510619521141052,
+            0.590164065361023,
+            2.0161561965942383
+          ],
+          [
+            0.49907955527305603,
+            0.24098335206508636,
+            2.0186614990234375
+          ],
+          [
+            -0.536852240562439,
+            0.24098335206508636,
+            2.006566047668457
+          ],
+          [
+            -0.42268362641334534,
+            0.7819676995277405,
+            2.0024373531341553
+          ],
+          [
+            0.6572253108024597,
+            0.48196667432785034,
+            2.004122495651245
+          ],
+          [
+            -0.6947508454322815,
+            0.48196667432785034,
+            1.9883370399475098
+          ],
+          [
+            0.4641279876232147,
+            0.7819676995277405,
+            1.9964063167572021
+          ],
+          [
+            0.6660884022712708,
+            0.580328643321991,
+            1.9932998418807983
+          ],
+          [
+            -0.7034491896629333,
+            0.580328643321991,
+            1.977309226989746
+          ],
+          [
+            -0.5585101842880249,
+            0.7819676995277405,
+            1.9680780172348022
+          ],
+          [
+            -0.6374412178993225,
+            0.24098335206508636,
+            1.9562329053878784
+          ],
+          [
+            0.5961441397666931,
+            0.7819676995277405,
+            1.954248070716858
+          ],
+          [
+            -0.6329283118247986,
+            0.7819676995277405,
+            1.9398975372314453
+          ],
+          [
+            0.6708483695983887,
+            0.3147541582584381,
+            1.9441967010498047
+          ],
+          [
+            -0.7074677348136902,
+            0.3147541582584381,
+            1.9281035661697388
+          ],
+          [
+            0.6402449011802673,
+            0.24098335206508636,
+            1.927453875541687
+          ],
+          [
+            0.6973075270652771,
+            0.5606552362442017,
+            1.9281203746795654
+          ],
+          [
+            0.6490646600723267,
+            0.7819676995277405,
+            1.9220951795578003
+          ],
+          [
+            -0.685354471206665,
+            0.7819676995277405,
+            1.9065146446228027
+          ],
+          [
+            0.6801624298095703,
+            0.7819676995277405,
+            1.8732997179031372
+          ],
+          [
+            -0.7157108187675476,
+            0.7819676995277405,
+            1.8570014238357544
+          ],
+          [
+            0.714164137840271,
+            0.009835466742515564,
+            1.5732797384262085
+          ],
+          [
+            -0.7431631684303284,
+            0.009835466742515564,
+            1.55626380443573
+          ],
+          [
+            0.7276613712310791,
+            0.0,
+            1.5297404527664185
+          ],
+          [
+            0.7629424333572388,
+            0.009835466742515564,
+            1.5083025693893433
+          ],
+          [
+            -0.7909528613090515,
+            0.009835466742515564,
+            1.490159273147583
+          ],
+          [
+            0.7601392269134521,
+            0.8114765286445618,
+            1.1641558408737183
+          ],
+          [
+            -0.7849776148796082,
+            0.8114765286445618,
+            1.1461149454116821
+          ],
+          [
+            -0.753879964351654,
+            0.850820779800415,
+            1.097319483757019
+          ],
+          [
+            0.7038294672966003,
+            0.8557385206222534,
+            -0.6826974749565125
+          ],
+          [
+            -0.697197437286377,
+            0.850820779800415,
+            -1.1797224283218384
+          ],
+          [
+            0.7131204605102539,
+            0.8213119506835938,
+            -1.3325815200805664
+          ],
+          [
+            -0.774684488773346,
+            0.03442653641104698,
+            -1.3827266693115234
+          ],
+          [
+            0.7837648987770081,
+            0.009835466742515564,
+            -1.386377215385437
+          ],
+          [
+            -0.770130455493927,
+            0.009835466742515564,
+            -1.4045206308364868
+          ],
+          [
+            0.7488546371459961,
+            0.0,
+            -1.4140962362289429
+          ],
+          [
+            -0.7348081469535828,
+            0.0,
+            -1.4314197301864624
+          ],
+          [
+            -0.7206106185913086,
+            0.7180323004722595,
+            -1.567806601524353
+          ],
+          [
+            0.6490071415901184,
+            0.8213119506835938,
+            -1.5627386569976807
+          ],
+          [
+            -0.6327364444732666,
+            0.8213119506835938,
+            -1.5777040719985962
+          ],
+          [
+            0.6410937309265137,
+            0.7868853807449341,
+            -1.6775363683700562
+          ],
+          [
+            0.7071841359138489,
+            0.6737703084945679,
+            -1.7095353603363037
+          ],
+          [
+            -0.6578795909881592,
+            0.7180323004722595,
+            -1.7364000082015991
+          ],
+          [
+            -0.5743969082832336,
+            0.7721322178840637,
+            -1.7463489770889282
+          ],
+          [
+            0.7294600009918213,
+            0.5311464071273804,
+            -1.7529723644256592
+          ],
+          [
+            -0.6878651976585388,
+            0.526228666305542,
+            -1.8350677490234375
+          ],
+          [
+            0.6861006617546082,
+            0.2016390860080719,
+            -1.8244872093200684
+          ],
+          [
+            -0.35860735177993774,
+            0.7819676995277405,
+            -1.8366851806640625
+          ],
+          [
+            0.6294499635696411,
+            0.17705048620700836,
+            -1.8797693252563477
+          ],
+          [
+            0.6821233034133911,
+            0.3983604311943054,
+            -1.879154086112976
+          ],
+          [
+            -0.6215275526046753,
+            0.2016390860080719,
+            -1.8998373746871948
+          ],
+          [
+            0.3705483078956604,
+            0.7377057075500488,
+            -1.8937183618545532
+          ],
+          [
+            0.6516022682189941,
+            0.5213109254837036,
+            -1.9068222045898438
+          ],
+          [
+            -0.6301412582397461,
+            0.5213109254837036,
+            -1.9217876195907593
+          ],
+          [
+            0.5860061049461365,
+            0.2016390860080719,
+            -1.940361499786377
+          ],
+          [
+            -0.5640507936477661,
+            0.2016390860080719,
+            -1.9537893533706665
+          ],
+          [
+            0.5948692560195923,
+            0.5213109254837036,
+            -1.9511816501617432
+          ],
+          [
+            -0.572708010673523,
+            0.39344269037246704,
+            -1.970275640487671
+          ],
+          [
+            0.5072421431541443,
+            0.18196818232536316,
+            -1.9740517139434814
+          ],
+          [
+            -0.484792560338974,
+            0.18196818232536316,
+            -1.985634684562683
+          ],
+          [
+            0.45050686597824097,
+            0.21147450804710388,
+            -2.01841139793396
+          ],
+          [
+            -0.4273982346057892,
+            0.21147450804710388,
+            -2.0286614894866943
+          ],
+          [
+            -0.43174853920936584,
+            0.51639324426651,
+            -2.0341739654541016
+          ],
+          [
+            0.4550219178199768,
+            0.38360726833343506,
+            -2.0347464084625244
+          ],
+          [
+            0.19173096120357513,
+            0.19180361926555634,
+            -2.0487442016601562
+          ],
+          [
+            -0.3613511621952057,
+            0.51639324426651,
+            -2.055201768875122
+          ],
+          [
+            -0.172476127743721,
+            0.21147450804710388,
+            -2.0693821907043457
+          ],
+          [
+            0.012007415294647217,
+            0.24098335206508636,
+            -2.083616256713867
+          ],
+          [
+            0.19636739790439606,
+            0.51639324426651,
+            -2.081463575363159
+          ],
+          [
+            0.01208979357033968,
+            0.51639324426651,
+            -2.094538688659668
+          ]
+        ],
+        [
+          [
+            0.18729856610298157,
+            0.7819676995277405,
+            2.0314066410064697
+          ],
+          [
+            -0.22531844675540924,
+            0.7819676995277405,
+            2.0265889167785645
+          ],
+          [
+            -0.0189687330275774,
+            0.8754093647003174,
+            2.023536443710327
+          ],
+          [
+            0.384993314743042,
+            0.7819676995277405,
+            2.0118677616119385
+          ],
+          [
+            -0.42268362641334534,
+            0.7819676995277405,
+            2.0024373531341553
+          ],
+          [
+            0.5213141441345215,
+            0.7819676995277405,
+            1.9806859493255615
+          ],
+          [
+            -0.5585101842880249,
+            0.7819676995277405,
+            1.9680780172348022
+          ],
+          [
+            -0.5014476180076599,
+            0.8754093647003174,
+            1.9687443971633911
+          ],
+          [
+            0.5961441397666931,
+            0.7819676995277405,
+            1.954248070716858
+          ],
+          [
+            -0.6329283118247986,
+            0.7819676995277405,
+            1.9398975372314453
+          ],
+          [
+            0.3679283559322357,
+            0.9885244965553284,
+            1.9461218118667603
+          ],
+          [
+            0.6490646600723267,
+            0.7819676995277405,
+            1.9220951795578003
+          ],
+          [
+            -0.685354471206665,
+            0.7819676995277405,
+            1.9065146446228027
+          ],
+          [
+            0.6095591187477112,
+            0.8754093647003174,
+            1.9216339588165283
+          ],
+          [
+            0.6537010669708252,
+            0.8754093647003174,
+            1.889375925064087
+          ],
+          [
+            -0.6894965767860413,
+            0.8754093647003174,
+            1.8736927509307861
+          ],
+          [
+            0.6801624298095703,
+            0.7819676995277405,
+            1.8732997179031372
+          ],
+          [
+            -0.7157108187675476,
+            0.7819676995277405,
+            1.8570014238357544
+          ],
+          [
+            0.6804506778717041,
+            0.8754093647003174,
+            1.835067868232727
+          ],
+          [
+            -0.6316513419151306,
+            1.0524598360061646,
+            1.7705891132354736
+          ],
+          [
+            0.5716188549995422,
+            1.1508193016052246,
+            1.7136298418045044
+          ],
+          [
+            -0.6047780513763428,
+            1.1508193016052246,
+            1.6998943090438843
+          ],
+          [
+            -0.732032060623169,
+            0.8754093647003174,
+            1.6929465532302856
+          ],
+          [
+            -0.02059815265238285,
+            1.4901645183563232,
+            1.657556414604187
+          ],
+          [
+            -0.007389196660369635,
+            1.4950822591781616,
+            1.652248740196228
+          ],
+          [
+            -0.011737263761460781,
+            1.5,
+            1.6467363834381104
+          ],
+          [
+            -0.020515773445367813,
+            1.5,
+            1.6466338634490967
+          ],
+          [
+            0.4897403419017792,
+            1.3475406169891357,
+            1.5105743408203125
+          ],
+          [
+            -0.5198513865470886,
+            1.3475406169891357,
+            1.4987863302230835
+          ],
+          [
+            0.4900698959827423,
+            1.357378602027893,
+            1.4668813943862915
+          ],
+          [
+            -0.7558571696281433,
+            0.7327879667282104,
+            1.3594781160354614
+          ],
+          [
+            -0.5173799395561218,
+            1.3819671869277954,
+            1.1710894107818604
+          ],
+          [
+            0.7850695252418518,
+            0.7377057075500488,
+            0.18672852218151093
+          ],
+          [
+            -0.4291830360889435,
+            1.377049446105957,
+            -0.045933887362480164
+          ],
+          [
+            0.5505077242851257,
+            1.3229520320892334,
+            -0.14373883605003357
+          ],
+          [
+            0.5073521137237549,
+            1.3081963062286377,
+            -0.24256019294261932
+          ],
+          [
+            -0.5765318870544434,
+            1.2688521146774292,
+            -0.29891255497932434
+          ],
+          [
+            0.8997117877006531,
+            0.9639358520507812,
+            -0.4619255065917969
+          ],
+          [
+            -0.8867475390434265,
+            0.8754093647003174,
+            -0.4937078058719635
+          ],
+          [
+            0.8866240382194519,
+            0.993442177772522,
+            -0.4730019271373749
+          ],
+          [
+            -0.8867475390434265,
+            0.993442177772522,
+            -0.4937078058719635
+          ],
+          [
+            0.9000000357627869,
+            0.9049181938171387,
+            -0.500157356262207
+          ],
+          [
+            -0.8997116684913635,
+            0.9049181938171387,
+            -0.5211707353591919
+          ],
+          [
+            -0.8997116684913635,
+            0.9590156674385071,
+            -0.5211707353591919
+          ],
+          [
+            0.7191985249519348,
+            0.7573765516281128,
+            -1.5564571619033813
+          ],
+          [
+            -0.7030102014541626,
+            0.7573765516281128,
+            -1.5730628967285156
+          ],
+          [
+            0.6410937309265137,
+            0.7868853807449341,
+            -1.6775363683700562
+          ],
+          [
+            0.6674726605415344,
+            0.7524588704109192,
+            -1.6826903820037842
+          ],
+          [
+            -0.6493895053863525,
+            0.7524588704109192,
+            -1.698065996170044
+          ],
+          [
+            0.6500781774520874,
+            0.7524588704109192,
+            -1.7047406435012817
+          ],
+          [
+            -0.6316654086112976,
+            0.7524588704109192,
+            -1.7197061777114868
+          ],
+          [
+            -0.5743969082832336,
+            0.7721322178840637,
+            -1.7463489770889282
+          ],
+          [
+            -0.35860735177993774,
+            0.7819676995277405,
+            -1.8366851806640625
+          ],
+          [
+            0.3705483078956604,
+            0.7377057075500488,
+            -1.8937183618545532
+          ],
+          [
+            -0.3493345379829407,
+            0.7377057075500488,
+            -1.9021236896514893
+          ],
+          [
+            0.010812848806381226,
+            0.7377057075500488,
+            -1.9252275228500366
+          ]
+        ]
+      ],
+      "raw_sha256": {
+        "assets\\models\\废弃汽车-低模.glb": "24a74e143f4b57a1d9f0e9f8a40c3ccfc2596a8a7e846875308766afabca4714",
+        "assets\\models\\废弃汽车.fbx": "4ddeb7e3b9dbd7ac47fcdc011ab2d72ec0a9da0fad27a9642d3c62d1083d7851"
+      },
+      "placeholder": false,
+      "review_status": "vehicle_integration_pending_visual_acceptance",
+      "preview_file": "docs/asset_requests/TASK-008/vehicle_runtime_front.png"
+    },
+    {
+      "id": "sample_smoke_sprite",
+      "category": "vfx_texture",
+      "proposed_path": "res://assets/textures/task008/smoke_puff_v001.png",
+      "status": "ready",
+      "required_for_mvp": false,
+      "source": "built-in imagegen, original smoke sprite with tested alpha",
+      "license": "AI-generated sample VFX; release review pending",
+      "usage_restrictions": "2D billboard smoke texture, not a 3D model",
+      "review_status": "sample_art_pending_visual_acceptance"
+    },
+    {
+      "id": "fps_rifle_m4_sample",
+      "category": "weapon",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v003/ar15_revision.glb",
+      "source": "User delivery; new batch tool not reconfirmed; derived LP + HP bake",
+      "license": "User supplied; terms not supplied; local evaluation",
+      "source_blend": "res://assets/source/task009/v003/new_ar/Derived.blend",
+      "raw_sha256": {
+        "assets/models/AR-15-1.glb": "57d9148714bbf834bd19a842adcc4ad561133ac4e6577ec766207c0d7b2391a4",
+        "assets/models/AR-15-1低模.glb": "10a9da3c56f27e2bae2c6d11f13292611d9a386a9b9cb717a4e341e0e35bf9d1"
+      },
+      "texture_resolution": [
+        2048,
+        2048
+      ],
+      "units": "meters",
+      "review_status": "v003_pending_user_acceptance",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "triangles": 7585,
+      "components": {
+        "Rifle_Body": 7263,
+        "Magazine": 260,
+        "Optic_Glass": 62
+      },
+      "mounts": {
+        "muzzle": [
+          4.889443516731262e-08,
+          0.04902336396276952,
+          -0.518
+        ],
+        "sight": [
+          0,
+          0.135,
+          0.042
+        ]
+      },
+      "fallback_asset": "fps_rifle_ar15_v002"
+    },
+    {
+      "id": "cinematic_skyline",
+      "category": "environment",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/skyline_v002.glb",
+      "required_for_mvp": false,
+      "source": "Original project meshes and seeded mathematical PBR; no external meshes",
+      "license": "Project original; fictional unbranded rifle",
+      "triangles": 13536,
+      "source_blend": "res://assets/source/task009/CinematicKit_v002.blend",
+      "texture_resolutions": {},
+      "units": "meters",
+      "forward_axis": "-Z",
+      "collision": "none; presentation only",
+      "review_status": "sample_pending_user_visual_acceptance",
+      "usage_restrictions": "TASK-009 sample, not final photographic quality or official manufacturer asset"
+    },
+    {
+      "id": "fps_rifle_m4_fallback",
+      "category": "weapon",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/rifle_v002.glb",
+      "required_for_mvp": false,
+      "source": "Original project meshes and seeded mathematical PBR; no external meshes",
+      "license": "Project original; fictional unbranded rifle",
+      "triangles": 16828,
+      "source_blend": "res://assets/source/task009/CinematicKit_v002.blend",
+      "texture_resolutions": {
+        "anodized": [
+          2048,
+          2048
+        ],
+        "polymer": [
+          1024,
+          1024
+        ]
+      },
+      "units": "meters",
+      "forward_axis": "-Z",
+      "collision": "none; presentation only",
+      "review_status": "sample_pending_user_visual_acceptance",
+      "usage_restrictions": "TASK-009 sample, not final photographic quality or official manufacturer asset"
+    },
+    {
+      "id": "fps_rifle_ar15_v002",
+      "category": "weapon",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/user_ar15_v002.glb",
+      "required_for_mvp": false,
+      "source": "Hunyuan3D, confirmed by user; user LP + HP PBR bake; magazine split and optic bore repaired",
+      "source_blend": "res://assets/source/task009/user_rifle/AR15_Prepared_v002.blend",
+      "license": "User-supplied Hunyuan3D output; terms not supplied; local evaluation",
+      "triangles": 7044,
+      "components": {
+        "Rifle_Body": 6528,
+        "Magazine": 328,
+        "Optic_Glass": 188
+      },
+      "raw_sha256": {
+        "assets/models/AR-15低模.glb": "de10d9ba0c9872340143b213ee5cf83478a105c7925e96228628b8ce3765be77",
+        "assets/models/AR-15.glb": "7bc1c2706857791624ba6d8fa6b6690224382f7154e583fb271cd5f392bb7582"
+      },
+      "texture_resolution": [
+        2048,
+        2048
+      ],
+      "mounts": {
+        "muzzle": [
+          0.0004728611961007118,
+          0.04336412124335766,
+          -0.536
+        ],
+        "sight": [
+          0,
+          0.135,
+          0.042
+        ]
+      },
+      "user_delivery": true,
+      "fallback_asset": "fps_rifle_m4_fallback",
+      "units": "meters",
+      "forward_axis": "-Z",
+      "collision": "visual only; existing weapon collision queries authoritative",
+      "review_status": "user_ar15_pending_visual_acceptance"
+    },
+    {
+      "id": "player_fp_arms",
+      "category": "character",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v005/gloves_rigged.glb",
+      "source": "https://sketchfab.com/3d-models/hand-with-gloves-5a6a434b8ec943ffacc581358781eecb",
+      "license": "CC-BY-4.0; embedded metadata, download page fetch 403",
+      "source_blend": "res://assets/source/task009/v005/Gloves_Derived.blend",
+      "raw_sha256": {
+        "assets/models/hand_with_gloves.glb": "c93b94a69940656937e35848e9eb7f706e63c214f1972bf662ae64acc9630455"
+      },
+      "units": "meters",
+      "review_status": "v005_pending_user_acceptance",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "triangles": 19734,
+      "bones": [
+        "GLTF_created_0_rootJoint",
+        "camera_2",
+        "camera_target_3",
+        "pose_controller_61",
+        "elbow_IK_L.L_4",
+        "hand_IK_L.L_5",
+        "body_58",
+        "shoulder_L.L_31",
+        "shoulder_L.R_57",
+        "elbow_IK_L.R_59",
+        "hand_IK_L.R_60",
+        "R_Upper",
+        "R_Forearm",
+        "R_Hand",
+        "thumb_L.L_8",
+        "thumb_L.002.L_7",
+        "thumb_L.001.L_6",
+        "index_L.L_12",
+        "index_L.003.L_11",
+        "index_L.002.L_10",
+        "index_L.001.L_9",
+        "middle_L.L_16",
+        "middle_L.003.L_15",
+        "middle_L.002.L_14",
+        "middle_L.001.L_13",
+        "ring_L.L_20",
+        "ring_L.001.L_19",
+        "ring_L.002.L_18",
+        "ring_L.003.L_17",
+        "pink_L.L_24",
+        "pink_L.003.L_23",
+        "pink_L.002.L_22",
+        "pink_L.001.L_21",
+        "twist_arm_1_L.L_26",
+        "twist_arm_3_L.L_27",
+        "twist_arm_2_L.L_28",
+        "L_Upper",
+        "L_Forearm",
+        "L_Hand",
+        "thumb_L.R_34",
+        "thumb_L.002.R_33",
+        "thumb_L.001.R_32",
+        "index_L.R_38",
+        "index_L.003.R_37",
+        "index_L.002.R_36",
+        "index_L.001.R_35",
+        "middle_L.R_42",
+        "middle_L.003.R_41",
+        "middle_L.002.R_40",
+        "middle_L.001.R_39",
+        "ring_L.R_46",
+        "ring_L.001.R_45",
+        "ring_L.002.R_44",
+        "ring_L.003.R_43",
+        "pink_L.R_50",
+        "pink_L.003.R_49",
+        "pink_L.002.R_48",
+        "pink_L.001.R_47",
+        "twist_arm_1_L.R_52",
+        "twist_arm_3_L.R_53",
+        "twist_arm_2_L.R_54"
+      ],
+      "animations": [
+        "Hold",
+        "Fire",
+        "Reload"
+      ],
+      "limitation": "Retargeted native glove skin; visual grip and reload acceptance pending",
+      "author": "JUST (https://sketchfab.com/teenjust500)",
+      "palm_axes": {
+        "R": [
+          -0.9906209111213684,
+          -0.043690748512744904,
+          -0.12946520745754242
+        ],
+        "L": [
+          0.9906209111213684,
+          -0.043690748512744904,
+          -0.12946520745754242
+        ]
+      },
+      "source_hand_mapping": {
+        "R": "native .L",
+        "L": "native .R"
+      },
+      "right_grip_socket": {
+        "position": [
+          0.04499998688697815,
+          -0.10999993979930878,
+          0.20500007271766663
+        ],
+        "rotation": [
+          -0.025998424738645554,
+          -0.023580225184559822,
+          -0.06429221481084824,
+          0.9973136782646179
+        ]
+      }
+    },
+    {
+      "id": "street_clutter1",
+      "category": "prop",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v003/clutter1_variants.glb",
+      "source": "User delivery; new batch tool not reconfirmed; derived LP + HP bake",
+      "license": "User supplied; terms not supplied; local evaluation",
+      "source_blend": "res://assets/source/task009/v003/clutter1/Derived.blend",
+      "raw_sha256": {
+        "assets/models/杂物1.glb": "e57439b8c3c8348398c1b084d1840222f5be7faf26e8753e52e3a3faa8ddeb6d",
+        "assets/models/杂物1-低模.glb": "320cfc32865cb9ffb6aa47b6388e9855e2505d483780e300a86fb4ba07bd6abe"
+      },
+      "texture_resolution": [
+        2048,
+        2048
+      ],
+      "units": "meters",
+      "review_status": "v003_pending_user_acceptance",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "variants": [
+        {
+          "name": "Pile0",
+          "triangles": 10314,
+          "dimensions_godot": [
+            1.4147906482219696,
+            0.5283452838659286,
+            1.7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "street_clutter2",
+      "category": "prop",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v003/clutter2_variants.glb",
+      "source": "User delivery; new batch tool not reconfirmed; derived LP + HP bake",
+      "license": "User supplied; terms not supplied; local evaluation",
+      "source_blend": "res://assets/source/task009/v003/clutter2/Derived.blend",
+      "raw_sha256": {
+        "assets/models/杂物2.glb": "8d6f1f312645cfe40341471fbd0cfa3538c3ae49fec8608a4b593de4610354e2",
+        "assets/models/杂物2-低模.glb": "0a2cd3d00a25ae4c8dc0e96aaa76efc03a8f2e52810b1bd2cfe64225a2ddebb8"
+      },
+      "texture_resolution": [
+        2048,
+        2048
+      ],
+      "units": "meters",
+      "review_status": "v003_pending_user_acceptance",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "variants": [
+        {
+          "name": "Pile0",
+          "triangles": 1711,
+          "dimensions_godot": [
+            1.0466774084242456,
+            0.47183547520322744,
+            1.05
+          ]
+        },
+        {
+          "name": "Pile1",
+          "triangles": 2974,
+          "dimensions_godot": [
+            1.05,
+            0.4396117076828185,
+            1.0032638762458905
+          ]
+        },
+        {
+          "name": "Pile2",
+          "triangles": 1810,
+          "dimensions_godot": [
+            1.05,
+            0.42704120665135437,
+            1.0167709173591368
+          ]
+        },
+        {
+          "name": "Pile3",
+          "triangles": 1972,
+          "dimensions_godot": [
+            0.990856771946925,
+            0.3651706759545608,
+            1.05
+          ]
+        },
+        {
+          "name": "Pile4",
+          "triangles": 2694,
+          "dimensions_godot": [
+            1.0351688641226737,
+            0.44009345860385896,
+            1.05
+          ]
+        },
+        {
+          "name": "Pile5",
+          "triangles": 2116,
+          "dimensions_godot": [
+            1.05,
+            0.31850957552208314,
+            0.8664529714243486
+          ]
+        }
+      ]
+    },
+    {
+      "id": "street_clutter3",
+      "category": "prop",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v003/clutter3_variants.glb",
+      "source": "User delivery; new batch tool not reconfirmed; derived LP + HP bake",
+      "license": "User supplied; terms not supplied; local evaluation",
+      "source_blend": "res://assets/source/task009/v003/clutter3/Derived.blend",
+      "raw_sha256": {
+        "assets/models/杂物3.glb": "8b5fd773365bf61006e8eb52f58f9387cebad8586df44a9b41cbf3e512b798d4",
+        "assets/models/杂物3-低模.glb": "ab5a3aa9c014a4a7aac9a2d97c037d2fa7cb50514dc83fa8793d4d02b9ef52eb"
+      },
+      "texture_resolution": [
+        2048,
+        2048
+      ],
+      "units": "meters",
+      "review_status": "v003_pending_user_acceptance",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "variants": [
+        {
+          "name": "Pile0",
+          "triangles": 3638,
+          "dimensions_godot": [
+            1.05,
+            0.46164896007899653,
+            0.8923618572658909
+          ]
+        },
+        {
+          "name": "Pile1",
+          "triangles": 3818,
+          "dimensions_godot": [
+            1.05,
+            0.8596935676892755,
+            1.0301565704201077
+          ]
+        },
+        {
+          "name": "Pile2",
+          "triangles": 1979,
+          "dimensions_godot": [
+            1.033201034968757,
+            0.4379634591974449,
+            1.05
+          ]
+        },
+        {
+          "name": "Pile3",
+          "triangles": 5013,
+          "dimensions_godot": [
+            1.05,
+            0.4414745313203852,
+            0.9367341152650176
+          ]
+        },
+        {
+          "name": "Pile4",
+          "triangles": 1307,
+          "dimensions_godot": [
+            0.5982417645841825,
+            0.6021304462872147,
+            1.05
+          ]
+        },
+        {
+          "name": "Pile5",
+          "triangles": 1941,
+          "dimensions_godot": [
+            0.9357745721859747,
+            0.38540293757956295,
+            1.05
+          ]
+        }
+      ]
+    },
+    {
+      "id": "player_fp_arms_v003",
+      "category": "character",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v003/arms_rigged.glb",
+      "source": "User delivery; new batch tool not reconfirmed; derived LP + HP bake",
+      "license": "User supplied; terms not supplied; local evaluation",
+      "source_blend": "res://assets/source/task009/v003/arms/Derived.blend",
+      "raw_sha256": {
+        "assets/models/手臂2.glb": "953a56a77bd7aa730a02a788fa03443ec3f71f4c66835ca561c5c2c688dc913c",
+        "assets/models/手臂2-低模.glb": "6411276e0c8bab648165db717a1713b6a88fd5af30bafcf80e3b0076c732fd8a"
+      },
+      "texture_resolution": [
+        2048,
+        2048
+      ],
+      "units": "meters",
+      "review_status": "v003_pending_user_acceptance",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "triangles": 13495,
+      "bones": [
+        "R_Upper",
+        "R_Forearm",
+        "R_Hand",
+        "R_Finger0_0",
+        "R_Finger0_1",
+        "R_Finger1_0",
+        "R_Finger1_1",
+        "R_Finger2_0",
+        "R_Finger2_1",
+        "R_Finger3_0",
+        "R_Finger3_1",
+        "L_Upper",
+        "L_Forearm",
+        "L_Hand",
+        "L_Finger0_0",
+        "L_Finger0_1",
+        "L_Finger1_0",
+        "L_Finger1_1",
+        "L_Finger2_0",
+        "L_Finger2_1",
+        "L_Finger3_0",
+        "L_Finger3_1"
+      ],
+      "animations": [
+        "Hold",
+        "Reload"
+      ],
+      "limitation": "basic arm and four-finger curl skinning; thumb retains supplied shape, detailed contact still needs visual review"
+    },
+    {
+      "id": "player_fp_arms_calibration",
+      "category": "character",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v006/arms_static.glb",
+      "source": "https://sketchfab.com/3d-models/hand-with-gloves-5a6a434b8ec943ffacc581358781eecb",
+      "license": "CC-BY-4.0; embedded metadata, download page fetch 403",
+      "source_blend": "res://assets/source/task009/v006/Arms_Static.blend",
+      "raw_sha256": {
+        "assets/models/hand_with_gloves.glb": "c93b94a69940656937e35848e9eb7f706e63c214f1972bf662ae64acc9630455"
+      },
+      "units": "meters",
+      "review_status": "static_v006_pending_user_acceptance",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "triangles": 19734,
+      "bones": [
+        "GLTF_created_0_rootJoint",
+        "camera_2",
+        "camera_target_3",
+        "pose_controller_61",
+        "elbow_IK_L.L_4",
+        "hand_IK_L.L_5",
+        "body_58",
+        "shoulder_L.L_31",
+        "shoulder_L.R_57",
+        "elbow_IK_L.R_59",
+        "hand_IK_L.R_60",
+        "R_Upper",
+        "R_Forearm",
+        "R_Hand",
+        "thumb_L.L_8",
+        "thumb_L.002.L_7",
+        "thumb_L.001.L_6",
+        "index_L.L_12",
+        "index_L.003.L_11",
+        "index_L.002.L_10",
+        "index_L.001.L_9",
+        "middle_L.L_16",
+        "middle_L.003.L_15",
+        "middle_L.002.L_14",
+        "middle_L.001.L_13",
+        "ring_L.L_20",
+        "ring_L.001.L_19",
+        "ring_L.002.L_18",
+        "ring_L.003.L_17",
+        "pink_L.L_24",
+        "pink_L.003.L_23",
+        "pink_L.002.L_22",
+        "pink_L.001.L_21",
+        "twist_arm_1_L.L_26",
+        "twist_arm_3_L.L_27",
+        "twist_arm_2_L.L_28",
+        "L_Upper",
+        "L_Forearm",
+        "L_Hand",
+        "thumb_L.R_34",
+        "thumb_L.002.R_33",
+        "thumb_L.001.R_32",
+        "index_L.R_38",
+        "index_L.003.R_37",
+        "index_L.002.R_36",
+        "index_L.001.R_35",
+        "middle_L.R_42",
+        "middle_L.003.R_41",
+        "middle_L.002.R_40",
+        "middle_L.001.R_39",
+        "ring_L.R_46",
+        "ring_L.001.R_45",
+        "ring_L.002.R_44",
+        "ring_L.003.R_43",
+        "pink_L.R_50",
+        "pink_L.003.R_49",
+        "pink_L.002.R_48",
+        "pink_L.001.R_47",
+        "twist_arm_1_L.R_52",
+        "twist_arm_3_L.R_53",
+        "twist_arm_2_L.R_54"
+      ],
+      "animations": [],
+      "limitation": "Static bind calibration only; Idle/Fire/Reload tracks absent; reload presentation frozen",
+      "author": "JUST (https://sketchfab.com/teenjust500)",
+      "palm_axes": {
+        "R": [
+          0.9906209111213684,
+          0.04369087517261505,
+          0.1294652223587036
+        ],
+        "L": [
+          -0.9906207919120789,
+          0.043690845370292664,
+          0.1294650435447693
+        ]
+      },
+      "source_hand_mapping": {
+        "R": "native .L",
+        "L": "native .R"
+      },
+      "right_grip_socket": {
+        "position": [
+          0.06500007957220078,
+          -0.1000000461935997,
+          0.17799997329711914
+        ],
+        "rotation": [
+          -0.06384523212909698,
+          0.6885335445404053,
+          -0.027077993378043175,
+          0.7218810319900513
+        ]
+      }
+    },
+    {
+      "id": "player_fp_arms_candidate_v007",
+      "category": "character",
+      "status": "ready",
+      "proposed_path": "res://assets/models/task009/v007/arms_palmar_candidate.glb",
+      "source": "https://sketchfab.com/3d-models/hand-with-gloves-5a6a434b8ec943ffacc581358781eecb",
+      "license": "CC-BY-4.0; embedded metadata, download page fetch 403",
+      "source_blend": "res://assets/source/task009/v007/Arms_Palmar_Candidate.blend",
+      "raw_sha256": {
+        "assets/models/hand_with_gloves.glb": "c93b94a69940656937e35848e9eb7f706e63c214f1972bf662ae64acc9630455"
+      },
+      "units": "meters",
+      "review_status": "diagnostic_candidate_only_not_merged",
+      "user_delivery": true,
+      "required_for_mvp": false,
+      "triangles": 19734,
+      "bones": [
+        "GLTF_created_0_rootJoint",
+        "camera_2",
+        "camera_target_3",
+        "pose_controller_61",
+        "elbow_IK_L.L_4",
+        "hand_IK_L.L_5",
+        "body_58",
+        "shoulder_L.L_31",
+        "shoulder_L.R_57",
+        "elbow_IK_L.R_59",
+        "hand_IK_L.R_60",
+        "R_Upper",
+        "R_Forearm",
+        "R_Hand",
+        "thumb_L.L_8",
+        "thumb_L.002.L_7",
+        "thumb_L.001.L_6",
+        "index_L.L_12",
+        "index_L.003.L_11",
+        "index_L.002.L_10",
+        "index_L.001.L_9",
+        "middle_L.L_16",
+        "middle_L.003.L_15",
+        "middle_L.002.L_14",
+        "middle_L.001.L_13",
+        "ring_L.L_20",
+        "ring_L.001.L_19",
+        "ring_L.002.L_18",
+        "ring_L.003.L_17",
+        "pink_L.L_24",
+        "pink_L.003.L_23",
+        "pink_L.002.L_22",
+        "pink_L.001.L_21",
+        "twist_arm_1_L.L_26",
+        "twist_arm_3_L.L_27",
+        "twist_arm_2_L.L_28",
+        "L_Upper",
+        "L_Forearm",
+        "L_Hand",
+        "thumb_L.R_34",
+        "thumb_L.002.R_33",
+        "thumb_L.001.R_32",
+        "index_L.R_38",
+        "index_L.003.R_37",
+        "index_L.002.R_36",
+        "index_L.001.R_35",
+        "middle_L.R_42",
+        "middle_L.003.R_41",
+        "middle_L.002.R_40",
+        "middle_L.001.R_39",
+        "ring_L.R_46",
+        "ring_L.001.R_45",
+        "ring_L.002.R_44",
+        "ring_L.003.R_43",
+        "pink_L.R_50",
+        "pink_L.003.R_49",
+        "pink_L.002.R_48",
+        "pink_L.001.R_47",
+        "twist_arm_1_L.R_52",
+        "twist_arm_3_L.R_53",
+        "twist_arm_2_L.R_54"
+      ],
+      "animations": [],
+      "limitation": "Source-palmar-marker solved static bind pose; no restored Reload; manual approval pending",
+      "author": "JUST (https://sketchfab.com/teenjust500)",
+      "palm_axes": {
+        "R": [
+          0.990620791912079,
+          0.043691411614418,
+          0.129466086626053
+        ],
+        "L": [
+          -0.990620791912079,
+          0.043691411614418,
+          0.129466086626053
+        ]
+      },
+      "source_hand_mapping": {
+        "R": "native .L",
+        "L": "native .R"
+      },
+      "right_grip_socket": {
+        "position": [
+          0.015402086079120636,
+          -0.09250986576080322,
+          0.12962982058525085
+        ],
+        "rotation": [
+          -0.5555925965309143,
+          0.5060137510299683,
+          0.4677193760871887,
+          0.46530163288116455
+        ]
+      }
+    }
+  ]
+}

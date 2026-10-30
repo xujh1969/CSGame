@@ -1,0 +1,3 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]

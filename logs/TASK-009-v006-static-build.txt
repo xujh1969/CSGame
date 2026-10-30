@@ -1,0 +1,9 @@
+00:02.813  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v005\Gloves_Derived.blend"
+Traceback (most recent call last):
+  File "C:\Users\AYOU\Desktop\CS\scripts\tools\build_static_hand_calibration.py", line 45, in <module>
+    assert edge_excess<.03, ('Glove webbing overstretch',edge_excess)
+           ^^^^^^^^^^^^^^^
+AssertionError: ('Glove webbing overstretch', 0.03029106316554664)
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

@@ -1,0 +1,62 @@
+[
+  {
+    "file": "assets/models/AR-15低模.glb",
+    "bytes": 115552,
+    "sha256": "de10d9ba0c9872340143b213ee5cf83478a105c7925e96228628b8ce3765be77",
+    "triangles": 6369,
+    "meshes": 1,
+    "materials": 0,
+    "images": 0,
+    "source_tool": "Hunyuan3D, confirmed by user"
+  },
+  {
+    "file": "assets/models/AR-15.glb",
+    "bytes": 75113116,
+    "sha256": "7bc1c2706857791624ba6d8fa6b6690224382f7154e583fb271cd5f392bb7582",
+    "triangles": 1500000,
+    "meshes": 1,
+    "materials": 1,
+    "images": 3,
+    "source_tool": "Hunyuan3D, confirmed by user"
+  },
+  {
+    "file": "assets/models/AK-47低模.glb",
+    "bytes": 57412,
+    "sha256": "a70c8205bbb2f5d841701c09f066eb2e3aabe31ac029cc823aea0c72d98ae521",
+    "triangles": 3136,
+    "meshes": 1,
+    "materials": 0,
+    "images": 0,
+    "source_tool": "Hunyuan3D, confirmed by user"
+  },
+  {
+    "file": "assets/models/AK-47.glb",
+    "bytes": 77462064,
+    "sha256": "57abbbffd2c6bd31087ffe97ed3f35f54836ac27ae635f5332aa67e650e64e68",
+    "triangles": 1499984,
+    "meshes": 1,
+    "materials": 1,
+    "images": 3,
+    "source_tool": "Hunyuan3D, confirmed by user"
+  },
+  {
+    "file": "assets/models/杂物1-低模.glb",
+    "bytes": 186744,
+    "sha256": "320cfc32865cb9ffb6aa47b6388e9855e2505d483780e300a86fb4ba07bd6abe",
+    "triangles": 10325,
+    "meshes": 1,
+    "materials": 0,
+    "images": 0,
+    "source_tool": "Hunyuan3D, confirmed by user"
+  },
+  {
+    "file": "assets/models/杂物1.glb",
+    "bytes": 82385156,
+    "sha256": "e57439b8c3c8348398c1b084d1840222f5be7faf26e8753e52e3a3faa8ddeb6d",
+    "triangles": 1499812,
+    "meshes": 1,
+    "materials": 1,
+    "images": 3,
+    "source_tool": "Hunyuan3D, confirmed by user"
+  }
+]

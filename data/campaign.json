@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "start_id": "entry",
+  "levels": [
+    {
+      "id": "entry",
+      "title": "01 / 街口验证关",
+      "scene_path": "res://scenes/levels/campaign/Entry.tscn",
+      "required_encounters": ["A1"],
+      "next_id": "yard"
+    },
+    {
+      "id": "yard",
+      "title": "02 / 院落验证关",
+      "scene_path": "res://scenes/levels/campaign/Yard.tscn",
+      "required_encounters": ["B1"],
+      "next_id": ""
+    }
+  ]
+}

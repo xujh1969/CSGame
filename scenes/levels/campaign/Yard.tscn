@@ -1,0 +1,293 @@
+[gd_scene load_steps=29 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/levels/modules/Shopfront.tscn" id="1"]
+
+[ext_resource type="PackedScene" path="res://scenes/cover/WoodenCrates.tscn" id="2"]
+
+[ext_resource type="PackedScene" path="res://scenes/enemies/EnemyBase.tscn" id="3"]
+
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="4"]
+
+[ext_resource type="Script" path="res://scripts/game/encounter_manager.gd" id="5"]
+
+[ext_resource type="Script" path="res://scripts/game/game_flow.gd" id="6"]
+
+[ext_resource type="Script" path="res://scripts/fx/battle_presentation.gd" id="7"]
+
+[sub_resource type="Environment" id="R1"]
+background_mode = 1
+background_color = Color(0.43, 0.51, 0.59, 1)
+ambient_light_source = 2
+ambient_light_energy = 0.65
+
+[sub_resource type="StandardMaterial3D" id="R2"]
+albedo_color = Color(0.19, 0.21, 0.22, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R3"]
+size = Vector3(16, 0.3, 34)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R4"]
+size = Vector3(16, 0.3, 34)
+
+[sub_resource type="StandardMaterial3D" id="R5"]
+albedo_color = Color(0.44, 0.4, 0.36, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R6"]
+size = Vector3(0.5, 3, 34)
+material = SubResource("R5")
+
+[sub_resource type="BoxShape3D" id="R7"]
+size = Vector3(0.5, 3, 34)
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(0.5, 3, 34)
+material = SubResource("R5")
+
+[sub_resource type="BoxShape3D" id="R9"]
+size = Vector3(0.5, 3, 34)
+
+[sub_resource type="StandardMaterial3D" id="R10"]
+albedo_color = Color(0.46, 0.47, 0.44, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(12, 3, 0.4)
+material = SubResource("R10")
+
+[sub_resource type="BoxShape3D" id="R12"]
+size = Vector3(12, 3, 0.4)
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(12, 3, 0.4)
+material = SubResource("R10")
+
+[sub_resource type="BoxShape3D" id="R14"]
+size = Vector3(12, 3, 0.4)
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(2.6, 1.1, 0.5)
+material = SubResource("R10")
+
+[sub_resource type="BoxShape3D" id="R16"]
+size = Vector3(2.6, 1.1, 0.5)
+
+[sub_resource type="BoxShape3D" id="R17"]
+size = Vector3(11, 3, 1)
+
+[sub_resource type="StandardMaterial3D" id="R18"]
+albedo_color = Color(0.15, 0.65, 0.7, 1)
+roughness = 0.9
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="R19"]
+size = Vector3(10, 0.015, 0.12)
+material = SubResource("R18")
+
+[sub_resource type="StandardMaterial3D" id="R20"]
+albedo_color = Color(0.26, 0.78, 0.48, 1)
+roughness = 0.9
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="R21"]
+size = Vector3(10, 0.02, 0.4)
+material = SubResource("R20")
+
+[node name="Yard" type="Node3D"]
+
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("R1")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-50, -25, 0)
+shadow_enabled = true
+
+[node name="WorldGeo" type="Node3D" parent="."]
+
+
+[node name="Ground" type="StaticBody3D" parent="WorldGeo"]
+position = Vector3(0, -0.15, -11)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldGeo/Ground"]
+mesh = SubResource("R3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldGeo/Ground"]
+shape = SubResource("R4")
+
+[node name="Boundary-1" type="StaticBody3D" parent="WorldGeo"]
+position = Vector3(-6, 1.5, -11)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldGeo/Boundary-1"]
+mesh = SubResource("R6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldGeo/Boundary-1"]
+shape = SubResource("R7")
+
+[node name="Boundary1" type="StaticBody3D" parent="WorldGeo"]
+position = Vector3(6, 1.5, -11)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldGeo/Boundary1"]
+mesh = SubResource("R8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldGeo/Boundary1"]
+shape = SubResource("R9")
+
+[node name="End6" type="StaticBody3D" parent="WorldGeo"]
+position = Vector3(0, 1.5, 6)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldGeo/End6"]
+mesh = SubResource("R11")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldGeo/End6"]
+shape = SubResource("R12")
+
+[node name="End-28" type="StaticBody3D" parent="WorldGeo"]
+position = Vector3(0, 1.5, -28)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="WorldGeo/End-28"]
+mesh = SubResource("R13")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WorldGeo/End-28"]
+shape = SubResource("R14")
+
+[node name="Facade2" parent="." instance=ExtResource("1")]
+position = Vector3(6, 0, -2)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Facade10" parent="." instance=ExtResource("1")]
+position = Vector3(6, 0, -10)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Facade18" parent="." instance=ExtResource("1")]
+position = Vector3(6, 0, -18)
+rotation = Vector3(0, -1.570796, 0)
+
+[node name="Cover" type="Node3D" parent="."]
+
+
+[node name="EnemyWall" type="StaticBody3D" parent="Cover"]
+position = Vector3(-2.6, 0.55, -14.5)
+collision_layer = 2
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="Cover/EnemyWall"]
+mesh = SubResource("R15")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Cover/EnemyWall"]
+shape = SubResource("R16")
+
+[node name="PlayerCover" parent="Cover" instance=ExtResource("2")]
+position = Vector3(2.0, 0, -9)
+
+[node name="SpawnMarkers" type="Node3D" parent="."]
+
+
+[node name="BGuard" type="Marker3D" parent="SpawnMarkers"]
+position = Vector3(-2.6, 0, -16)
+metadata/encounter_id = "B1"
+
+[node name="CoverMarkers" type="Node3D" parent="."]
+
+
+[node name="C1" type="Marker3D" parent="CoverMarkers"]
+position = Vector3(-2.6, 0, -16)
+
+[node name="PeekMarkers" type="Node3D" parent="."]
+
+
+[node name="P1" type="Marker3D" parent="PeekMarkers"]
+position = Vector3(-2.6, 0, -16)
+
+[node name="Enemies" type="Node3D" parent="."]
+
+
+[node name="BGuard" parent="Enemies" instance=ExtResource("3")]
+position = Vector3(-2.6, 0, -16)
+rotation_degrees = Vector3(0, 180, 0)
+archetype = "cover_rifleman"
+cover_path = NodePath("../../CoverMarkers/C1")
+peek_path = NodePath("../../PeekMarkers/P1")
+
+[node name="Triggers" type="Node3D" parent="."]
+
+
+[node name="B1" type="Area3D" parent="Triggers"]
+position = Vector3(0, 1.5, -5)
+collision_layer = 32
+collision_mask = 4
+metadata/enemy_id = "BGuard"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Triggers/B1"]
+shape = SubResource("R17")
+
+[node name="TriggerLine" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.01, -5)
+mesh = SubResource("R19")
+
+[node name="Route" type="Node3D" parent="."]
+
+
+[node name="P0" type="Marker3D" parent="Route"]
+position = Vector3(0, 0, 3)
+
+[node name="P1" type="Marker3D" parent="Route"]
+position = Vector3(0, 0, -7)
+
+[node name="P2" type="Marker3D" parent="Route"]
+position = Vector3(0, 0, -12)
+
+[node name="P3" type="Marker3D" parent="Route"]
+position = Vector3(0, 0, -24)
+
+[node name="Player" parent="." instance=ExtResource("4")]
+position = Vector3(0, 0, 3)
+
+[node name="EncounterManager" type="Node" parent="."]
+script = ExtResource("5")
+
+[node name="FinishArea" type="Area3D" parent="."]
+position = Vector3(0, 1.5, -24)
+collision_layer = 32
+collision_mask = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FinishArea"]
+shape = SubResource("R17")
+
+[node name="FinishLine" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.015, -24)
+mesh = SubResource("R21")
+
+[node name="FinishSign" type="Label3D" parent="."]
+position = Vector3(0, 3.5, -24)
+text = "FINISH / YARD"
+billboard = 1
+font_size = 42
+pixel_size = 0.008
+
+[node name="GreyboxSign" type="Label3D" parent="."]
+position = Vector3(0, 4, -4)
+text = "TASK-007 / YARD / GRAYBOX"
+billboard = 1
+font_size = 34
+pixel_size = 0.008
+
+[node name="GameFlow" type="Node" parent="."]
+process_mode = 3
+script = ExtResource("6")
+required_encounters = Array[StringName]([&"B1"])
+
+[node name="BattlePresentation" type="Node3D" parent="."]
+script = ExtResource("7")

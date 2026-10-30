@@ -1,0 +1,84 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: production level catalog validates
+PASS: invalid catalog rejected: duplicate
+PASS: invalid catalog rejected: scene
+PASS: invalid catalog rejected: next
+PASS: invalid catalog rejected: cycle
+PASS: invalid catalog rejected: start
+PASS: invalid catalog rejected: encounter
+Campaign loaded entry transition_ms=58.925 count=1
+PASS: transition completes without error
+PASS: campaign boots first level exactly once
+PASS: incomplete PackedScene is rejected before ready
+PASS: first real trigger, player rays and physical walk clear enemy
+PASS: first physical finish area produces alive victory
+PASS: first player actually overlaps finish trigger
+ROUTE first frames=350 shots=5 hp=100
+PASS: first victory displays next-level button
+PASS: victory button starts transition to next level
+PASS: duplicate next/retry is rejected during transition
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=243.363 count=2
+PASS: transition completes without error
+PASS: next loads second level once
+PASS: old level and spatial audio owner are freed
+PASS: new level starts HP100 and 30/90
+PASS: new level resets pause and starts running
+PASS: cannot skip running level
+PASS: second level can fail independently
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=269.489 count=3
+PASS: transition completes without error
+PASS: failure retry rebuilds current level, not campaign start
+PASS: retry restores player and encounter state
+PASS: final real trigger, player rays and physical walk clear enemy
+PASS: final physical finish area produces alive victory
+PASS: final player actually overlaps finish trigger
+ROUTE final frames=395 shots=5 hp=100
+PASS: final level has no next level
+PASS: final victory UI shows completion without next button
+PASS: unknown level request preserves current level
+Audio shutdown mix cycles: 2
+Campaign loaded yard transition_ms=293.314 count=4
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=284.532 count=5
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=269.314 count=6
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=274.743 count=7
+PASS: transition completes without error
+PASS: four restarts keep one level, flow and audio owner without node growth
+PASS: current level pauses
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=275.306 count=8
+PASS: transition completes without error
+PASS: paused retry resets pause while preserving current level id
+Campaign load rejected: Missing encounter trigger: missing_trigger
+PASS: bad encounter relation reports error and retains paused current level
+PASS: load error has a visible recovery screen
+Audio shutdown mix cycles: 3
+Campaign loaded entry transition_ms=258.514 count=9
+PASS: transition completes without error
+PASS: corrected config can retry load from error UI
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=273.423 count=10
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded entry transition_ms=274.187 count=11
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=275.823 count=12
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded entry transition_ms=273.206 count=13
+PASS: transition completes without error
+PASS: repeated A/B loading frees old worlds with stable per-level node counts
+CAMPAIGN load_count=13 stable_nodes=170 static_memory_bytes=57674631.0
+Audio shutdown mix cycles: 3
+Campaign load rejected: Invalid campaign schema or empty levels
+PASS: missing catalog fails explicitly without spawning a level
+TASK-007 failures: 0

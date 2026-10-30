@@ -1,0 +1,55 @@
+19:16:48 | INFO: Data are loaded, start creating Blender stuff
+19:16:48 | INFO: Blender create Mesh node node_0
+19:16:51 | INFO: glTF import finished in 3.54s
+19:16:53 | INFO: Data are loaded, start creating Blender stuff
+19:16:53 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+19:16:53 | INFO: glTF import finished in 0.02s
+C:\Users\AYOU\Desktop\CS\scripts\tools\inspect_v003_delivery.py:42: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True
+00:13.032  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-new_ar-High.png'
+00:16.672  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-new_ar-Low.png'
+Info: Saved as "Inspection.blend"
+INSPECTED new_ar [{'object': 'High', 'file': 'AR-15-1.glb', 'bounds': [[-0.059199001640081406, -0.5775061249732971, -3.189276176485123e-09], [0.050668999552726746, 0.6016200184822083, 0.4983770549297333]], 'dimensions': [0.10986800119280815, 1.1791261434555054, 0.49837705811900945]}, {'object': 'Low', 'file': 'AR-15-1低模.glb', 'bounds': [[-0.06835900247097015, -0.75, -0.31835898756980896], [0.0703120008111, 0.75, 0.3164060115814209]], 'dimensions': [0.13867100328207016, 1.5, 0.6347649991512299]}]
+19:17:02 | INFO: Data are loaded, start creating Blender stuff
+19:17:02 | INFO: Blender create Mesh node node_0
+19:17:05 | INFO: glTF import finished in 2.80s
+19:17:06 | INFO: Data are loaded, start creating Blender stuff
+19:17:06 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+19:17:06 | INFO: glTF import finished in 0.00s
+00:26.266  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-arms-High.png'
+00:30.422  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-arms-Low.png'
+Info: Saved as "Inspection.blend"
+INSPECTED arms [{'object': 'High', 'file': '手臂2.glb', 'bounds': [[-0.4255419969558716, -0.23673704266548157, -1.6414487546967393e-08], [0.420987993478775, 0.26988890767097473, 0.8669402003288269]], 'dimensions': [0.8465299904346466, 0.5066259503364563, 0.8669402167433145]}, {'object': 'Low', 'file': '手臂2-低模.glb', 'bounds': [[-0.7304689884185791, -0.43945300579071045, -0.7480469942092896], [0.7304689884185791, 0.4375, 0.75]], 'dimensions': [1.4609379768371582, 0.8769530057907104, 1.4980469942092896]}]
+19:17:16 | INFO: Data are loaded, start creating Blender stuff
+19:17:16 | INFO: Blender create Mesh node node_0
+19:17:21 | INFO: glTF import finished in 4.93s
+19:17:23 | INFO: Data are loaded, start creating Blender stuff
+19:17:23 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+19:17:23 | INFO: glTF import finished in 0.01s
+00:44.813  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-clutter1-High.png'
+00:48.703  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-clutter1-Low.png'
+Info: Saved as "Inspection.blend"
+INSPECTED clutter1 [{'object': 'High', 'file': '杂物1.glb', 'bounds': [[-0.4685409963130951, -0.5332510471343994, -5.472933395367363e-08], [0.4674220085144043, 0.5914390683174133, 0.3440110385417938]], 'dimensions': [0.9359630048274994, 1.1246901154518127, 0.3440110932711278]}, {'object': 'Low', 'file': '杂物1-低模.glb', 'bounds': [[-0.624970018863678, -0.7519530057907104, -0.23765000700950623], [0.625, 0.75, 0.22914400696754456]], 'dimensions': [1.249970018863678, 1.5019530057907104, 0.4667940139770508]}]
+19:17:34 | INFO: Data are loaded, start creating Blender stuff
+19:17:34 | INFO: Blender create Mesh node node_0
+19:17:38 | INFO: glTF import finished in 3.92s
+19:17:40 | INFO: Data are loaded, start creating Blender stuff
+19:17:40 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+19:17:40 | INFO: glTF import finished in 0.01s
+01:00.125  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-clutter2-High.png'
+01:04.032  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-clutter2-Low.png'
+Info: Saved as "Inspection.blend"
+INSPECTED clutter2 [{'object': 'High', 'file': '杂物2.glb', 'bounds': [[-0.45100298523902893, -0.31235602498054504, -1.333807198022896e-08], [0.4590519964694977, 0.21607893705368042, 0.7857421040534973]], 'dimensions': [0.9100549817085266, 0.5284349620342255, 0.7857421173915693]}, {'object': 'Low', 'file': '杂物2-低模.glb', 'bounds': [[-0.75, -0.43164101243019104, -0.6486340165138245], [0.7460759878158569, 0.43945300579071045, 0.6484379768371582]], 'dimensions': [1.496075987815857, 0.8710940182209015, 1.2970719933509827]}]
+19:17:49 | INFO: Data are loaded, start creating Blender stuff
+19:17:49 | INFO: Blender create Mesh node node_0
+19:17:53 | INFO: glTF import finished in 3.84s
+19:17:55 | INFO: Data are loaded, start creating Blender stuff
+19:17:55 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+19:17:55 | INFO: glTF import finished in 0.01s
+01:15.063  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-clutter3-High.png'
+01:18.547  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-v003-source-clutter3-Low.png'
+Info: Saved as "Inspection.blend"
+INSPECTED clutter3 [{'object': 'High', 'file': '杂物3.glb', 'bounds': [[-0.5333759784698486, -0.2761220335960388, -1.765085855254256e-08], [0.5022860169410706, 0.30349797010421753, 0.560420036315918]], 'dimensions': [1.0356619954109192, 0.5796200037002563, 0.5604200539667765]}, {'object': 'Low', 'file': '杂物3-低模.glb', 'bounds': [[-0.7519530057907104, -0.421875, -0.40429699420928955], [0.7529810070991516, 0.4179689884185791, 0.40429699420928955]], 'dimensions': [1.504934012889862, 0.8398439884185791, 0.8085939884185791]}]
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

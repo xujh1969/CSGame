@@ -1,0 +1,35 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.3.260 - Forward+ - Using Device #0: AMD - AMD Radeon(TM) Graphics
+
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_proxy"] errors=[] vehicle=placeholder until user delivery
+PASS: both balconies include both side return railings in actual exported triangles
+PASS: five real Blender GLB modules load
+PASS: registered sample assets exist and load
+PASS: Medium creates bounded smoke, dust, fire and volumetric haze
+PASS: smoke sprite contains actual alpha, not a painted background
+PASS: forty larger debris pieces have real collision shapes
+PASS: textured player barrier still blocks weapon layer ray
+PASS: vehicle proxy has real metal collision
+PASS: shop facade, not hidden boundary box, blocks real shot
+PASS: imported GLBs retain albedo, normal and roughness textures
+PASS: entire sample route preserves 1.2m capsule clearance
+PASS: sample starts with original player health
+PASS: actual render saved: start
+SAMPLE PERFORMANCE low=false resolution=(1280, 720) median_ms=14.879 p95_ms=17.206 max_ms=22.214 engine_video_memory_bytes=425003824.0 GPU=AMD Radeon(TM) Graphics
+SAMPLE PERFORMANCE low=true resolution=(1280, 720) median_ms=7.119 p95_ms=8.886 max_ms=14.401 engine_video_memory_bytes=410848048.0 GPU=AMD Radeon(TM) Graphics
+PASS: physical route reaches point 1
+PASS: actual render saved: cover
+PASS: physical route reaches point 2
+PASS: actual render saved: shop
+PASS: actual render saved: low
+PASS: physical route reaches point 3
+PASS: sample retains real combat and finish victory
+PASS: physical player overlaps sample finish
+PASS: Low still disables dynamic shadow
+PASS: Low disables volumetric atmosphere and fire light
+PASS: Low stops all noncritical atmosphere particles
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_proxy"] errors=[] vehicle=placeholder until user delivery
+PASS: retry reloads art sample rather than base graybox fixture
+PASS: art retry restores running player state
+Audio shutdown mix cycles: 3
+TASK-008 failures: 0

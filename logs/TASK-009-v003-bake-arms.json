@@ -1,0 +1,20 @@
+{
+  "asset": "arms",
+  "raw_sha256": {
+    "\u624b\u81c22.glb": "953a56a77bd7aa730a02a788fa03443ec3f71f4c66835ca561c5c2c688dc913c",
+    "\u624b\u81c22-\u4f4e\u6a21.glb": "6411276e0c8bab648165db717a1713b6a88fd5af30bafcf80e3b0076c732fd8a"
+  },
+  "raw_files_unchanged": true,
+  "rotation_degrees": 0.0,
+  "target_dimensions_blender": [
+    0.7996872899429905,
+    0.48002597216781173,
+    0.8199999999999998
+  ],
+  "triangles": 13495,
+  "texture_resolution": [
+    2048,
+    2048
+  ],
+  "skin_adjustment": "roughness min .55 and metallic zero"
+}

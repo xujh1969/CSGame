@@ -1,0 +1,59 @@
+{
+  "asset": "arms",
+  "variants": [],
+  "left_grip_fit": {
+    "wrist_godot": [
+      -0.14000000059604645,
+      -0.006617104634642601,
+      -0.2849999964237213
+    ],
+    "curl_factor": 0.25,
+    "penetrating_sample_vertices": 58,
+    "nearest12_mean_m": 0.0002422846523586486,
+    "samples": 413,
+    "handguard_section_bounds": [
+      [
+        -0.02664044126868248,
+        0.022382894530892372,
+        -0.2990315556526184
+      ],
+      [
+        0.026640499010682106,
+        0.10351547598838806,
+        -0.26512500643730164
+      ]
+    ]
+  },
+  "runtime_glb": "assets/models/task009/v003/arms_rigged.glb",
+  "bones": [
+    "R_Upper",
+    "R_Forearm",
+    "R_Hand",
+    "R_Finger0_0",
+    "R_Finger0_1",
+    "R_Finger1_0",
+    "R_Finger1_1",
+    "R_Finger2_0",
+    "R_Finger2_1",
+    "R_Finger3_0",
+    "R_Finger3_1",
+    "L_Upper",
+    "L_Forearm",
+    "L_Hand",
+    "L_Finger0_0",
+    "L_Finger0_1",
+    "L_Finger1_0",
+    "L_Finger1_1",
+    "L_Finger2_0",
+    "L_Finger2_1",
+    "L_Finger3_0",
+    "L_Finger3_1"
+  ],
+  "triangles": 13495,
+  "animations": [
+    "Hold",
+    "Reload"
+  ],
+  "limitation": "basic arm and four-finger curl skinning; thumb retains supplied shape, detailed contact still needs visual review",
+  "source_blend": "assets/source/task009/v003/arms/Derived.blend"
+}

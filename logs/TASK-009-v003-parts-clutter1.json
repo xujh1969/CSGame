@@ -1,0 +1,16 @@
+{
+  "asset": "clutter1",
+  "variants": [
+    {
+      "name": "Pile0",
+      "triangles": 10314,
+      "dimensions_godot": [
+        1.4147906482219696,
+        0.5283452838659286,
+        1.7
+      ]
+    }
+  ],
+  "runtime_glb": "assets/models/task009/v003/clutter1_variants.glb",
+  "source_blend": "assets/source/task009/v003/clutter1/Derived.blend"
+}

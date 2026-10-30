@@ -1,0 +1,65 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.3.260 - Forward+ - Using Device #0: AMD - AMD Radeon(TM) Graphics
+
+PASS: cinematic sample exists
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: actual arms skin and hold/reload animations load
+PASS: both shoulder joints remain anchored behind the camera
+ARM CONTACT ERRORS { "R": 0.0, "L": 0.0 }
+PASS: both hands remain within 15mm of authored weapon contacts
+PASS: real GLB body and independent magazine load
+PASS: optic has real separate coated transparent glass mesh
+PASS: old box weapon hidden only in cinematic sample
+PASS: shot marker aligns with modeled bore
+PASS: user source rifle hashes remain unchanged
+PASS: actual imported rifle matches registered bounded geometry and PBR textures
+ACTUAL RIFLE TRIANGLES 7713
+PASS: actual imported rifle retains its registered PBR finish
+PASS: first-person weapon does not cast an orphan floating gun shadow
+PASS: all split component and optic-bore faces have explicit materials
+PASS: real scope body has an open sight-axis aperture
+PASS: layered distant building mesh exists
+PASS: actual distant mesh includes tall landmark silhouette
+PASS: camera owns active conservative DOF attributes
+PASS: entire 24m combat range remains inside sharp far region
+PASS: actual render saved: hip
+PASS: ADS aligns open reflex sight without opaque overlay
+PASS: ADS positions actual sight center on camera axis
+PASS: actual render saved: ads
+OPTIC THROUGH-VIEW mean_rgb_difference=0.02936922219496
+PASS: rendered sight glass transmits actual scene rather than an opaque panel
+PASS: new viewmodel fires once through original ammo authority
+PASS: original reload starts
+PASS: real magazine visibly extracts during actual reload
+MAGAZINE FRAMING rect=[P: (630.7413, 469.7248), S: (122.3514, 150.0812)] viewport=(1280.0, 720.0) ratio=1.0
+PASS: extracted magazine remains clearly inside the actual camera frame
+PASS: reload does not move open shoulder cuts into view
+PASS: reload wrist targets remain anatomically reachable
+PASS: actual render saved: reload
+PASS: pause freezes reload and visual presentation
+PASS: pause freezes the actual arm pose
+PASS: reload transfers exactly one round without animation duplicating ammo
+PASS: magazine returns to socket after reload
+PASS: reload preserves original upper-arm and forearm lengths
+PASS: actual render saved: post_reload
+PASS: 180 frames of sprinting and turning do not accumulate arm stretch
+PASS: actual render saved: post_sprint
+PASS: near-wall sphere cast retracts weapon
+PASS: entire rendered hip weapon remains in front of wall surface
+PASS: retracted muzzle still cannot shoot through real wall
+PASS: actual render saved: wall
+PASS: entire rendered ADS weapon remains in front of wall surface
+PASS: ADS weapon remains outside oblique wall -30
+PASS: ADS weapon remains outside oblique wall 30
+PASS: weapon smoothly recovers after leaving wall
+PASS: Low disables all added DOF
+PASS: actual render saved: low
+PASS: Medium restores conservative DOF
+PASS: new rifle fixture physically reaches route point 1
+PASS: new rifle fixture physically reaches route point 2
+PASS: new rifle fixture physically reaches route point 3
+PASS: new muzzle and lens retain actual combat victory
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: retry retains cinematic scene and rifle
+Audio shutdown mix cycles: 2
+TASK-009 failures: 0

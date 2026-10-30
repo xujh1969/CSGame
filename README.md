@@ -4,7 +4,7 @@
 
 ## 当前本机工程（TASK-008，人工验收通过）
 
-TASK-009电影镜头与枪械样板进行中，尚未获得本轮人工验收。双击 `run_cinematic_sample.bat` 运行独立样板（默认战役和已验收 TASK-008 保留）。当前采用 AR-15-1 用户枪模、独立弹匣与透明瞄具；新交付杂物按13个独立堆体接入。双臂已换用下载的 `hand_with_gloves.glb` 派生模型，保留原权重、手指骨骼和PBR材质；持枪和左侧换弹路径仍在视觉校准。骨长/动画检查通过不能代表握持正确。原件及前版派生资源均保留。最新记录见 `logs/TASK-009-v004.md`；完整人物影子仍未实现。
+TASK-009电影镜头与枪械样板进行中，尚未获得本轮人工验收。双击 `run_cinematic_sample.bat` 运行独立样板（默认战役和已验收 TASK-008 保留）。当前采用 AR-15-1 用户枪模、独立弹匣与透明瞄具；新交付杂物按13个独立堆体接入。双臂已换用下载的 `hand_with_gloves.glb` 派生模型，保留原权重、手指骨骼和PBR材质；持枪和左侧换弹路径仍在视觉校准。骨长/动画检查通过不能代表握持正确。原件及前版派生资源均保留。诊断流程见 `docs/11_FPS_RIG_DIAGNOSTICS.md`，历史记录见 `logs/TASK-009-v004.md`；完整人物影子仍未实现。
 
 TASK-008 环境样板v003已于2026-10-29获用户人工验收通过：关闭旧样板窗口后，双击 `run_art_sample.bat` 单独运行24米材质/灯光样板，标题应为“TASK-008 Sample v003”；不影响下面两关默认入口。已补三面阳台围栏、成簇碎石杂物、烟柱/浮尘/火光与分档体积薄雾，并接入用户混元3D废弃汽车：9,614三角面低模、四张2K高模烘焙贴图、车身/车舱凸碰撞。两份原文件保留，高模不在运行时加载。本次验收范围为24米环境样板；下一张允许开始TASK-009。游戏截图/实测见 `logs/TASK-008.md`，来源与制作单见 `docs/asset_requests/TASK-008_FIRST_BATCH.md`。
 
@@ -62,3 +62,5 @@ F3/F4 已获用户确认，仅用于原80米回归场；新增短关暂不带装
 - Codex 最佳实践：https://learn.chatgpt.com/docs/learn/best-practices
 - Godot 4.7 及支持策略：https://docs.godotengine.org/en/stable/about/release_policy.html
 - Godot GridMap：https://docs.godotengine.org/en/stable/tutorials/3d/using_gridmaps.html
+
+自动诊断测试场：`debug/fps_rig_test.tscn`，F9 导出同帧 JSON/PNG。默认静态候选尚未验收；`--legacy` 记录旧版问题，`--candidate` 记录掌面 Marker 求解版。工具测试通过不等于模型视觉通过。

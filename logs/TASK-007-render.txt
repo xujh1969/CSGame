@@ -1,0 +1,92 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.3.260 - Forward+ - Using Device #0: AMD - AMD Radeon(TM) Graphics
+
+PASS: production level catalog validates
+PASS: invalid catalog rejected: duplicate
+PASS: invalid catalog rejected: scene
+PASS: invalid catalog rejected: next
+PASS: invalid catalog rejected: cycle
+PASS: invalid catalog rejected: start
+PASS: invalid catalog rejected: encounter
+Campaign loaded entry transition_ms=74.509 count=1
+PASS: transition completes without error
+PASS: campaign boots first level exactly once
+PASS: incomplete PackedScene is rejected before ready
+PASS: actual render saved: entry-start
+RENDER SAMPLE entry-idle 720p Medium median_ms=6.968 p95_ms=7.772 max_ms=8.347 GPU=AMD Radeon(TM) Graphics
+PASS: first real trigger, player rays and physical walk clear enemy
+PASS: first physical finish area produces alive victory
+PASS: first player actually overlaps finish trigger
+PASS: actual render saved: first
+ROUTE first frames=350 shots=5 hp=100
+PASS: first victory displays next-level button
+PASS: victory button starts transition to next level
+PASS: duplicate next/retry is rejected during transition
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=301.586 count=2
+PASS: transition completes without error
+PASS: next loads second level once
+PASS: old level and spatial audio owner are freed
+RENDER SAMPLE yard-idle 720p Medium median_ms=6.85 p95_ms=8.168 max_ms=10.035 GPU=AMD Radeon(TM) Graphics
+PASS: new level starts HP100 and 30/90
+PASS: new level resets pause and starts running
+PASS: cannot skip running level
+PASS: second level can fail independently
+PASS: actual render saved: yard-failed
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=292.142 count=3
+PASS: transition completes without error
+PASS: failure retry rebuilds current level, not campaign start
+PASS: retry restores player and encounter state
+PASS: final real trigger, player rays and physical walk clear enemy
+PASS: final physical finish area produces alive victory
+PASS: final player actually overlaps finish trigger
+PASS: actual render saved: final
+ROUTE final frames=395 shots=5 hp=100
+PASS: final level has no next level
+PASS: final victory UI shows completion without next button
+PASS: unknown level request preserves current level
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=286.977 count=4
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=265.154 count=5
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=264.514 count=6
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=266.888 count=7
+PASS: transition completes without error
+PASS: four restarts keep one level, flow and audio owner without node growth
+PASS: current level pauses
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=264.732 count=8
+PASS: transition completes without error
+PASS: paused retry resets pause while preserving current level id
+Campaign load rejected: Missing encounter trigger: missing_trigger
+PASS: bad encounter relation reports error and retains paused current level
+PASS: load error has a visible recovery screen
+PASS: actual render saved: load-error
+Audio shutdown mix cycles: 3
+Campaign loaded entry transition_ms=282.47 count=9
+PASS: transition completes without error
+PASS: corrected config can retry load from error UI
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=271.249 count=10
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded entry transition_ms=265.42 count=11
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded yard transition_ms=267.232 count=12
+PASS: transition completes without error
+Audio shutdown mix cycles: 3
+Campaign loaded entry transition_ms=264.782 count=13
+PASS: transition completes without error
+PASS: repeated A/B loading frees old worlds with stable per-level node counts
+CAMPAIGN load_count=13 stable_nodes=170 static_memory_bytes=77975501.0
+Audio shutdown mix cycles: 3
+Campaign load rejected: Invalid campaign schema or empty levels
+PASS: missing catalog fails explicitly without spawning a level
+TASK-007 failures: 0

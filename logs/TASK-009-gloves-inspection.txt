@@ -1,0 +1,11 @@
+01:18:53 | INFO: Data are loaded, start creating Blender stuff
+01:18:53 | INFO: Blender create Mesh node Object_0
+01:18:53 | INFO: Blender create Mesh node Object_1
+01:18:53 | INFO: Blender create Mesh node Object_2
+01:18:53 | INFO: Blender create Mesh node Object_3
+01:18:53 | INFO: glTF import finished in 0.13s
+Info: Saved as "Gloves_Inspection.blend"
+GLOVES_INSPECTED [{"name": "Object_7", "vertices": 6678, "bounds": [[-28.635351181030273, -263.7008972167969, 474.8301696777344], [28.635351181030273, -257.7693176269531, 482.48443603515625]], "materials": ["glove_hardknuckle"]}, {"name": "Object_9", "vertices": 4468, "bounds": [[-23.873292922973633, -263.85040283203125, 479.11053466796875], [23.880647659301758, -257.5597229003906, 494.406982421875]], "materials": ["sleeve_st6_generalist"]}, {"name": "Object_72", "vertices": 20, "bounds": [[-0.9757631421089172, -36.50836181640625, 33.02445983886719], [0.9757607579231262, -36.50836181640625, 34.975982666015625]], "materials": ["crosshair"]}, {"name": "Object_74", "vertices": 1946, "bounds": [[-0.9362727403640747, -1.0000003576278687, -0.19021283090114594], [0.966583788394928, -1.0000003576278687, 0.28072279691696167]], "materials": ["material_0"]}, {"name": "Icosphere", "vertices": 42, "bounds": [[-0.9510578513145447, -0.9999999403953552, -1.0], [0.9510578513145447, 0.9999999403953552, 1.0]], "materials": []}]
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

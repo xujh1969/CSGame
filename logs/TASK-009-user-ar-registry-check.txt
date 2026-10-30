@@ -1,0 +1,1 @@
+PASS: re-registering procedural assets preserves actual user AR-15 entry

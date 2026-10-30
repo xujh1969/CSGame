@@ -1,0 +1,147 @@
+WorkerThreadPool: 12 threads, 3 max low-priority.
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 2004498165
+EDITOR API HASH: 1696660745
+Loading resource: res://tests/test_campaign_close.gd remapped: res://tests/test_campaign_close.gd
+Completed load for: 'res://tests/test_campaign_close.gd' remapped 'res://tests/test_campaign_close.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://scenes/game/Campaign.tscn remapped: res://scenes/game/Campaign.tscn
+Loading resource: res://scripts/game/campaign_session.gd remapped: res://scripts/game/campaign_session.gd
+Loading resource: res://scenes/fx/ImpactFx.tscn remapped: res://scenes/fx/ImpactFx.tscn
+Loading resource: res://scripts/fx/impact_fx.gd remapped: res://scripts/fx/impact_fx.gd
+Completed load for: 'res://scripts/fx/impact_fx.gd' remapped 'res://scripts/fx/impact_fx.gd' at thread -1
+Completed load for: 'res://scenes/fx/ImpactFx.tscn' remapped 'res://scenes/fx/ImpactFx.tscn' at thread -1
+Loading resource: res://scenes/fx/MuzzleFlash.tscn remapped: res://scenes/fx/MuzzleFlash.tscn
+Loading resource: res://scripts/fx/muzzle_flash.gd remapped: res://scripts/fx/muzzle_flash.gd
+Completed load for: 'res://scripts/fx/muzzle_flash.gd' remapped 'res://scripts/fx/muzzle_flash.gd' at thread -1
+Completed load for: 'res://scenes/fx/MuzzleFlash.tscn' remapped 'res://scenes/fx/MuzzleFlash.tscn' at thread -1
+Completed load for: 'res://scripts/game/campaign_session.gd' remapped 'res://scripts/game/campaign_session.gd' at thread -1
+Completed load for: 'res://scenes/game/Campaign.tscn' remapped 'res://scenes/game/Campaign.tscn' at thread -1
+Loading resource: res://scenes/levels/campaign/Entry.tscn remapped: res://scenes/levels/campaign/Entry.tscn
+Loading resource: res://scenes/levels/modules/Residential.tscn remapped: res://scenes/levels/modules/Residential.tscn
+Loading resource: res://scripts/game/asset_visual_slot.gd remapped: res://scripts/game/asset_visual_slot.gd
+Completed load for: 'res://scripts/game/asset_visual_slot.gd' remapped 'res://scripts/game/asset_visual_slot.gd' at thread -1
+Completed load for: 'res://scenes/levels/modules/Residential.tscn' remapped 'res://scenes/levels/modules/Residential.tscn' at thread -1
+Loading resource: res://scenes/cover/JerseyBarrier.tscn remapped: res://scenes/cover/JerseyBarrier.tscn
+Completed load for: 'res://scenes/cover/JerseyBarrier.tscn' remapped 'res://scenes/cover/JerseyBarrier.tscn' at thread -1
+Loading resource: res://scenes/enemies/EnemyBase.tscn remapped: res://scenes/enemies/EnemyBase.tscn
+Loading resource: res://scripts/enemies/enemy_brain.gd remapped: res://scripts/enemies/enemy_brain.gd
+Completed load for: 'res://scripts/enemies/enemy_brain.gd' remapped 'res://scripts/enemies/enemy_brain.gd' at thread -1
+Loading resource: res://scripts/enemies/enemy_perception.gd remapped: res://scripts/enemies/enemy_perception.gd
+Completed load for: 'res://scripts/enemies/enemy_perception.gd' remapped 'res://scripts/enemies/enemy_perception.gd' at thread -1
+Loading resource: res://scripts/enemies/enemy_weapon.gd remapped: res://scripts/enemies/enemy_weapon.gd
+Completed load for: 'res://scripts/enemies/enemy_weapon.gd' remapped 'res://scripts/enemies/enemy_weapon.gd' at thread -1
+Loading resource: res://scripts/enemies/enemy_visual.gd remapped: res://scripts/enemies/enemy_visual.gd
+Completed load for: 'res://scripts/enemies/enemy_visual.gd' remapped 'res://scripts/enemies/enemy_visual.gd' at thread -1
+Loading resource: res://scripts/player/health_component.gd remapped: res://scripts/player/health_component.gd
+Completed load for: 'res://scripts/player/health_component.gd' remapped 'res://scripts/player/health_component.gd' at thread -1
+Completed load for: 'res://scenes/enemies/EnemyBase.tscn' remapped 'res://scenes/enemies/EnemyBase.tscn' at thread -1
+Loading resource: res://scenes/player/player.tscn remapped: res://scenes/player/player.tscn
+Loading resource: res://scripts/player/player_motor.gd remapped: res://scripts/player/player_motor.gd
+Completed load for: 'res://scripts/player/player_motor.gd' remapped 'res://scripts/player/player_motor.gd' at thread -1
+Loading resource: res://scripts/player/player_controller.gd remapped: res://scripts/player/player_controller.gd
+Completed load for: 'res://scripts/player/player_controller.gd' remapped 'res://scripts/player/player_controller.gd' at thread -1
+Loading resource: res://scripts/weapons/weapon_controller.gd remapped: res://scripts/weapons/weapon_controller.gd
+Completed load for: 'res://scripts/weapons/weapon_controller.gd' remapped 'res://scripts/weapons/weapon_controller.gd' at thread -1
+Loading resource: res://scenes/weapons/RifleViewModel.tscn remapped: res://scenes/weapons/RifleViewModel.tscn
+Loading resource: res://scripts/weapons/rifle_view_model.gd remapped: res://scripts/weapons/rifle_view_model.gd
+Completed load for: 'res://scripts/weapons/rifle_view_model.gd' remapped 'res://scripts/weapons/rifle_view_model.gd' at thread -1
+Completed load for: 'res://scenes/weapons/RifleViewModel.tscn' remapped 'res://scenes/weapons/RifleViewModel.tscn' at thread -1
+Loading resource: res://scenes/weapons/WeaponHUD.tscn remapped: res://scenes/weapons/WeaponHUD.tscn
+Loading resource: res://scripts/ui/weapon_hud.gd remapped: res://scripts/ui/weapon_hud.gd
+Completed load for: 'res://scripts/ui/weapon_hud.gd' remapped 'res://scripts/ui/weapon_hud.gd' at thread -1
+Completed load for: 'res://scenes/weapons/WeaponHUD.tscn' remapped 'res://scenes/weapons/WeaponHUD.tscn' at thread -1
+Completed load for: 'res://scenes/player/player.tscn' remapped 'res://scenes/player/player.tscn' at thread -1
+Loading resource: res://scripts/game/encounter_manager.gd remapped: res://scripts/game/encounter_manager.gd
+Completed load for: 'res://scripts/game/encounter_manager.gd' remapped 'res://scripts/game/encounter_manager.gd' at thread -1
+Completed load for: 'res://scenes/levels/campaign/Entry.tscn' remapped 'res://scenes/levels/campaign/Entry.tscn' at thread -1
+Loading resource: res://scenes/levels/campaign/Yard.tscn remapped: res://scenes/levels/campaign/Yard.tscn
+Loading resource: res://scenes/levels/modules/Shopfront.tscn remapped: res://scenes/levels/modules/Shopfront.tscn
+Completed load for: 'res://scenes/levels/modules/Shopfront.tscn' remapped 'res://scenes/levels/modules/Shopfront.tscn' at thread -1
+Loading resource: res://scenes/cover/WoodenCrates.tscn remapped: res://scenes/cover/WoodenCrates.tscn
+Completed load for: 'res://scenes/cover/WoodenCrates.tscn' remapped 'res://scenes/cover/WoodenCrates.tscn' at thread -1
+Loading resource: res://scenes/enemies/EnemyBase.tscn remapped: res://scenes/enemies/EnemyBase.tscn
+Completed load for: 'res://scenes/enemies/EnemyBase.tscn' remapped 'res://scenes/enemies/EnemyBase.tscn' at thread -1
+Loading resource: res://scenes/player/player.tscn remapped: res://scenes/player/player.tscn
+Loading resource: res://scenes/weapons/RifleViewModel.tscn remapped: res://scenes/weapons/RifleViewModel.tscn
+Completed load for: 'res://scenes/weapons/RifleViewModel.tscn' remapped 'res://scenes/weapons/RifleViewModel.tscn' at thread -1
+Loading resource: res://scenes/weapons/WeaponHUD.tscn remapped: res://scenes/weapons/WeaponHUD.tscn
+Completed load for: 'res://scenes/weapons/WeaponHUD.tscn' remapped 'res://scenes/weapons/WeaponHUD.tscn' at thread -1
+Completed load for: 'res://scenes/player/player.tscn' remapped 'res://scenes/player/player.tscn' at thread -1
+Completed load for: 'res://scenes/levels/campaign/Yard.tscn' remapped 'res://scenes/levels/campaign/Yard.tscn' at thread -1
+Loading resource: res://scenes/levels/campaign/Entry.tscn remapped: res://scenes/levels/campaign/Entry.tscn
+Loading resource: res://scenes/levels/modules/Residential.tscn remapped: res://scenes/levels/modules/Residential.tscn
+Completed load for: 'res://scenes/levels/modules/Residential.tscn' remapped 'res://scenes/levels/modules/Residential.tscn' at thread -1
+Loading resource: res://scenes/cover/JerseyBarrier.tscn remapped: res://scenes/cover/JerseyBarrier.tscn
+Completed load for: 'res://scenes/cover/JerseyBarrier.tscn' remapped 'res://scenes/cover/JerseyBarrier.tscn' at thread -1
+Loading resource: res://scenes/enemies/EnemyBase.tscn remapped: res://scenes/enemies/EnemyBase.tscn
+Completed load for: 'res://scenes/enemies/EnemyBase.tscn' remapped 'res://scenes/enemies/EnemyBase.tscn' at thread -1
+Loading resource: res://scenes/player/player.tscn remapped: res://scenes/player/player.tscn
+Loading resource: res://scenes/weapons/RifleViewModel.tscn remapped: res://scenes/weapons/RifleViewModel.tscn
+Completed load for: 'res://scenes/weapons/RifleViewModel.tscn' remapped 'res://scenes/weapons/RifleViewModel.tscn' at thread -1
+Loading resource: res://scenes/weapons/WeaponHUD.tscn remapped: res://scenes/weapons/WeaponHUD.tscn
+Completed load for: 'res://scenes/weapons/WeaponHUD.tscn' remapped 'res://scenes/weapons/WeaponHUD.tscn' at thread -1
+Completed load for: 'res://scenes/player/player.tscn' remapped 'res://scenes/player/player.tscn' at thread -1
+Completed load for: 'res://scenes/levels/campaign/Entry.tscn' remapped 'res://scenes/levels/campaign/Entry.tscn' at thread -1
+Loading resource: res://assets/audio/shot.wav remapped: res://assets/audio/shot.wav
+Loading resource: res://.godot/imported/shot.wav-ac6ed86fa6b7982e876275e953a6b851.sample remapped: res://.godot/imported/shot.wav-ac6ed86fa6b7982e876275e953a6b851.sample
+Completed load for: 'res://assets/audio/shot.wav' remapped 'res://assets/audio/shot.wav' at thread -1
+Loading resource: res://assets/audio/reload.wav remapped: res://assets/audio/reload.wav
+Loading resource: res://.godot/imported/reload.wav-50f2d65be979b5afe34a1e31b08f63e8.sample remapped: res://.godot/imported/reload.wav-50f2d65be979b5afe34a1e31b08f63e8.sample
+Completed load for: 'res://assets/audio/reload.wav' remapped 'res://assets/audio/reload.wav' at thread -1
+Loading resource: res://assets/audio/hurt.wav remapped: res://assets/audio/hurt.wav
+Loading resource: res://.godot/imported/hurt.wav-e638edfaf88190ba3ffee0adc26b7375.sample remapped: res://.godot/imported/hurt.wav-e638edfaf88190ba3ffee0adc26b7375.sample
+Completed load for: 'res://assets/audio/hurt.wav' remapped 'res://assets/audio/hurt.wav' at thread -1
+Loading resource: res://assets/audio/step.wav remapped: res://assets/audio/step.wav
+Loading resource: res://.godot/imported/step.wav-7c1afa4d3561f9fd67ecf320728c68cf.sample remapped: res://.godot/imported/step.wav-7c1afa4d3561f9fd67ecf320728c68cf.sample
+Completed load for: 'res://assets/audio/step.wav' remapped 'res://assets/audio/step.wav' at thread -1
+Loading resource: res://assets/audio/alert.wav remapped: res://assets/audio/alert.wav
+Loading resource: res://.godot/imported/alert.wav-fb62dc472b15c790b1647b45dcb4c793.sample remapped: res://.godot/imported/alert.wav-fb62dc472b15c790b1647b45dcb4c793.sample
+Completed load for: 'res://assets/audio/alert.wav' remapped 'res://assets/audio/alert.wav' at thread -1
+Loading resource: res://assets/audio/empty.wav remapped: res://assets/audio/empty.wav
+Loading resource: res://.godot/imported/empty.wav-ebf1630805aebc8569e199dd93ecf706.sample remapped: res://.godot/imported/empty.wav-ebf1630805aebc8569e199dd93ecf706.sample
+Completed load for: 'res://assets/audio/empty.wav' remapped 'res://assets/audio/empty.wav' at thread -1
+Loading resource: res://assets/audio/jump.wav remapped: res://assets/audio/jump.wav
+Loading resource: res://.godot/imported/jump.wav-7ea4d93114fa52c0b9979f6b2117f13f.sample remapped: res://.godot/imported/jump.wav-7ea4d93114fa52c0b9979f6b2117f13f.sample
+Completed load for: 'res://assets/audio/jump.wav' remapped 'res://assets/audio/jump.wav' at thread -1
+Loading resource: res://assets/audio/land.wav remapped: res://assets/audio/land.wav
+Loading resource: res://.godot/imported/land.wav-baef3c9f2a47922b496a826b5b8d32ac.sample remapped: res://.godot/imported/land.wav-baef3c9f2a47922b496a826b5b8d32ac.sample
+Completed load for: 'res://assets/audio/land.wav' remapped 'res://assets/audio/land.wav' at thread -1
+Loading resource: res://assets/audio/victory.wav remapped: res://assets/audio/victory.wav
+Loading resource: res://.godot/imported/victory.wav-d893d32ad919f27e15cf04d35e288b78.sample remapped: res://.godot/imported/victory.wav-d893d32ad919f27e15cf04d35e288b78.sample
+Completed load for: 'res://assets/audio/victory.wav' remapped 'res://assets/audio/victory.wav' at thread -1
+Loading resource: res://scenes/levels/campaign/Entry.tscn remapped: res://scenes/levels/campaign/Entry.tscn
+Loading resource: res://scenes/levels/modules/Residential.tscn remapped: res://scenes/levels/modules/Residential.tscn
+Completed load for: 'res://scenes/levels/modules/Residential.tscn' remapped 'res://scenes/levels/modules/Residential.tscn' at thread -1
+Loading resource: res://scenes/cover/JerseyBarrier.tscn remapped: res://scenes/cover/JerseyBarrier.tscn
+Completed load for: 'res://scenes/cover/JerseyBarrier.tscn' remapped 'res://scenes/cover/JerseyBarrier.tscn' at thread -1
+Loading resource: res://scenes/enemies/EnemyBase.tscn remapped: res://scenes/enemies/EnemyBase.tscn
+Completed load for: 'res://scenes/enemies/EnemyBase.tscn' remapped 'res://scenes/enemies/EnemyBase.tscn' at thread -1
+Loading resource: res://scenes/player/player.tscn remapped: res://scenes/player/player.tscn
+Loading resource: res://scenes/weapons/RifleViewModel.tscn remapped: res://scenes/weapons/RifleViewModel.tscn
+Completed load for: 'res://scenes/weapons/RifleViewModel.tscn' remapped 'res://scenes/weapons/RifleViewModel.tscn' at thread -1
+Loading resource: res://scenes/weapons/WeaponHUD.tscn remapped: res://scenes/weapons/WeaponHUD.tscn
+Completed load for: 'res://scenes/weapons/WeaponHUD.tscn' remapped 'res://scenes/weapons/WeaponHUD.tscn' at thread -1
+Completed load for: 'res://scenes/player/player.tscn' remapped 'res://scenes/player/player.tscn' at thread -1
+Completed load for: 'res://scenes/levels/campaign/Entry.tscn' remapped 'res://scenes/levels/campaign/Entry.tscn' at thread -1
+CLOSE DURING TRANSITION prepared=true voices=5
+Audio shutdown mix cycles: 2
+Audio shutdown mix cycles: 2
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Leaked instance: Node3D:54777612512 - Node path: 
+Leaked instance: Node3D:54794389729 - Node path: 
+Hint: Leaked instances typically happen when nodes are removed from the scene tree (with `remove_child()`) but not freed (with `free()` or `queue_free()`).
+WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: Cannot get path of node as it is not in a scene tree.
+   at: get_path (scene/main/node.cpp:2431)
+ERROR: Cannot get path of node as it is not in a scene tree.
+   at: get_path (scene/main/node.cpp:2431)

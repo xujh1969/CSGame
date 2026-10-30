@@ -1,0 +1,69 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Vulkan 1.3.260 - Forward+ - Using Device #0: AMD - AMD Radeon(TM) Graphics
+
+PASS: production layout validates
+PASS: invalid config rejected: seed
+PASS: invalid config rejected: socket
+PASS: invalid config rejected: duplicate
+PASS: invalid config rejected: variant
+PASS: invalid config rejected: budget
+PASS: invalid config rejected: spawn
+PASS: invalid config rejected: encounter
+PASS: invalid config rejected: axis
+PASS: invalid config rejected: bounds
+PASS: invalid config rejected: objective
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+PASS: runtime source hash and JSON agree
+PASS: bounded nonempty decoration generated
+PASS: nine missing GLBs reported and greybox fallback retained
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+PASS: same seed reproduces IDs, positions, types and yaw
+PASS: repeat rebuild does not duplicate nodes
+PASS: all decoration stays outside road with zero physics bodies
+LevelRuntime seed=0 decoration=12 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=1 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+LevelRuntime seed=2 decoration=13 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=3 decoration=13 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+LevelRuntime seed=4 decoration=12 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=5 decoration=13 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+LevelRuntime seed=6 decoration=12 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+LevelRuntime seed=7 decoration=15 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=8 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=9 decoration=12 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=10 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=11 decoration=13 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=12 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=13 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+LevelRuntime seed=14 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+LevelRuntime seed=15 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=16 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+LevelRuntime seed=17 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+LevelRuntime seed=18 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=19 decoration=14 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_vent_A", "facade_ac_A"]
+PASS: 20 seeds vary decoration while preserving every core marker/collider and bounded counts
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+PASS: missing fallback fails before altering existing decoration
+PASS: core edits require offline rebake and cannot silently change live gameplay
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+PASS: registry-only edit imports real GLB and replaces one visual slot
+PASS: replacement hides greybox visuals only
+PASS: GLB replacement preserves all authored collision and gameplay markers
+PASS: replaced cover still blocks real weapon-layer ray
+PASS: replacing GLB twice leaves exactly one model
+PASS: missing GLB restores greybox without losing collision
+PASS: debug keys match actual engine F3/F4 constants
+DEBUG visible=true geometry=139 label=F3 碰撞/标记调试 | F4 装饰开关
+seed: 20261027 | 装饰: 11 / 24 | 显示: true
+缺失 GLB: 8 | 配置错误: 0
+青色=实体盒碰撞  橙色=触发区  绿色=固定 Marker
+PASS: debug action shows real box colliders, markers and active seed
+PASS: debug toggles reuse nodes and never alter collision
+PASS: decoration action hides only visual decoration
+PASS: actual render saved: debug
+PASS: actual render saved: street
+RENDER SAMPLE 720p Medium decorations=false nodes=812 median_ms=6.962 p95_ms=7.695 max_ms=8.594
+RENDER SAMPLE 720p Medium decorations=true nodes=812 median_ms=6.917 p95_ms=7.867 max_ms=19.014
+RENDER SAMPLE 720p Medium decorations=false nodes=812 median_ms=6.909 p95_ms=7.867 max_ms=11.53
+Audio shutdown mix cycles: 3
+TASK-006 failures: 0

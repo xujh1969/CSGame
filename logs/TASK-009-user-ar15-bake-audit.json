@@ -1,0 +1,35 @@
+{
+  "source_tool": "Hunyuan3D, confirmed by user",
+  "runtime_glb": "assets/models/task009/user_ar15_v002.glb",
+  "source_blend": "assets/source/task009/user_rifle/AR15_Prepared_v002.blend",
+  "raw_sha256": {
+    "assets/models/AR-15\u4f4e\u6a21.glb": "de10d9ba0c9872340143b213ee5cf83478a105c7925e96228628b8ce3765be77",
+    "assets/models/AR-15.glb": "7bc1c2706857791624ba6d8fa6b6690224382f7154e583fb271cd5f392bb7582"
+  },
+  "raw_files_unchanged": true,
+  "components": {
+    "Rifle_Body": 6528,
+    "Magazine": 328,
+    "Optic_Glass": 188
+  },
+  "muzzle_godot": [
+    0.0004728611961007118,
+    0.04336412124335766,
+    -0.536
+  ],
+  "sight_center_godot": [
+    0,
+    0.135,
+    0.042
+  ],
+  "texture_size": [
+    2048,
+    2048
+  ],
+  "scope_bore_radius": 0.019,
+  "license": "User-supplied Hunyuan3D output; terms not supplied; local evaluation",
+  "explicit_interface_faces": {
+    "Rifle_Body": 7,
+    "Magazine": 9
+  }
+}

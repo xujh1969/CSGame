@@ -1,0 +1,5 @@
+00:02.468  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v005\Gloves_Derived.blend"
+PALM_SIDE_TEXTURE Image_0 {'+Z': (80, 0.13594771921634674), '-Z': (195, 0.4784313937028249)}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

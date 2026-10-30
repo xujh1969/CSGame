@@ -1,0 +1,35 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: both balconies include both side return railings in actual exported triangles
+PASS: five real Blender GLB modules load
+PASS: registered sample assets exist and load
+PASS: user low-poly car replaces the proxy
+PASS: actual imported car has 9614 triangles and baked 2K PBR maps
+PASS: both original user model SHA256 values remain unchanged
+PASS: car collision uses actual low-poly body and cabin hulls
+PASS: Medium creates bounded smoke, dust, fire and volumetric haze
+PASS: smoke sprite contains actual alpha, not a painted background
+PASS: forty larger debris pieces have real collision shapes
+PASS: textured player barrier still blocks weapon layer ray
+PASS: actual car body blocks weapon ray with metal collision
+PASS: ray above the car roof remains unobstructed
+PASS: shop facade, not hidden boundary box, blocks real shot
+PASS: imported GLBs retain albedo, normal and roughness textures
+PASS: player-size capsule cannot overlap the actual car body
+PASS: entire sample route preserves 1.2m capsule clearance
+PASS: sample starts with original player health
+PASS: physical route reaches point 1
+PASS: physical route reaches point 2
+PASS: physical route reaches point 3
+PASS: sample retains real combat and finish victory
+PASS: physical player overlaps sample finish
+PASS: Low still disables dynamic shadow
+PASS: Low disables volumetric atmosphere and fire light
+PASS: Low stops all noncritical atmosphere particles
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_final"] errors=[] vehicle_final=true
+PASS: retry reloads art sample rather than base graybox fixture
+PASS: retry retains actual delivered car
+PASS: art retry restores running player state
+Audio shutdown mix cycles: 3
+TASK-008 failures: 0

@@ -1,0 +1,41 @@
+{
+  "model": "res://assets/models/task009/v006/arms_static.glb",
+  "source_blend": "res://assets/source/task009/v006/Arms_Static.blend",
+  "right_grip_socket": {
+    "position": [
+      0.06500007957220078,
+      -0.1000000461935997,
+      0.17799997329711914
+    ],
+    "rotation": [
+      -0.06384523212909698,
+      0.6885335445404053,
+      -0.027077993378043175,
+      0.7218810319900513
+    ]
+  },
+  "palm_axes": {
+    "R": [
+      0.9906209111213684,
+      0.04369087517261505,
+      0.1294652223587036
+    ],
+    "L": [
+      -0.9906207919120789,
+      0.043690845370292664,
+      0.1294650435447693
+    ]
+  },
+  "source_hand_mapping": {
+    "R": "native .L",
+    "L": "native .R"
+  },
+  "animations": [],
+  "weight_hashes": {
+    "Object_7": "55f72a78dd9f60792d9e685a99a9d347083dec59defacabf1f3494ebdbd874f4",
+    "Object_9": "b38c847b5ca0220e45f53b22377a8ab886572c362782629cbb75a4d1c06949cd"
+  },
+  "original_weights_preserved": true,
+  "bind_geometry_reposed": true,
+  "raw_sha256": "c93b94a69940656937e35848e9eb7f706e63c214f1972bf662ae64acc9630455"
+}

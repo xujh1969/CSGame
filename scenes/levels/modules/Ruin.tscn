@@ -1,0 +1,148 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://scripts/game/asset_visual_slot.gd" id="1"]
+
+[sub_resource type="StandardMaterial3D" id="R1"]
+albedo_color = Color(0.44, 0.4, 0.36, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R2"]
+size = Vector3(8, 2.8, 0.5)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R3"]
+size = Vector3(8, 2.8, 0.5)
+
+[sub_resource type="BoxMesh" id="R4"]
+size = Vector3(1.8, 4.7, 0.5)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R5"]
+size = Vector3(1.8, 4.7, 0.5)
+
+[sub_resource type="BoxMesh" id="R6"]
+size = Vector3(1.8, 2.6, 0.5)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R7"]
+size = Vector3(1.8, 2.6, 0.5)
+
+[sub_resource type="BoxMesh" id="R8"]
+size = Vector3(1.8, 3.7, 0.5)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R9"]
+size = Vector3(1.8, 3.7, 0.5)
+
+[sub_resource type="BoxMesh" id="R10"]
+size = Vector3(1.8, 1.5, 0.5)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R11"]
+size = Vector3(1.8, 1.5, 0.5)
+
+[sub_resource type="StandardMaterial3D" id="R12"]
+albedo_color = Color(0.1, 0.15, 0.18, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(8, 6.8, 0.3)
+material = SubResource("R12")
+
+[sub_resource type="BoxShape3D" id="R14"]
+size = Vector3(8, 6.8, 0.3)
+
+[sub_resource type="StandardMaterial3D" id="R15"]
+albedo_color = Color(0.46, 0.47, 0.44, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="R16"]
+size = Vector3(8.1, 0.16, 0.8)
+material = SubResource("R15")
+
+[sub_resource type="BoxShape3D" id="R17"]
+size = Vector3(8.1, 0.16, 0.8)
+
+[node name="Ruin" type="Node3D"]
+
+
+[node name="LowerWall" type="StaticBody3D" parent="."]
+position = Vector3(0, 1.4, -0.25)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="LowerWall"]
+mesh = SubResource("R2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowerWall"]
+shape = SubResource("R3")
+
+[node name="BrokenPier0" type="StaticBody3D" parent="."]
+position = Vector3(-3, 5.15, -0.25)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="BrokenPier0"]
+mesh = SubResource("R4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BrokenPier0"]
+shape = SubResource("R5")
+
+[node name="BrokenPier1" type="StaticBody3D" parent="."]
+position = Vector3(-1, 4.1, -0.25)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="BrokenPier1"]
+mesh = SubResource("R6")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BrokenPier1"]
+shape = SubResource("R7")
+
+[node name="BrokenPier2" type="StaticBody3D" parent="."]
+position = Vector3(1, 4.65, -0.25)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="BrokenPier2"]
+mesh = SubResource("R8")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BrokenPier2"]
+shape = SubResource("R9")
+
+[node name="BrokenPier3" type="StaticBody3D" parent="."]
+position = Vector3(3, 3.55, -0.25)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="BrokenPier3"]
+mesh = SubResource("R10")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BrokenPier3"]
+shape = SubResource("R11")
+
+[node name="InsetBackWall" type="StaticBody3D" parent="."]
+position = Vector3(0, 3.4, -2)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="InsetBackWall"]
+mesh = SubResource("R13")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InsetBackWall"]
+shape = SubResource("R14")
+
+[node name="RoofCap" type="StaticBody3D" parent="."]
+position = Vector3(0, 7.58, -0.3)
+collision_layer = 1
+metadata/surface_type = "concrete"
+
+[node name="Mesh" type="MeshInstance3D" parent="RoofCap"]
+mesh = SubResource("R16")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoofCap"]
+shape = SubResource("R17")
+
+[node name="VisualSlot" type="Node3D" parent="."]
+script = ExtResource("1")
+asset_id = "facade_ruin_A"

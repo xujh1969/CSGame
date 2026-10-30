@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Campaign loaded entry transition_ms=46.734 count=1
+CLOSE DURING TRANSITION prepared=true voices=5
+Audio shutdown mix cycles: 3
+Audio shutdown mix cycles: 3

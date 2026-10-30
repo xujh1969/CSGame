@@ -1,0 +1,819 @@
+{
+	"animations": [
+		{
+			"length": 0.0666666701436043,
+			"name": "Hold",
+			"tracks": [
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:elbow_IK_L.R_59",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:hand_IK_L.L_5",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:L_Upper",
+					"type": 1
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:L_Upper",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:L_Forearm",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:L_Hand",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.L_12",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.003.L_11",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.002.L_10",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.001.L_9",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.L_16",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.003.L_15",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.002.L_14",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.001.L_13",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.L_24",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.003.L_23",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.002.L_22",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.001.L_21",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.L_20",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.001.L_19",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.002.L_18",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.003.L_17",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.L_8",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.002.L_7",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.001.L_6",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:R_Upper",
+					"type": 1
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:R_Upper",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:R_Forearm",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:R_Hand",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.R_38",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.003.R_37",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.002.R_36",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.001.R_35",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.R_42",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.003.R_41",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.002.R_40",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.001.R_39",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.R_50",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.003.R_49",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.002.R_48",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.001.R_47",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.R_46",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.001.R_45",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.002.R_44",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.003.R_43",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.R_34",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.002.R_33",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.001.R_32",
+					"type": 2
+				}
+			]
+		},
+		{
+			"length": 2.21666669845581,
+			"name": "Reload",
+			"tracks": [
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:elbow_IK_L.R_59",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:hand_IK_L.L_5",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:L_Upper",
+					"type": 1
+				},
+				{
+					"keys": 52,
+					"path": "GLTF_created_0/Skeleton3D:L_Upper",
+					"type": 2
+				},
+				{
+					"keys": 53,
+					"path": "GLTF_created_0/Skeleton3D:L_Forearm",
+					"type": 2
+				},
+				{
+					"keys": 53,
+					"path": "GLTF_created_0/Skeleton3D:L_Hand",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:index_L.L_12",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:index_L.003.L_11",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:index_L.002.L_10",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:index_L.001.L_9",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.L_16",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.003.L_15",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.002.L_14",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.001.L_13",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.L_24",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.003.L_23",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.002.L_22",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.001.L_21",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.L_20",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.001.L_19",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.002.L_18",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.003.L_17",
+					"type": 2
+				},
+				{
+					"keys": 23,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.L_8",
+					"type": 2
+				},
+				{
+					"keys": 22,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.002.L_7",
+					"type": 2
+				},
+				{
+					"keys": 22,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.001.L_6",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:R_Upper",
+					"type": 1
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:R_Upper",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:R_Forearm",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:R_Hand",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.R_38",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.003.R_37",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.002.R_36",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:index_L.001.R_35",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.R_42",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.003.R_41",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.002.R_40",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:middle_L.001.R_39",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.R_50",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.003.R_49",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.002.R_48",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:pink_L.001.R_47",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.R_46",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.001.R_45",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.002.R_44",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:ring_L.003.R_43",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.R_34",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.002.R_33",
+					"type": 2
+				},
+				{
+					"keys": 1,
+					"path": "GLTF_created_0/Skeleton3D:thumb_L.001.R_32",
+					"type": 2
+				}
+			]
+		}
+	],
+	"bones": [
+		{
+			"name": "GLTF_created_0_rootJoint",
+			"parent": -1,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "camera_2",
+			"parent": 0,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "camera_target_3",
+			"parent": 0,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pose_controller_61",
+			"parent": 0,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "body_58",
+			"parent": 3,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "shoulder_L.L_31",
+			"parent": 4,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "shoulder_L.R_57",
+			"parent": 4,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "elbow_IK_L.L_4",
+			"parent": 3,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "elbow_IK_L.R_59",
+			"parent": 3,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "hand_IK_L.L_5",
+			"parent": 3,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "hand_IK_L.R_60",
+			"parent": 3,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "L_Upper",
+			"parent": -1,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "L_Forearm",
+			"parent": 11,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "L_Hand",
+			"parent": 12,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "index_L.L_12",
+			"parent": 13,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "index_L.003.L_11",
+			"parent": 14,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "index_L.002.L_10",
+			"parent": 15,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "index_L.001.L_9",
+			"parent": 16,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "middle_L.L_16",
+			"parent": 13,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "middle_L.003.L_15",
+			"parent": 18,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "middle_L.002.L_14",
+			"parent": 19,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "middle_L.001.L_13",
+			"parent": 20,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pink_L.L_24",
+			"parent": 13,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pink_L.003.L_23",
+			"parent": 22,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pink_L.002.L_22",
+			"parent": 23,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pink_L.001.L_21",
+			"parent": 24,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "ring_L.L_20",
+			"parent": 13,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "ring_L.001.L_19",
+			"parent": 26,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "ring_L.002.L_18",
+			"parent": 27,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "ring_L.003.L_17",
+			"parent": 28,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "thumb_L.L_8",
+			"parent": 13,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "thumb_L.002.L_7",
+			"parent": 30,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "thumb_L.001.L_6",
+			"parent": 31,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "twist_arm_1_L.L_26",
+			"parent": 12,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "twist_arm_2_L.L_28",
+			"parent": 12,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "twist_arm_3_L.L_27",
+			"parent": 12,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "R_Upper",
+			"parent": -1,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "R_Forearm",
+			"parent": 36,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "R_Hand",
+			"parent": 37,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "index_L.R_38",
+			"parent": 38,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "index_L.003.R_37",
+			"parent": 39,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "index_L.002.R_36",
+			"parent": 40,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "index_L.001.R_35",
+			"parent": 41,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "middle_L.R_42",
+			"parent": 38,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "middle_L.003.R_41",
+			"parent": 43,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "middle_L.002.R_40",
+			"parent": 44,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "middle_L.001.R_39",
+			"parent": 45,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pink_L.R_50",
+			"parent": 38,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pink_L.003.R_49",
+			"parent": 47,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pink_L.002.R_48",
+			"parent": 48,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "pink_L.001.R_47",
+			"parent": 49,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "ring_L.R_46",
+			"parent": 38,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "ring_L.001.R_45",
+			"parent": 51,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "ring_L.002.R_44",
+			"parent": 52,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "ring_L.003.R_43",
+			"parent": 53,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "thumb_L.R_34",
+			"parent": 38,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "thumb_L.002.R_33",
+			"parent": 55,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "thumb_L.001.R_32",
+			"parent": 56,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "twist_arm_1_L.R_52",
+			"parent": 37,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "twist_arm_2_L.R_54",
+			"parent": 37,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		},
+		{
+			"name": "twist_arm_3_L.R_53",
+			"parent": 37,
+			"rest_scale": "(1.0, 1.0, 1.0)"
+		}
+	],
+	"meshes": [
+		{
+			"can_bake_pose": true,
+			"name": "Object_7",
+			"skeleton_path": "..",
+			"skin_binds": 61,
+			"transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.28, 1.48, 2.5)]"
+		},
+		{
+			"can_bake_pose": true,
+			"name": "Object_9",
+			"skeleton_path": "..",
+			"skin_binds": 61,
+			"transform": "[X: (1.0, 0.0, 0.0), Y: (0.0, 1.0, 0.0), Z: (0.0, 0.0, 1.0), O: (0.28, 1.48, 2.5)]"
+		}
+	]
+}

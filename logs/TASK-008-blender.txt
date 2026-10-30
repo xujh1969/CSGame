@@ -1,0 +1,103 @@
+C:\Users\AYOU\Desktop\CS\scripts\tools\build_sample_assets.py:88: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+C:\Users\AYOU\Desktop\CS\scripts\tools\build_sample_assets.py:107: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+09:55:56 | INFO: Starting glTF 2.0 export
+09:55:56 | INFO: Extracting primitive: residential_v002_dark
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: residential_v002_metal
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: residential_v002_plaster
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: residential_v002_rust
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: residential_v002_stone
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: residential_v002_white
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: residential_v002_wood
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Finished glTF 2.0 export in 0.6929290294647217 s
+
+ASSET residential_v002 tris 3136 bounds [[-4.05, 0.0, -1.8], [4.05, 8.620000000000001, 1.13]]
+09:55:56 | INFO: Starting glTF 2.0 export
+09:55:56 | INFO: Extracting primitive: shopfront_v001_cloth
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: shopfront_v001_dark
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: shopfront_v001_metal
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: shopfront_v001_plaster
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: shopfront_v001_rust
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: shopfront_v001_stone
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: shopfront_v001_white
+09:55:56 | INFO: Primitives created: 1
+09:55:56 | INFO: Extracting primitive: shopfront_v001_wood
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Finished glTF 2.0 export in 0.39330577850341797 s
+
+ASSET shopfront_v001 tris 1712 bounds [[-4.05, 0.0, -1.8], [4.05, 7.619999999999999, 1.35]]
+09:55:57 | INFO: Starting glTF 2.0 export
+09:55:57 | INFO: Extracting primitive: road_v001_dark
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: road_v001_road
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: road_v001_stone
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Finished glTF 2.0 export in 0.1947615146636963 s
+
+ASSET road_v001 tris 1044 bounds [[-8.0, -0.3, -28.0], [8.0, 0.01, 6.0]]
+09:55:57 | INFO: Starting glTF 2.0 export
+09:55:57 | INFO: Extracting primitive: barrier_v001_metal
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: barrier_v001_red
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: barrier_v001_stone
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Finished glTF 2.0 export in 0.10424375534057617 s
+
+ASSET barrier_v001 tris 1968 bounds [[-1.25, 0.0, -0.45], [1.25, 1.0779999494552612, 0.45]]
+09:55:57 | INFO: Starting glTF 2.0 export
+09:55:57 | INFO: Extracting primitive: crates_v001_dark
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: crates_v001_metal
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: crates_v001_wood
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Finished glTF 2.0 export in 0.13315868377685547 s
+
+ASSET crates_v001 tris 3240 bounds [[-0.9, 0.0, -0.4225], [0.9, 1.2, 0.4225]]
+09:55:57 | INFO: Starting glTF 2.0 export
+09:55:57 | INFO: Extracting primitive: vehicle_proxy_v001_dark
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: vehicle_proxy_v001_metal
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Finished glTF 2.0 export in 0.013588428497314453 s
+
+ASSET vehicle_proxy_v001 tris 200 bounds [[-0.949999988079071, 0.0, -2.1], [0.949999988079071, 1.295, 2.1]]
+09:55:57 | INFO: Starting glTF 2.0 export
+09:55:57 | INFO: Extracting primitive: street_details_v002_dark
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: street_details_v002_rust
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | INFO: Extracting primitive: street_details_v002_stone
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | WARNING: Mesh street_details_v002_white is not valid, and may be exported wrongly
+09:55:57 | INFO: Extracting primitive: street_details_v002_white
+09:55:57 | INFO: Primitives created: 1
+09:55:57 | WARNING: Mesh street_details_v002_wood is not valid, and may be exported wrongly
+09:55:57 | INFO: Extracting primitive: street_details_v002_wood
+09:55:58 | INFO: Primitives created: 1
+09:55:58 | INFO: Finished glTF 2.0 export in 0.23236632347106934 s
+
+ASSET street_details_v002 tris 8224 bounds [[-5.8016486167907715, 0.0002936394833884109, -26.114370483559608], [5.8051335127272194, 6.310260772705078, 3.6319115850394135]]
+Info: Saved as "StreetKit_v002.blend"
+TASK-008 ASSET BUILD COMPLETE
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

@@ -1,0 +1,134 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" path="res://scripts/task_000_smoke.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/weapons/TargetDummy.tscn" id="3"]
+
+[sub_resource type="Environment" id="Environment_0"]
+background_mode = 1
+background_color = Color(0.12, 0.14, 0.17, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.65, 0.68, 0.72, 1)
+ambient_light_energy = 0.7
+
+[sub_resource type="StandardMaterial3D" id="BarricadeMaterial"]
+shading_mode = 0
+albedo_color = Color(1, 0.12, 0.015, 1)
+
+[sub_resource type="BoxMesh" id="GroundMeshResource"]
+size = Vector3(12, 0.2, 20)
+
+[sub_resource type="BoxMesh" id="BuildingMeshResource"]
+size = Vector3(2, 6, 20)
+
+[sub_resource type="BoxMesh" id="BarricadeMeshResource"]
+size = Vector3(2.5, 1.1, 0.45)
+material = SubResource("BarricadeMaterial")
+
+[sub_resource type="BoxShape3D" id="GroundShape"]
+size = Vector3(12, 0.2, 20)
+
+[sub_resource type="BoxShape3D" id="BuildingShape"]
+size = Vector3(2, 6, 20)
+
+[sub_resource type="BoxShape3D" id="BarricadeShape"]
+size = Vector3(2.5, 1.1, 0.45)
+
+[sub_resource type="BoxMesh" id="LowWallMesh"]
+size = Vector3(2.2, 1.1, 0.4)
+
+[sub_resource type="BoxShape3D" id="LowWallShape"]
+size = Vector3(2.2, 1.1, 0.4)
+
+[sub_resource type="BoxMesh" id="StepMesh"]
+size = Vector3(1.2, 0.3, 1.2)
+
+[sub_resource type="BoxShape3D" id="StepShape"]
+size = Vector3(1.2, 0.3, 1.2)
+[sub_resource type="BoxMesh" id="ShotBlockerMesh"]
+size = Vector3(1.8, 2.5, 0.3)
+
+[sub_resource type="BoxShape3D" id="ShotBlockerShape"]
+size = Vector3(1.8, 2.5, 0.3)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation = Vector3(-0.75, 0.55, 0)
+light_energy = 1.2
+
+[node name="Ground" type="StaticBody3D" parent="."]
+position = Vector3(0, -0.1, -6)
+
+[node name="GroundMesh" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("GroundMeshResource")
+
+[node name="GroundCollision" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("GroundShape")
+
+[node name="BuildingLeft" type="StaticBody3D" parent="."]
+position = Vector3(-6, 3, -6)
+
+[node name="BuildingMesh" type="MeshInstance3D" parent="BuildingLeft"]
+mesh = SubResource("BuildingMeshResource")
+
+[node name="BuildingCollision" type="CollisionShape3D" parent="BuildingLeft"]
+shape = SubResource("BuildingShape")
+
+[node name="BuildingRight" type="StaticBody3D" parent="."]
+position = Vector3(6, 3, -6)
+
+[node name="BuildingMesh" type="MeshInstance3D" parent="BuildingRight"]
+mesh = SubResource("BuildingMeshResource")
+
+[node name="BuildingCollision" type="CollisionShape3D" parent="BuildingRight"]
+shape = SubResource("BuildingShape")
+
+[node name="Barricade" type="StaticBody3D" parent="."]
+position = Vector3(0, 0.55, -7)
+
+[node name="BarricadeMesh" type="MeshInstance3D" parent="Barricade"]
+mesh = SubResource("BarricadeMeshResource")
+
+[node name="BarricadeCollision" type="CollisionShape3D" parent="Barricade"]
+shape = SubResource("BarricadeShape")
+
+[node name="Player" parent="." instance=ExtResource("2")]
+[node name="LowWall" type="StaticBody3D" parent="."]
+position = Vector3(2.8, 0.55, -4.5)
+
+[node name="Mesh" type="MeshInstance3D" parent="LowWall"]
+mesh = SubResource("LowWallMesh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="LowWall"]
+shape = SubResource("LowWallShape")
+
+[node name="Step" type="StaticBody3D" parent="."]
+position = Vector3(-2.8, 0.15, -3.5)
+
+[node name="Mesh" type="MeshInstance3D" parent="Step"]
+mesh = SubResource("StepMesh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Step"]
+shape = SubResource("StepShape")
+
+[node name="ShotBlocker" type="StaticBody3D" parent="."]
+position = Vector3(0, 1.25, -10)
+
+[node name="Mesh" type="MeshInstance3D" parent="ShotBlocker"]
+mesh = SubResource("ShotBlockerMesh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="ShotBlocker"]
+shape = SubResource("ShotBlockerShape")
+
+[node name="ExposedTarget" parent="." instance=ExtResource("3")]
+position = Vector3(-2.5, 0, -12.5)
+
+[node name="CoveredTarget" parent="." instance=ExtResource("3")]
+position = Vector3(0, 0, -12.5)
+
+

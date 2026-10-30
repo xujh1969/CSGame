@@ -1,0 +1,24 @@
+00:02.515  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v003\clutter2\Baked.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+22:25:16 | INFO: Starting glTF 2.0 export
+22:25:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.001
+22:25:16 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+22:25:16 | INFO: Primitives created: 1
+22:25:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.002
+22:25:16 | INFO: Primitives created: 1
+22:25:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.003
+22:25:16 | INFO: Primitives created: 1
+22:25:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.004
+22:25:16 | INFO: Primitives created: 1
+22:25:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.005
+22:25:16 | INFO: Primitives created: 1
+22:25:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.006
+22:25:16 | INFO: Primitives created: 1
+22:25:16 | INFO: Finished glTF 2.0 export in 0.5666134357452393 s
+
+Info: Saved as "Derived.blend"
+ASSEMBLED clutter2 {'asset': 'clutter2', 'variants': [{'name': 'Pile0', 'triangles': 1711, 'dimensions_godot': [1.0466774084242456, 0.47183547520322744, 1.05]}, {'name': 'Pile1', 'triangles': 2974, 'dimensions_godot': [1.05, 0.4396117076828185, 1.0032638762458905]}, {'name': 'Pile2', 'triangles': 1810, 'dimensions_godot': [1.05, 0.42704120665135437, 1.0167709173591368]}, {'name': 'Pile3', 'triangles': 1972, 'dimensions_godot': [0.990856771946925, 0.3651706759545608, 1.05]}, {'name': 'Pile4', 'triangles': 2694, 'dimensions_godot': [1.0351688641226737, 0.44009345860385896, 1.05]}, {'name': 'Pile5', 'triangles': 2116, 'dimensions_godot': [1.05, 0.31850957552208314, 0.8664529714243486]}], 'runtime_glb': 'assets/models/task009/v003/clutter2_variants.glb', 'source_blend': 'assets/source/task009/v003/clutter2/Derived.blend'}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

@@ -1,0 +1,110 @@
+{
+  "right_grip_socket": {
+    "position": [
+      0.04499998688697815,
+      -0.10999993979930878,
+      0.20500007271766663
+    ],
+    "rotation": [
+      -0.025998424738645554,
+      -0.023580225184559822,
+      -0.06429221481084824,
+      0.9973136782646179
+    ]
+  },
+  "source_hand_mapping": {
+    "R": "native .L",
+    "L": "native .R"
+  },
+  "weight_audit": {
+    "Object_7": "13b257858310e0657e370ea6910eaae387e6dc0db9aeb6e3c4897a96789ce0f9",
+    "Object_9": "a4953f3efa341890120a721fe64ac3cd7bc94cf7352db905aaacf181e54f4a3e"
+  },
+  "raw_sha256": "c93b94a69940656937e35848e9eb7f706e63c214f1972bf662ae64acc9630455",
+  "triangles": 19734,
+  "bones": [
+    "GLTF_created_0_rootJoint",
+    "camera_2",
+    "camera_target_3",
+    "pose_controller_61",
+    "elbow_IK_L.L_4",
+    "hand_IK_L.L_5",
+    "body_58",
+    "shoulder_L.L_31",
+    "shoulder_L.R_57",
+    "elbow_IK_L.R_59",
+    "hand_IK_L.R_60",
+    "R_Upper",
+    "R_Forearm",
+    "R_Hand",
+    "thumb_L.L_8",
+    "thumb_L.002.L_7",
+    "thumb_L.001.L_6",
+    "index_L.L_12",
+    "index_L.003.L_11",
+    "index_L.002.L_10",
+    "index_L.001.L_9",
+    "middle_L.L_16",
+    "middle_L.003.L_15",
+    "middle_L.002.L_14",
+    "middle_L.001.L_13",
+    "ring_L.L_20",
+    "ring_L.001.L_19",
+    "ring_L.002.L_18",
+    "ring_L.003.L_17",
+    "pink_L.L_24",
+    "pink_L.003.L_23",
+    "pink_L.002.L_22",
+    "pink_L.001.L_21",
+    "twist_arm_1_L.L_26",
+    "twist_arm_3_L.L_27",
+    "twist_arm_2_L.L_28",
+    "L_Upper",
+    "L_Forearm",
+    "L_Hand",
+    "thumb_L.R_34",
+    "thumb_L.002.R_33",
+    "thumb_L.001.R_32",
+    "index_L.R_38",
+    "index_L.003.R_37",
+    "index_L.002.R_36",
+    "index_L.001.R_35",
+    "middle_L.R_42",
+    "middle_L.003.R_41",
+    "middle_L.002.R_40",
+    "middle_L.001.R_39",
+    "ring_L.R_46",
+    "ring_L.001.R_45",
+    "ring_L.002.R_44",
+    "ring_L.003.R_43",
+    "pink_L.R_50",
+    "pink_L.003.R_49",
+    "pink_L.002.R_48",
+    "pink_L.001.R_47",
+    "twist_arm_1_L.R_52",
+    "twist_arm_3_L.R_53",
+    "twist_arm_2_L.R_54"
+  ],
+  "animations": [
+    "Hold",
+    "Fire",
+    "Reload"
+  ],
+  "source": "https://sketchfab.com/3d-models/hand-with-gloves-5a6a434b8ec943ffacc581358781eecb",
+  "author": "JUST (https://sketchfab.com/teenjust500)",
+  "license": "CC-BY-4.0; embedded metadata, download page fetch 403",
+  "retained_original_weights": true,
+  "scale": 0.030151149241291215,
+  "palm_axes": {
+    "R": [
+      -0.9906209111213684,
+      -0.043690748512744904,
+      -0.12946520745754242
+    ],
+    "L": [
+      0.9906209111213684,
+      -0.043690748512744904,
+      -0.12946520745754242
+    ]
+  }
+}

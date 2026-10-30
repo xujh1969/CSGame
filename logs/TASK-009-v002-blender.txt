@@ -1,0 +1,23 @@
+C:\Users\AYOU\Desktop\CS\scripts\tools\build_cinematic_assets.py:70: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+Info: Saved as "CinematicKit_v002.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+17:09:51 | INFO: Starting glTF 2.0 export
+17:09:51 | INFO: Extracting primitive: Magazine_geometry
+17:09:51 | INFO: Primitives created: 3
+17:09:51 | INFO: Extracting primitive: Cube.079
+17:09:51 | INFO: Primitives created: 1
+17:09:51 | INFO: Extracting primitive: Upper_receiver_profile
+17:09:51 | INFO: Primitives created: 7
+17:09:51 | INFO: Finished glTF 2.0 export in 0.5924785137176514 s
+
+17:09:54 | INFO: Starting glTF 2.0 export
+17:09:54 | INFO: Extracting primitive: Cube.089
+17:09:54 | INFO: Primitives created: 4
+17:09:54 | INFO: Finished glTF 2.0 export in 0.026290416717529297 s
+
+CINEMATIC ASSET AUDIT {"blender_version": "5.2.3 LTS", "source": "Original project meshes and seeded mathematical PBR; no external meshes", "license": "Project original; fictional unbranded rifle", "assets": [{"id": "rifle_v002", "objects": 3, "triangles": 16828}, {"id": "skyline_v002", "objects": 1, "triangles": 13536}], "muzzle_godot": [0, 0.006, -0.582], "sight_center_godot": [0, 0.135, 0.042], "seed": 20261029, "revision": "v002", "source_blend": "assets/source/task009/CinematicKit_v002.blend", "texture_resolutions": {"anodized": [2048, 2048], "polymer": [1024, 1024]}}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

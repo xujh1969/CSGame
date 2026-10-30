@@ -1,0 +1,33 @@
+{
+  "asset": "new_ar",
+  "variants": [],
+  "components": {
+    "Rifle_Body": 7263,
+    "Magazine": 260,
+    "Optic_Glass": 62
+  },
+  "muzzle_godot": [
+    4.889443516731262e-08,
+    0.04902336396276952,
+    -0.518
+  ],
+  "sight_center_godot": [
+    0,
+    0.135,
+    0.042
+  ],
+  "lens_fit": {
+    "source_center": [
+      -0.0030274689197540283,
+      0.15136709809303284,
+      0.094
+    ],
+    "radii": [
+      0.018890624418854713,
+      0.018418388664722445
+    ],
+    "surface": "single fitted plane"
+  },
+  "runtime_glb": "assets/models/task009/v003/ar15_revision.glb",
+  "source_blend": "assets/source/task009/v003/new_ar/Derived.blend"
+}

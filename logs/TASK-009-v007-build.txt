@@ -1,0 +1,17 @@
+00:07.391  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v005\Gloves_Derived.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+12:10:48 | INFO: Starting glTF 2.0 export
+12:10:48 | INFO: Extracting primitive: Object_0
+12:10:48 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+12:10:48 | INFO: Primitives created: 1
+12:10:48 | INFO: Extracting primitive: Object_1
+12:10:48 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+12:10:48 | INFO: Primitives created: 1
+12:10:48 | INFO: Finished glTF 2.0 export in 0.5602760314941406 s
+
+Info: Saved as "Arms_Palmar_Candidate.blend"
+PALMAR_CANDIDATE_EXPORTED edge_increase_m= 0.012298741595057746
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

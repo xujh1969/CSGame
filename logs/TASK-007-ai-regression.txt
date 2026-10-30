@@ -1,0 +1,54 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+PASS: exactly three enemies preplaced at scene load
+PASS: E01 starts dormant
+PASS: E01 initially occupies editor marker
+PASS: E02 starts dormant
+PASS: E02 initially occupies editor marker
+PASS: E03 starts dormant
+PASS: E03 initially occupies editor marker
+PASS: physical T1 crossing activates E01
+PASS: repeat T1 entry/calls do not respawn or duplicate activation
+PASS: baked corner navigation provides a path to peek point
+Corner diagnostics: min_x=3.12530517578125 largest_step=0.03775382041931 position=(4.576629, 0.07932, -25.0) state=COOLDOWN nav_path=[(3.125305, 0.1, -25.0), (3.255556, 0.1, -25.0), (3.6875, 0.10625, -25.0), (4.698951, 0.128238, -25.0)]
+PASS: E01 physically approaches corner edge without teleporting
+PASS: E01 performs finite burst then seeks cover
+PASS: E01 navigation returns to sidewalk cover
+PASS: enemy stance shapes are independent between instances
+PASS: T2 activates fixed window sentry
+PASS: no enemy shot during first 0.4s reaction window
+PASS: window sentry waits for alert and aim before firing
+PASS: visible player receives real ray damage
+PASS: window gun visibly aims down toward player
+PASS: window sentry remains on platform without floor navigation
+Window first shot at seconds: 1.13333333333333
+PASS: solid wall blocks enemy LOS
+PASS: wall stops attacks and damage for five simulated seconds
+PASS: occluded player is not tracked through wall
+PASS: enemy weapon rechecks LOS before each shot
+PASS: window sentry does not see player behind its facing arc
+PASS: dormant E03 crouches behind real low-wall collision
+PASS: T3 activates cover rifleman
+PASS: E03 stands for burst then crouches behind cover
+PASS: player shot against enemy accepted: 1
+PASS: player shot against enemy accepted: 2
+PASS: player shot against enemy accepted: 3
+PASS: player shot against enemy accepted: 4
+PASS: four actual player shots kill 100HP enemy
+PASS: enemy health is not shared
+PASS: death and encounter-cleared each emit once
+PASS: dead enemy cannot fire and hit collision is disabled
+PASS: player death test begins with valid enemy LOS
+PASS: player death stops held fire and releases mouse
+PASS: player death cancels reload without transferring ammo
+PASS: enemies stop attacking a downed player
+LevelRuntime seed=20261027 decoration=11 missing GLB=["facade_residential_A", "facade_shopfront_A", "facade_ruin_A", "facade_high_window_A", "cover_wall_A", "cover_barrier_A", "cover_box_A", "facade_ac_A", "facade_vent_A"]
+PASS: scene restart resets encounters and enemy count
+PASS: E01 restart restores health, state and weapon
+PASS: E02 restart restores health, state and weapon
+PASS: E03 restart restores health, state and weapon
+PASS: restart restores player health, ammo and reload state
+PASS: enemy killed before activation stays cleared without respawning
+TASK-004 failures: 0
+Audio shutdown mix cycles: 3

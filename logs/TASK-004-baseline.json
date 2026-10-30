@@ -1,0 +1,26 @@
+[
+  {
+    "file": "scripts/player/player_motor.gd",
+    "sha256": "5E7E9C6A8CF50732EB08EA766B917CAA6D6BB24A8813AFECB22FCA894D34236A"
+  },
+  {
+    "file": "scripts/weapons/weapon_controller.gd",
+    "sha256": "4B86643C99181D827D1880BCE9E1FCAF50453816B203D92BB89FBE105556B861"
+  },
+  {
+    "file": "scripts/weapons/rifle_view_model.gd",
+    "sha256": "B0BC43E252E79478EABD7281C68618A09849E8550D575571A3C5320EB2F93221"
+  },
+  {
+    "file": "scripts/player/health_component.gd",
+    "sha256": "9237544654A89F4143D7CC25E40961F38F557ECBCE6A0504581C7E524208954E"
+  },
+  {
+    "file": "scenes/main.tscn",
+    "sha256": "66DAABB68C8E06D0546B8135EDD1A18B373BE47FDA710A2E1CFBB4441EF3662C"
+  },
+  {
+    "file": "tests/test_weapon.gd",
+    "sha256": "82EC337A0675FEBE2A33F12B111646D8951338F39D746EC2783017191CB5041E"
+  }
+]

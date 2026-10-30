@@ -1,0 +1,27 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_proxy"] errors=[] vehicle=placeholder until user delivery
+ERROR: FAIL: both balconies include both side return railings in actual exported triangles
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/test_art_sample.gd:13)
+       [1] _run (res://tests/test_art_sample.gd:38)
+PASS: five real Blender GLB modules load
+PASS: registered sample assets exist and load
+PASS: textured player barrier still blocks weapon layer ray
+PASS: vehicle proxy has real metal collision
+PASS: shop facade, not hidden boundary box, blocks real shot
+PASS: imported GLBs retain albedo, normal and roughness textures
+PASS: entire sample route preserves 1.2m capsule clearance
+PASS: sample starts with original player health
+PASS: physical route reaches point 1
+PASS: physical route reaches point 2
+PASS: physical route reaches point 3
+PASS: sample retains real combat and finish victory
+PASS: physical player overlaps sample finish
+PASS: Low still disables dynamic shadow
+Street sample models=["sample_residential_A", "sample_shopfront_A", "sample_barrier_A", "sample_crates_A", "sample_road_A", "sample_street_details_A", "sample_vehicle_proxy"] errors=[] vehicle=placeholder until user delivery
+PASS: retry reloads art sample rather than base graybox fixture
+PASS: art retry restores running player state
+Audio shutdown mix cycles: 3
+TASK-008 failures: 1

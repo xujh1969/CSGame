@@ -1,0 +1,5 @@
+00:02.469  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v005\Gloves_Derived.blend"
+RIGHT_PALM_SKIN 70 median [ 0.01391901 -0.12931359  0.18689016] bounds [ 0.0029401  -0.1608949   0.14129922] [ 0.06949836 -0.07873655  0.20300569]
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

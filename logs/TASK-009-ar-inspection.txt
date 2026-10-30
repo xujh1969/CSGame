@@ -1,0 +1,15 @@
+17:39:59 | INFO: Data are loaded, start creating Blender stuff
+17:39:59 | INFO: Blender create Mesh node node_0
+17:40:02 | INFO: glTF import finished in 2.99s
+17:40:03 | INFO: Data are loaded, start creating Blender stuff
+17:40:03 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+17:40:03 | INFO: glTF import finished in 0.01s
+C:\Users\AYOU\Desktop\CS\scripts\tools\inspect_user_rifle.py:39: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes=True
+00:14.562  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-source-AR_High.png'
+00:19.109  render           | Saved: 'C:\Users\AYOU\Desktop\CS\logs\TASK-009-source-AR_Low.png'
+Info: Saved as "AR15_SourceInspection_v001.blend"
+RIFLE SOURCE INSPECTION [{"object": "AR_High", "bounds": [[-0.6318579912185669, -0.05123906582593918, -2.822879430208758e-10], [0.5542070269584656, 0.059506963938474655, 0.5108230710029602]], "dimensions": [1.1860650181770325, 0.11074602976441383, 0.5108230712852482], "principal_axes": [[-0.0009564296354177798, -0.10968049886288231, -0.9939664347509637], [0.9999846796225476, -0.0055241430814981785, -0.00035265196221029305], [-0.005452133760630695, -0.9939515440967958, 0.10968410197039398]], "axis_values": [0.0006273777193829975, 0.009952911182411171, 0.08869857391109788], "materials": ["Material.001"], "uv_layers": ["UVMap"]}, {"object": "AR_Low", "bounds": [[-0.9492189884185791, -0.08701600134372711, -0.40820300579071045], [0.9492189884185791, 0.09071899950504303, 0.40820300579071045]], "dimensions": [1.8984379768371582, 0.17773500084877014, 0.8164060115814209], "principal_axes": [[-0.0018088984232812028, -0.11520600003992376, -0.9933399747524989], [0.9999795360717135, -0.006303937206654342, -0.0010898685682128456], [-0.006136393427386588, -0.993321618576026, 0.11521504565467429]], "axis_values": [0.0017896714006821754, 0.02151746369852465, 0.2107780309718516], "materials": [], "uv_layers": []}]
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

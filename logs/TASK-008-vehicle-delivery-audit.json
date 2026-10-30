@@ -1,0 +1,164 @@
+{
+  "blender": "5.2.3 LTS",
+  "files": [
+    {
+      "path": "C:\\Users\\AYOU\\Desktop\\CS\\assets\\models\\废弃汽车-低模.glb",
+      "bytes": 173956,
+      "import_seconds": 3.2689468000025954,
+      "objects": [
+        {
+          "name": "mesh_rep_0_ori_repair_quad.obj",
+          "vertices": 4803,
+          "triangles": 9614,
+          "uv_layers": [],
+          "color_attributes": []
+        }
+      ],
+      "bounds_blender": [
+        [
+          -0.40008899569511414,
+          -0.7519530057907104,
+          -0.296875
+        ],
+        [
+          0.40069299936294556,
+          0.75,
+          0.29882800579071045
+        ]
+      ],
+      "dimensions_blender": [
+        0.8007819950580597,
+        1.5019530057907104,
+        0.5957030057907104
+      ],
+      "materials": [],
+      "images": [],
+      "gltf_images": [],
+      "gltf_extensions": []
+    },
+    {
+      "path": "C:\\Users\\AYOU\\Desktop\\CS\\assets\\models\\废弃汽车.fbx",
+      "bytes": 127934636,
+      "import_seconds": 5.429491099996085,
+      "objects": [
+        {
+          "name": "node_0",
+          "vertices": 749734,
+          "triangles": 1499788,
+          "uv_layers": [
+            "UVMap"
+          ],
+          "color_attributes": []
+        }
+      ],
+      "bounds_blender": [
+        [
+          -0.3074449896812439,
+          -0.5858010053634644,
+          -4.182644275374514e-08
+        ],
+        [
+          0.3019689917564392,
+          0.5540080666542053,
+          0.4529400169849396
+        ]
+      ],
+      "dimensions_blender": [
+        0.6094139814376831,
+        1.1398090720176697,
+        0.45294005881138233
+      ],
+      "materials": [
+        {
+          "name": "Material",
+          "textures": [
+            {
+              "image": "texture_pbr_20250901.png",
+              "size": [
+                4096,
+                4096
+              ],
+              "packed": true,
+              "path": "C:\\Users\\AYOU\\Desktop\\CS\\assets\\models\\output.fbm\\texture_pbr_20250901.png",
+              "has_data": true
+            },
+            {
+              "image": "texture_pbr_20250901_normal.png",
+              "size": [
+                4096,
+                4096
+              ],
+              "packed": true,
+              "path": "C:\\Users\\AYOU\\Desktop\\CS\\assets\\models\\output.fbm\\texture_pbr_20250901_normal.png",
+              "has_data": true
+            },
+            {
+              "image": "texture_pbr_20250901_roughness.png",
+              "size": [
+                4096,
+                4096
+              ],
+              "packed": true,
+              "path": "C:\\Users\\AYOU\\Desktop\\CS\\assets\\models\\output.fbm\\texture_pbr_20250901_roughness.png",
+              "has_data": true
+            },
+            {
+              "image": "texture_pbr_20250901_metallic.png",
+              "size": [
+                4096,
+                4096
+              ],
+              "packed": true,
+              "path": "C:\\Users\\AYOU\\Desktop\\CS\\assets\\models\\output.fbm\\texture_pbr_20250901_metallic.png",
+              "has_data": true
+            }
+          ],
+          "diffuse": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ]
+        }
+      ],
+      "images": [
+        {
+          "name": "texture_pbr_20250901.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true,
+          "has_data": true
+        },
+        {
+          "name": "texture_pbr_20250901_metallic.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true,
+          "has_data": true
+        },
+        {
+          "name": "texture_pbr_20250901_normal.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true,
+          "has_data": true
+        },
+        {
+          "name": "texture_pbr_20250901_roughness.png",
+          "size": [
+            4096,
+            4096
+          ],
+          "packed": true,
+          "has_data": true
+        }
+      ]
+    }
+  ]
+}

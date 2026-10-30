@@ -1,0 +1,12 @@
+11:51:33 | INFO: Data are loaded, start creating Blender stuff
+11:51:33 | INFO: Blender create Mesh node mesh_rep_0_ori_repair_quad.obj
+11:51:33 | INFO: glTF import finished in 0.02s
+DELIVERY 废弃汽车-低模.glb triangles 9614 dimensions [0.8007819950580597, 1.5019530057907104, 0.5957030057907104] images 0
+C:\Users\AYOU\Desktop\CS\scripts\tools\audit_vehicle_delivery.py:31: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if material.use_nodes:
+FBX version: 7400
+DELIVERY 废弃汽车.fbx triangles 1499788 dimensions [0.6094139814376831, 1.1398090720176697, 0.45294005881138233] images 4
+VEHICLE AUDIT COMPLETE
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

@@ -1,0 +1,18 @@
+00:02.156  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\user_rifle\AR15_Prepared_v001.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+18:23:16 | INFO: Starting glTF 2.0 export
+18:23:16 | INFO: Extracting primitive: Cylinder.001
+18:23:16 | INFO: Primitives created: 1
+18:23:16 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj.001
+18:23:17 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:23:17 | INFO: Primitives created: 2
+18:23:17 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj
+18:23:17 | INFO: Primitives created: 2
+18:23:17 | INFO: Finished glTF 2.0 export in 0.555854082107544 s
+
+Info: Saved as "AR15_Prepared_v002.blend"
+REPAIRED INTERFACES {'Rifle_Body': 7, 'Magazine': 9}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

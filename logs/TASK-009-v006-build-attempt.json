@@ -1,0 +1,7 @@
+{
+  "status": "rejected_not_exported",
+  "reason": "prebind glove edge-length increase 0.030291063m exceeds 0.030m",
+  "blender_exit_code_without_python_exit_code_flag": 0,
+  "source": "scripts/tools/build_static_hand_calibration.py",
+  "active_v006_model": "previous successful static derivative; not replaced by rejected attempt"
+}

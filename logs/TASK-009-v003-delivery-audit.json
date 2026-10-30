@@ -1,0 +1,302 @@
+[
+  {
+    "file": "assets/models/AR-15-1低模.glb",
+    "sha256": "10a9da3c56f27e2bae2c6d11f13292611d9a386a9b9cb717a4e341e0e35bf9d1",
+    "bytes": 111488,
+    "triangles": 6146,
+    "materials": 0,
+    "images": 0,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.06835900247097015,
+          -0.31835898756980896,
+          -0.75
+        ],
+        "max": [
+          0.0703120008111,
+          0.3164060115814209,
+          0.75
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/AR-15-1.glb",
+    "sha256": "57d9148714bbf834bd19a842adcc4ad561133ac4e6577ec766207c0d7b2391a4",
+    "bytes": 73852016,
+    "triangles": 1499464,
+    "materials": 1,
+    "images": 3,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.059199001640081406,
+          -0.6016200184822083,
+          -0.4983769953250885
+        ],
+        "max": [
+          0.050668999552726746,
+          0.5775060057640076,
+          0
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/手臂2-低模.glb",
+    "sha256": "6411276e0c8bab648165db717a1713b6a88fd5af30bafcf80e3b0076c732fd8a",
+    "bytes": 243936,
+    "triangles": 13495,
+    "materials": 0,
+    "images": 0,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.7304689884185791,
+          -0.7480469942092896,
+          -0.4375
+        ],
+        "max": [
+          0.7304689884185791,
+          0.75,
+          0.43945300579071045
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/手臂2.glb",
+    "sha256": "953a56a77bd7aa730a02a788fa03443ec3f71f4c66835ca561c5c2c688dc913c",
+    "bytes": 77360512,
+    "triangles": 1500126,
+    "materials": 1,
+    "images": 3,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.4255419969558716,
+          -0.2698889970779419,
+          -0.8669400215148926
+        ],
+        "max": [
+          0.420987993478775,
+          0.23673699796199799,
+          0
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/杂物1-低模.glb",
+    "sha256": "320cfc32865cb9ffb6aa47b6388e9855e2505d483780e300a86fb4ba07bd6abe",
+    "bytes": 186744,
+    "triangles": 10325,
+    "materials": 0,
+    "images": 0,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.624970018863678,
+          -0.23765000700950623,
+          -0.75
+        ],
+        "max": [
+          0.625,
+          0.22914400696754456,
+          0.7519530057907104
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/杂物1.glb",
+    "sha256": "e57439b8c3c8348398c1b084d1840222f5be7faf26e8753e52e3a3faa8ddeb6d",
+    "bytes": 82385156,
+    "triangles": 1499812,
+    "materials": 1,
+    "images": 3,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.4685409963130951,
+          -0.5914390087127686,
+          -0.34401100873947144
+        ],
+        "max": [
+          0.4674220085144043,
+          0.5332509875297546,
+          0
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/杂物2-低模.glb",
+    "sha256": "0a2cd3d00a25ae4c8dc0e96aaa76efc03a8f2e52810b1bd2cfe64225a2ddebb8",
+    "bytes": 239364,
+    "triangles": 13281,
+    "materials": 0,
+    "images": 0,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.75,
+          -0.6486340165138245,
+          -0.43945300579071045
+        ],
+        "max": [
+          0.7460759878158569,
+          0.6484379768371582,
+          0.43164101243019104
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/杂物2.glb",
+    "sha256": "8d6f1f312645cfe40341471fbd0cfa3538c3ae49fec8608a4b593de4610354e2",
+    "bytes": 84735440,
+    "triangles": 1497698,
+    "materials": 1,
+    "images": 3,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.45100298523902893,
+          -0.2160789966583252,
+          -0.7857419848442078
+        ],
+        "max": [
+          0.4590519964694977,
+          0.31235599517822266,
+          0
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/杂物3-低模.glb",
+    "sha256": "ab5a3aa9c014a4a7aac9a2d97c037d2fa7cb50514dc83fa8793d4d02b9ef52eb",
+    "bytes": 318812,
+    "triangles": 17707,
+    "materials": 0,
+    "images": 0,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.7519530057907104,
+          -0.40429699420928955,
+          -0.4179689884185791
+        ],
+        "max": [
+          0.7529810070991516,
+          0.40429699420928955,
+          0.421875
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION"
+      ]
+    ]
+  },
+  {
+    "file": "assets/models/杂物3.glb",
+    "sha256": "8b5fd773365bf61006e8eb52f58f9387cebad8586df44a9b41cbf3e512b798d4",
+    "bytes": 85290284,
+    "triangles": 1498736,
+    "materials": 1,
+    "images": 3,
+    "skins": 0,
+    "animations": 0,
+    "bounds": [
+      {
+        "min": [
+          -0.5333759784698486,
+          -0.3034979999065399,
+          -0.5604199767112732
+        ],
+        "max": [
+          0.5022860169410706,
+          0.27612200379371643,
+          0
+        ]
+      }
+    ],
+    "attributes": [
+      [
+        "POSITION",
+        "NORMAL",
+        "TEXCOORD_0"
+      ]
+    ]
+  }
+]

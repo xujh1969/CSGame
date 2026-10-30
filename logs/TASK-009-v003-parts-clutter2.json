@@ -1,0 +1,61 @@
+{
+  "asset": "clutter2",
+  "variants": [
+    {
+      "name": "Pile0",
+      "triangles": 1711,
+      "dimensions_godot": [
+        1.0466774084242456,
+        0.47183547520322744,
+        1.05
+      ]
+    },
+    {
+      "name": "Pile1",
+      "triangles": 2974,
+      "dimensions_godot": [
+        1.05,
+        0.4396117076828185,
+        1.0032638762458905
+      ]
+    },
+    {
+      "name": "Pile2",
+      "triangles": 1810,
+      "dimensions_godot": [
+        1.05,
+        0.42704120665135437,
+        1.0167709173591368
+      ]
+    },
+    {
+      "name": "Pile3",
+      "triangles": 1972,
+      "dimensions_godot": [
+        0.990856771946925,
+        0.3651706759545608,
+        1.05
+      ]
+    },
+    {
+      "name": "Pile4",
+      "triangles": 2694,
+      "dimensions_godot": [
+        1.0351688641226737,
+        0.44009345860385896,
+        1.05
+      ]
+    },
+    {
+      "name": "Pile5",
+      "triangles": 2116,
+      "dimensions_godot": [
+        1.05,
+        0.31850957552208314,
+        0.8664529714243486
+      ]
+    }
+  ],
+  "runtime_glb": "assets/models/task009/v003/clutter2_variants.glb",
+  "source_blend": "assets/source/task009/v003/clutter2/Derived.blend"
+}

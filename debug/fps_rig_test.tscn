@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://debug/FPSRigTest.gd" id="1"]
+[ext_resource type="Script" path="res://debug/FPSRigDiagnostics.gd" id="2"]
+
+[node name="FPSRigTest" type="Node3D"]
+script = ExtResource("1")
+
+[node name="RigDiagnostics" type="Node" parent="."]
+script = ExtResource("2")
+skeleton_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D")
+viewmodel_root_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel")
+weapon_root_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel")
+camera_path = NodePath("../Fixture/Player/Camera3D")
+animation_player_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/AnimationPlayer")
+right_palm_marker_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/RightPalmAttachment/RightPalmMarker")
+left_palm_marker_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel/FirstPersonArms/ArmsModel/GLTF_created_0/Skeleton3D/LeftPalmAttachment/LeftPalmMarker")
+right_grip_socket_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/RightGripSocket")
+left_grip_socket_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/LeftGripSocket")
+sight_marker_path = NodePath("../Fixture/Player/Camera3D/RifleViewModel/CinematicRifle/RifleModel/SightMarker")
+required_bones = PackedStringArray("R_Hand", "L_Hand")

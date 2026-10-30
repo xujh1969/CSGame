@@ -1,0 +1,24 @@
+00:02.640  blend            | Read blend: "C:\Users\AYOU\Desktop\CS\assets\source\task009\v003\clutter3\Inspection.blend"
+C:\Users\AYOU\Desktop\CS\scripts\tools\prepare_v003_assets.py:58: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material.use_nodes=True
+BAKE clutter3 albedo
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE clutter3 normal
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE clutter3 roughness
+Info: Baking map saved to internal image, save it externally or pack it
+BAKE clutter3 metallic
+Info: Baking map saved to internal image, save it externally or pack it
+Info: Saved as "Baked.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+19:30:07 | INFO: Starting glTF 2.0 export
+19:30:07 | INFO: Extracting primitive: mesh_rep_0_ori_repair_quad.obj
+19:30:07 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:30:07 | INFO: Primitives created: 1
+19:30:07 | INFO: Finished glTF 2.0 export in 0.31362247467041016 s
+
+BAKED clutter3 {'asset': 'clutter3', 'raw_sha256': {'杂物3.glb': '8b5fd773365bf61006e8eb52f58f9387cebad8586df44a9b41cbf3e512b798d4', '杂物3-低模.glb': 'ab5a3aa9c014a4a7aac9a2d97c037d2fa7cb50514dc83fa8793d4d02b9ef52eb'}, 'raw_files_unchanged': True, 'rotation_degrees': 0.0, 'target_dimensions_blender': [1.9999999999999998, 1.1161206820036735, 1.0745906219049028], 'triangles': 17696, 'texture_resolution': [2048, 2048], 'skin_adjustment': None}
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit
