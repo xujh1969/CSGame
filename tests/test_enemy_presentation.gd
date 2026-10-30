@@ -34,6 +34,7 @@ func _run()->void:
  actor._process(.01)
  check(actor.current_clip=="Fire","shot event selects firing pose")
  check(actor.flash.remaining>0,"shot emits short muzzle flash")
+ check(actor.flash.smoke.amount<=3 and actor.flash.smoke.lifetime<=.24,"muzzle smoke stays small and brief")
  enemy.apply_damage(1000)
  actor._process(.1)
  check(actor.current_clip=="Death","lethal hit selects actual death animation")

@@ -31,5 +31,30 @@ func _run()->void:
 		enemy._travel_to(cover)
 		enemy.move_and_slide()
 	check(enemy.global_position.distance_to(cover)<0.35,"enemy physically returns behind cover")
+	enemy.global_position=Vector3(2.6,0,-13)
+	enemy.rotation.y=0
+	for i in 2:await physics_frame
+	for i in 120:
+		await physics_frame
+		enemy.velocity=Vector3(0,0,-2)
+		enemy.move_and_slide()
+	check(enemy.is_on_wall() and enemy.global_position.z>-14.0,"enemy body collision stops direct movement at the solid wall")
+	var stopped_position:Vector3=enemy.global_position
+	enemy.apply_damage(1000)
+	var actor=enemy.get_node("VisualRoot/RiggedEnemy")
+	var wall_bounds:=AABB(Vector3(1.3,0,-14.75),Vector3(2.6,1.1,.5)).grow(.06)
+	var death_bones_clear:=true
+	for i in 120:
+		await physics_frame
+		actor._process(1.0/60.0)
+		for bone in actor.skeleton.get_bone_count():
+			var bone_name:String=actor.skeleton.get_bone_name(bone)
+			if bone_name.contains("Thumb") or bone_name.contains("Index") or bone_name.contains("Toe") or bone_name.contains("Foot"):continue
+			var bone_world:Vector3=(actor.skeleton.global_transform*actor.skeleton.get_bone_global_pose(bone)).origin
+			if wall_bounds.has_point(bone_world):
+				death_bones_clear=false
+	check(enemy.global_position.distance_to(stopped_position)<0.01,"lethal hit beside wall does not move enemy root through it")
+	check(actor.current_clip=="Death","enemy beside wall plays the death animation")
+	check(death_bones_clear,"death animation keeps the enemy skeleton outside the solid wall")
 	print("ENEMY_COMBAT_SAMPLE failures=",failures)
 	quit(1 if failures else 0)

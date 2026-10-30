@@ -18,11 +18,25 @@ var mount_frozen:=false
 var grip:=Vector3(0,-.055,.08)
 var aim_point:=Vector3.ZERO
 var has_aim_point:=false
+var death_probe_shape:=SphereShape3D.new()
+var death_collision_offset:=Vector3.ZERO
 func _ready()->void:
  actor=get_parent().get_parent()
+ death_probe_shape.radius=.08
  _setup.call_deferred()
 func _setup()->void:
  model=load("res://assets/models/task010/enemy_fighter.glb").instantiate();add_child(model)
+ for mesh in model.find_children("*","MeshInstance3D",true,false):
+  mesh.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+  for surface in mesh.mesh.get_surface_count():
+   var material:Material=mesh.get_active_material(surface)
+   if material is BaseMaterial3D:
+    var lit_material:BaseMaterial3D=material.duplicate()
+    lit_material.disable_receive_shadows=true
+    mesh.set_surface_override_material(surface,lit_material)
+ var fill:=OmniLight3D.new();fill.name="EnemyDetailFill";fill.position=Vector3(0,1.15,0)
+ fill.light_color=Color(1.0,.88,.74);fill.light_energy=.9;fill.omni_range=3.8;fill.omni_attenuation=1.4;fill.shadow_enabled=false
+ add_child(fill)
  skeleton=model.find_children("*","Skeleton3D",true,false)[0]
  player=model.find_children("*","AnimationPlayer",true,false)[0]
  var library:=AnimationLibrary.new()
@@ -31,7 +45,7 @@ func _setup()->void:
    if name.ends_with(wanted):
     var animation:Animation=player.get_animation(name).duplicate(true)
     animation.loop_mode=Animation.LOOP_NONE if wanted=="Death" else Animation.LOOP_LINEAR
-    if wanted=="Move":
+    if wanted in ["Move","Death"]:
      for track in animation.get_track_count():
       if animation.track_get_type(track)==Animation.TYPE_POSITION_3D and str(animation.track_get_path(track)).ends_with(hips_bone):
        var first:Vector3=animation.track_get_key_value(track,0)
@@ -77,15 +91,49 @@ func aim_at(point:Vector3)->void:
 func _on_state(_id:StringName,state:StringName)->void:
  if state==&"DEAD":
   death_mount=gun.transform;mount_frozen=true;shot_remaining=0;flash.stop()
+func _death_collision_normal()->Vector3:
+ var query:=PhysicsShapeQueryParameters3D.new()
+ query.shape=death_probe_shape;query.collision_mask=actor.collision_mask;query.exclude=[actor.get_rid()]
+ var space:=actor.get_world_3d().direct_space_state
+ for bone in skeleton.get_bone_count():
+  var bone_name:=skeleton.get_bone_name(bone)
+  if bone_name.contains("Thumb") or bone_name.contains("Index") or bone_name.contains("Toe") or bone_name.contains("Foot"):continue
+  var relevant:=false
+  for part in ["Hips","Spine","Neck","Head","Arm","ForeArm","Hand","UpLeg","Leg"]:
+   if bone_name.contains(part):relevant=true;break
+  if not relevant:continue
+  var point:Vector3=(skeleton.global_transform*skeleton.get_bone_global_pose(bone)).origin
+  if point.y<.18:continue
+  query.transform=Transform3D(Basis.IDENTITY,point)
+  var hit:=space.get_rest_info(query)
+  if not hit.is_empty():
+   var normal:Vector3=hit.normal;normal.y=0
+   if normal.length_squared()>.01:return normal.normalized()
+ return Vector3.ZERO
 func _process(delta:float)->void:
  if player==null:return
  shot_remaining=maxf(0,shot_remaining-delta)
  var moving:=Vector2(actor.velocity.x,actor.velocity.z).length()>.1
  var selected:="Death" if not actor.is_alive() else ("Move" if moving else (("Crouch" if crouched else "Fire") if shot_remaining>0 else ("CrouchIdle" if crouched else "Idle")))
  if selected!=current_clip:
-  player.play(clips[selected],.12);current_clip=selected
+  player.play(clips[selected],0.0 if selected=="Death" else .12);current_clip=selected
  player.speed_scale=clampf(Vector2(actor.velocity.x,actor.velocity.z).length()/2.8,.5,1.4) if selected=="Move" else 1.0
- if player.is_playing():player.advance(delta)
+ if player.is_playing():
+  var previous_time:=player.current_animation_position
+  player.advance(delta)
+  if selected=="Death":
+   var normal:=_death_collision_normal()
+   var remaining:=.25-death_collision_offset.length()
+   if normal!=Vector3.ZERO:
+    if remaining>0:
+     var correction:=normal*minf(.08,remaining)
+     model.position+=global_basis.inverse()*correction
+     death_collision_offset+=correction
+    else:
+     player.seek(previous_time,true);player.advance(0);player.pause()
+    if player.is_playing():
+     player.seek(previous_time,true);player.advance(0)
+     if _death_collision_normal()!=Vector3.ZERO:player.pause()
  if mount_frozen:
   gun.transform=death_mount
  else:
