@@ -1,0 +1,6 @@
+Uploading LFS objects: 100% (427/427), 3.4 GB | 0 B/s, done.
+To https://github.com/xujh1969/CSGame.git
+ * [new branch]      main -> main
+ * [new branch]      task-009-rig-diagnostics -> task-009-rig-diagnostics
+branch 'main' set up to track 'origin/main'.
+branch 'task-009-rig-diagnostics' set up to track 'origin/task-009-rig-diagnostics'.

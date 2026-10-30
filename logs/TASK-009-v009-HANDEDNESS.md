@@ -40,3 +40,5 @@ Blender 可执行文件：C:/Program Files/Blender Foundation/Blender 5.2/blende
 左右手错用已经数据复现并纠正。ADS 仍能看到左手手指竖在瞄具旁，包握角度尚不自然；不能把本次纠正说成握持/换弹整体修好。静态姿态通过前不恢复 Reload，不合入默认战役，不进入 TASK-010。未重新进行目标 RTX2060 性能验收。
 
 GitHub 初次推送完成3.4GB LFS传输后被 GH008 拒绝（缺少至少23个对象）；不能声称上传完成。后续需补齐 LFS 对象并核对远端提交。
+
+后续补传结果：`git lfs fsck` 通过；`git lfs push --all origin task-009-rig-diagnostics` 成功（427对象）；`git push -u origin main task-009-rig-diagnostics` 成功。`main` 仅为说明/配置，未合并候选游戏。任务分支包含 v009 代码、模型、Blender源文件和测试记录。初次上传失败日志保留，不能用成功覆盖历史失败。

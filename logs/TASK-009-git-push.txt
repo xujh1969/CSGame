@@ -1,0 +1,11 @@
+Uploading LFS objects: 100% (391/391), 3.4 GB | 1.4 MB/s, done.
+remote: error: GH008: Your push referenced at least 23 unknown Git LFS objects:        
+remote:     76e63f49d0afa70bbfb98906517ee83f81b2a0d3f120c390f7cab87b809c9e46        
+remote:     ed28dc6a5c4d209219764a000a3584eabb5d90208b0006799d97e0897ee3a11f        
+remote:     d3f468de7e39c289ad36d78e0c3478e8c0b4b638367ceea2257b0dd2f112b667        
+remote:     ...        
+remote: Try to push them with 'git lfs push --all'.        
+To https://github.com/xujh1969/CSGame.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+ ! [remote rejected] task-009-rig-diagnostics -> task-009-rig-diagnostics (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/xujh1969/CSGame.git'
