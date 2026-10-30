@@ -1,0 +1,17 @@
+.godot/
+.import/
+.DS_Store
+Thumbs.db
+*.tmp
+logs/*.log
+# 不忽略资源源文件/GLB/设计文档
+
+# Local editor backups and credentials; source GLB/BLEND files stay tracked through LFS.
+*.blend[0-9]
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
