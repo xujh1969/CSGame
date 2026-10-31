@@ -39,8 +39,14 @@ func _run()->void:
  actor._process(.1)
  check(actor.current_clip=="Death","lethal hit selects actual death animation")
  check(is_equal_approx(visual.scale.y,1),"death does not squash the actor mesh")
- actor.player.advance(actor.player.get_animation(actor.clips.Death).length+.1)
- var final_pose=actor.skeleton.get_bone_global_pose(actor.skeleton.find_bone(actor.hips_bone))
+ var death_length:float=actor.player.get_animation(actor.clips.Death).length
+ for frame in range(int(ceil(death_length*60.0))):actor._process(1.0/60.0)
+ var lowest_y:=INF
+ for bone in actor.skeleton.get_bone_count():
+  if actor.skeleton.get_bone_name(bone).ends_with("_End"):continue
+  var point:Vector3=(actor.skeleton.global_transform*actor.skeleton.get_bone_global_pose(bone)).origin
+  lowest_y=minf(lowest_y,point.y)
+ check(lowest_y>=enemy.global_position.y-.05 and lowest_y<=enemy.global_position.y+.15,"lowest death bone stays at ground height")
  actor._process(.2)
  check(actor.current_clip=="Death" and not actor.player.is_playing(),"death holds final frame and does not revive")
  check(not enemy.get_node("EnemyWeapon").fire_at(Vector3.ZERO),"dead enemy cannot shoot")
